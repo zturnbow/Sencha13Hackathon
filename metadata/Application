@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "users",
+            "user",
             "meetings",
             "image",
             "meeting"

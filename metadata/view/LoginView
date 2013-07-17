@@ -6,6 +6,8 @@
     },
     "codeClass": null,
     "userConfig": {
+        "id": "loginView",
+        "itemId": "loginView",
         "ui": "dark",
         "designer|userClassName": "LoginView",
         "designer|userAlias": "loginView",
@@ -26,30 +28,14 @@
             "userConfig": {
                 "docked": null,
                 "height": 32,
+                "id": "submit",
                 "itemId": "submit",
                 "ui": "confirm",
                 "designer|displayName": "submit",
+                "designer|createAlias": null,
                 "text": "Login"
             },
-            "designerId": "a68feab9-8790-439d-bc64-e21cb5e0d085",
-            "cn": [
-                {
-                    "type": "basiceventbinding",
-                    "reference": {
-                        "name": "listeners",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "fn": "onSubmitTap",
-                        "implHandler": [
-                            "console.log(button);"
-                        ],
-                        "name": "tap"
-                    },
-                    "designerId": "47e75f2e-f692-47bf-ba25-88a3aba95dfe"
-                }
-            ]
+            "designerId": "a68feab9-8790-439d-bc64-e21cb5e0d085"
         },
         {
             "type": "Ext.Container",

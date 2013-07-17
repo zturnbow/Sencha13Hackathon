@@ -18,6 +18,8 @@ Ext.define('MyApp.view.LoginView', {
     alias: 'widget.loginView',
 
     config: {
+        id: 'loginView',
+        itemId: 'loginView',
         ui: 'dark',
         layout: {
             type: 'fit'
@@ -28,6 +30,7 @@ Ext.define('MyApp.view.LoginView', {
             {
                 xtype: 'button',
                 height: 32,
+                id: 'submit',
                 itemId: 'submit',
                 ui: 'confirm',
                 text: 'Login'
@@ -70,18 +73,7 @@ Ext.define('MyApp.view.LoginView', {
                     }
                 ]
             }
-        ],
-        listeners: [
-            {
-                fn: 'onSubmitTap',
-                event: 'tap',
-                delegate: '#submit'
-            }
         ]
-    },
-
-    onSubmitTap: function(button, e, eOpts) {
-        console.log(button);
     }
 
 });

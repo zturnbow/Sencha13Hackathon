@@ -25,17 +25,19 @@ Ext.define('MyApp.controller.LoginController', {
         ],
 
         control: {
-            "formpanel": {
-                submit: 'onFormpanelSubmit'
+            "#submit": {
+                tap: 'onButtonTap'
             }
         }
     },
 
-    onFormpanelSubmit: function(formpanel, result, e, eOpts) {
-        var user = Ext.create('app.model.user', {
-            username : result.username,
-            password : result.password
-        });
+    onButtonTap: function(button, e, eOpts) {
+        /*var user = Ext.create('app.model.user', {
+        username : result.username,
+        password : result.password
+        }); */
+        console.log(button);
+        return true;
     }
 
 });

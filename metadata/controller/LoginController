@@ -24,16 +24,18 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onFormpanelSubmit",
+                "fn": "onButtonTap",
                 "implHandler": [
-                    "var user = Ext.create('app.model.user', {",
+                    "/*var user = Ext.create('app.model.user', {",
                     "    username : result.username,",
                     "    password : result.password",
-                    "});"
+                    "}); */",
+                    "console.log(button.parent());",
+                    "return true;"
                 ],
-                "name": "submit",
-                "designer|targetType": "LoginView",
-                "designer|controlQuery": "formpanel"
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#submit"
             },
             "designerId": "b2b7236a-f4f9-4aff-8c0a-7d19a215e709"
         }

@@ -1,0 +1,39 @@
+{
+    "name": "sencha13hackathon",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "ae21bab5-1802-44dd-9aec-6d7e35e0452d": {
+            "paths": [
+                "metadata/view/MyNavigationView",
+                "app/view/override/MyNavigationView.js",
+                "app/view/MyNavigationView.js"
+            ],
+            "className": "MyNavigationView"
+        },
+        "3d804e96-3a99-4d61-bb50-695957a76d4b": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "ae21bab5-1802-44dd-9aec-6d7e35e0452d"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "3d804e96-3a99-4d61-bb50-695957a76d4b"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -22,6 +22,7 @@ Ext.define('MyApp.store.imageStore', {
 
     config: {
         model: 'MyApp.model.image',
+        storeId: 'imageStore',
         proxy: {
             type: 'ajax',
             reader: {

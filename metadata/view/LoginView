@@ -8,30 +8,51 @@
     "userConfig": {
         "ui": "dark",
         "designer|userClassName": "LoginView",
+        "designer|userAlias": "loginView",
         "designer|initialView": true,
-        "layout": "card",
+        "layout": "fit",
+        "scrollable": false,
         "standardSubmit": true
     },
     "designerId": "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",
     "cn": [
         {
-            "type": "customevent",
+            "type": "Ext.Button",
             "reference": {
-                "name": "customEvents",
+                "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "login",
-                "params": [
-                    "username",
-                    "password"
-                ]
+                "docked": null,
+                "height": 32,
+                "itemId": "submit",
+                "ui": "confirm",
+                "designer|displayName": "submit",
+                "text": "Login"
             },
-            "designerId": "02c318a5-5808-4a08-8998-cf5216dd202a"
+            "designerId": "a68feab9-8790-439d-bc64-e21cb5e0d085",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onSubmitTap",
+                        "implHandler": [
+                            "console.log(button);"
+                        ],
+                        "name": "tap"
+                    },
+                    "designerId": "47e75f2e-f692-47bf-ba25-88a3aba95dfe"
+                }
+            ]
         },
         {
-            "type": "Ext.field.Text",
+            "type": "Ext.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
@@ -40,32 +61,64 @@
             "userConfig": {
                 "centered": false,
                 "docked": "top",
-                "id": "username",
+                "padding": 45
+            },
+            "designerId": "e4f8f614-dad8-42fb-8910-0ff0c8034049"
+        },
+        {
+            "type": "Ext.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": "top",
                 "showAnimation": "fadeIn",
-                "designer|displayName": "username",
-                "label": "Username",
-                "labelAlign": "bottom",
-                "labelWidth": "100%",
-                "required": true
+                "ui": "dark",
+                "layout": "fit"
             },
-            "designerId": "38d2b5f0-914c-42de-8370-2b80762743ad"
-        },
-        {
-            "type": "Ext.field.Password",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "centered": false,
-                "docked": "top",
-                "id": "password",
-                "label": "Password",
-                "labelAlign": "bottom",
-                "required": true
-            },
-            "designerId": "7c26df30-1811-493e-985e-d17eec311b81"
+            "designerId": "05dcbd81-99a2-44f0-83bc-2714d722c3c5",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "docked": "top",
+                        "id": "username",
+                        "showAnimation": "fadeIn",
+                        "designer|displayName": "username",
+                        "label": "Username",
+                        "labelAlign": "bottom",
+                        "labelWidth": "100%",
+                        "required": true
+                    },
+                    "designerId": "38d2b5f0-914c-42de-8370-2b80762743ad"
+                },
+                {
+                    "type": "Ext.field.Password",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "docked": "top",
+                        "id": "password",
+                        "label": "Password",
+                        "labelAlign": "bottom",
+                        "required": true
+                    },
+                    "designerId": "7c26df30-1811-493e-985e-d17eec311b81"
+                }
+            ]
         }
     ]
 }

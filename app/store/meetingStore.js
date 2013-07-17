@@ -22,6 +22,7 @@ Ext.define('MyApp.store.meetingStore', {
 
     config: {
         model: 'MyApp.model.meetings',
+        storeId: 'meetingStore',
         proxy: {
             type: 'ajax',
             reader: {

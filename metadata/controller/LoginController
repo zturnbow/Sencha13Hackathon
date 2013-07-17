@@ -7,9 +7,35 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "users"
+            "user"
+        ],
+        "views": [
+            "LoginView"
         ],
         "designer|userClassName": "LoginController"
     },
-    "designerId": "a520ca8e-f72a-45cc-8089-f3241bf019e4"
+    "designerId": "a520ca8e-f72a-45cc-8089-f3241bf019e4",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFormpanelSubmit",
+                "implHandler": [
+                    "var user = Ext.create('app.model.user', {",
+                    "    username : result.username,",
+                    "    password : result.password",
+                    "});"
+                ],
+                "name": "submit",
+                "designer|targetType": "LoginView",
+                "designer|controlQuery": "formpanel"
+            },
+            "designerId": "b2b7236a-f4f9-4aff-8c0a-7d19a215e709"
+        }
+    ]
 }

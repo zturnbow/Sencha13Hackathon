@@ -18,7 +18,24 @@ Ext.define('MyApp.controller.LoginController', {
 
     config: {
         models: [
-            'users'
-        ]
+            'user'
+        ],
+        views: [
+            'LoginView'
+        ],
+
+        control: {
+            "formpanel": {
+                submit: 'onFormpanelSubmit'
+            }
+        }
+    },
+
+    onFormpanelSubmit: function(formpanel, result, e, eOpts) {
+        var user = Ext.create('app.model.user', {
+            username : result.username,
+            password : result.password
+        });
     }
+
 });

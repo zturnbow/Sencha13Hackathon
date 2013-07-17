@@ -18,7 +18,7 @@ Ext.define('MyApp.model.meetings', {
 
     uses: [
         'MyApp.model.meeting',
-        'MyApp.model.users'
+        'MyApp.model.user'
     ],
 
     config: {
@@ -28,7 +28,7 @@ Ext.define('MyApp.model.meetings', {
                 name: 'meetings'
             },
             {
-                model: 'MyApp.model.users',
+                model: 'MyApp.model.user',
                 name: 'users'
             }
         ]

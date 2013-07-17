@@ -15,35 +15,73 @@
 
 Ext.define('MyApp.view.LoginView', {
     extend: 'Ext.form.Panel',
+    alias: 'widget.loginView',
 
     config: {
         ui: 'dark',
         layout: {
-            type: 'card'
+            type: 'fit'
         },
+        scrollable: false,
         standardSubmit: true,
         items: [
             {
-                xtype: 'textfield',
-                centered: false,
-                docked: 'top',
-                id: 'username',
-                showAnimation: 'fadeIn',
-                label: 'Username',
-                labelAlign: 'bottom',
-                labelWidth: '100%',
-                required: true
+                xtype: 'button',
+                height: 32,
+                itemId: 'submit',
+                ui: 'confirm',
+                text: 'Login'
             },
             {
-                xtype: 'passwordfield',
+                xtype: 'container',
                 centered: false,
                 docked: 'top',
-                id: 'password',
-                label: 'Password',
-                labelAlign: 'bottom',
-                required: true
+                padding: 45
+            },
+            {
+                xtype: 'container',
+                centered: false,
+                docked: 'top',
+                showAnimation: 'fadeIn',
+                ui: 'dark',
+                layout: {
+                    type: 'fit'
+                },
+                items: [
+                    {
+                        xtype: 'textfield',
+                        centered: false,
+                        docked: 'top',
+                        id: 'username',
+                        showAnimation: 'fadeIn',
+                        label: 'Username',
+                        labelAlign: 'bottom',
+                        labelWidth: '100%',
+                        required: true
+                    },
+                    {
+                        xtype: 'passwordfield',
+                        centered: false,
+                        docked: 'top',
+                        id: 'password',
+                        label: 'Password',
+                        labelAlign: 'bottom',
+                        required: true
+                    }
+                ]
+            }
+        ],
+        listeners: [
+            {
+                fn: 'onSubmitTap',
+                event: 'tap',
+                delegate: '#submit'
             }
         ]
+    },
+
+    onSubmitTap: function(button, e, eOpts) {
+        console.log(button);
     }
 
 });

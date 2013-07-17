@@ -2,7 +2,12 @@
     "name": "Architect",
     "settings": {
         "urlPrefix": "http://localhost",
-        "exportPath": ""
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": true,
+        "buildShouldOverwriteIndex": true
     },
     "xdsVersion": "2.2.2",
     "xdsBuild": 991,
@@ -36,11 +41,11 @@
         },
         "300bf1ee-bbe8-48ff-8fde-cfa6099da00f": {
             "paths": [
-                "metadata/model/users",
-                "app/model/override/users.js",
-                "app/model/users.js"
+                "metadata/model/user",
+                "app/model/override/user.js",
+                "app/model/user.js"
             ],
-            "className": "users"
+            "className": "user"
         },
         "1acff2bf-e6df-41c2-abe6-520ffdf03ad7": {
             "paths": [

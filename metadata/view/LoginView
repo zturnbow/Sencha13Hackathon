@@ -1,0 +1,71 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "ui": "dark",
+        "designer|userClassName": "LoginView",
+        "designer|initialView": true,
+        "layout": "card",
+        "standardSubmit": true
+    },
+    "designerId": "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",
+    "cn": [
+        {
+            "type": "customevent",
+            "reference": {
+                "name": "customEvents",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "login",
+                "params": [
+                    "username",
+                    "password"
+                ]
+            },
+            "designerId": "02c318a5-5808-4a08-8998-cf5216dd202a"
+        },
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": "top",
+                "id": "username",
+                "showAnimation": "fadeIn",
+                "designer|displayName": "username",
+                "label": "Username",
+                "labelAlign": "bottom",
+                "labelWidth": "100%",
+                "required": true
+            },
+            "designerId": "38d2b5f0-914c-42de-8370-2b80762743ad"
+        },
+        {
+            "type": "Ext.field.Password",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "docked": "top",
+                "id": "password",
+                "label": "Password",
+                "labelAlign": "bottom",
+                "required": true
+            },
+            "designerId": "7c26df30-1811-493e-985e-d17eec311b81"
+        }
+    ]
+}

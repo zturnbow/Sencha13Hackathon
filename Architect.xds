@@ -1,6 +1,9 @@
 {
     "name": "Architect",
-    "settings": {},
+    "settings": {
+        "urlPrefix": "http://localhost",
+        "exportPath": ""
+    },
     "xdsVersion": "2.2.2",
     "xdsBuild": 991,
     "schemaVersion": 1,
@@ -68,16 +71,36 @@
                 "metadata/resource/Library"
             ],
             "className": "Library"
+        },
+        "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c": {
+            "paths": [
+                "metadata/view/LoginView",
+                "app/view/override/LoginView.js",
+                "app/view/LoginView.js"
+            ],
+            "className": "LoginView"
+        },
+        "a520ca8e-f72a-45cc-8089-f3241bf019e4": {
+            "paths": [
+                "metadata/controller/LoginController",
+                "app/controller/override/LoginController.js",
+                "app/controller/LoginController.js"
+            ],
+            "className": "LoginController"
         }
     },
     "viewOrderMap": {
-        "view": [],
+        "view": [
+            "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c"
+        ],
         "store": [
             "7dc7745b-f467-445d-9ea0-fe60358dabb3",
             "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
             "54618e1f-0c7d-459e-ba47-4f426ffb2aac"
         ],
-        "controller": [],
+        "controller": [
+            "a520ca8e-f72a-45cc-8089-f3241bf019e4"
+        ],
         "model": [
             "300bf1ee-bbe8-48ff-8fde-cfa6099da00f",
             "1acff2bf-e6df-41c2-abe6-520ffdf03ad7",

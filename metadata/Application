@@ -17,6 +17,12 @@
             "meetingStore",
             "imageStore"
         ],
+        "views": [
+            "LoginView"
+        ],
+        "controllers": [
+            "LoginController"
+        ],
         "name": "MyApp"
     },
     "designerId": "application"

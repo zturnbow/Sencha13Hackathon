@@ -20,13 +20,16 @@ Ext.Loader.setConfig({
 
 Ext.application({
     views: [
-        'MyNavigationView'
+        'Login',
+        'Main',
+        'NewMeeting',
+        'ExistingMeeting'
     ],
     name: 'MyApp',
 
     launch: function() {
 
-        Ext.create('MyApp.view.MyNavigationView', {fullscreen: true});
+        Ext.create('MyApp.view.Login', {fullscreen: true});
     }
 
 });

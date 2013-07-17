@@ -6,13 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "container|animation": "pop",
-        "ui": "",
-        "designer|userClassName": "MyNavigationView",
-        "designer|initialView": true,
-        "scrollable": true
+        "designer|userClassName": "ExistingMeeting"
     },
-    "designerId": "ae21bab5-1802-44dd-9aec-6d7e35e0452d",
+    "designerId": "fc329c37-5bbb-46a4-a8ad-5adc16585613",
     "cn": [
         {
             "type": "Ext.Panel",
@@ -22,9 +18,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "White Board"
+                "title": "Existing Meeting"
             },
-            "designerId": "e9fa1a97-9436-483d-afc9-e9cc1ded9c55"
+            "designerId": "1bb913c7-da81-4aee-9e31-094f52aea7d1"
         }
     ]
 }

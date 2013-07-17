@@ -1,0 +1,26 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Main"
+    },
+    "designerId": "15f066f6-54ec-4a3f-8486-11318e63ba2a",
+    "cn": [
+        {
+            "type": "Ext.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Actions"
+            },
+            "designerId": "eb704cf7-2f8b-4bbe-963c-95c30624fc1e"
+        }
+    ]
+}

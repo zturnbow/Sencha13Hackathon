@@ -1,0 +1,41 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "meetings",
+        "designer|userClassName": "meetingStore"
+    },
+    "designerId": "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "meetingAjaxProxy"
+            },
+            "designerId": "919bfc66-ef46-4153-90ac-7a91e47bc8eb",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "meetingReader"
+                    },
+                    "designerId": "ff616804-24cf-4b07-8449-4c011345f3e5"
+                }
+            ]
+        }
+    ]
+}

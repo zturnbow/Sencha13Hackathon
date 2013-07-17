@@ -1,0 +1,30 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "meeting"
+    },
+    "designerId": "f3e4ad26-5dc1-4929-bb42-163b689f747d",
+    "cn": [
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "associatedName": null,
+                "associationKey": null,
+                "designer|displayName": "images",
+                "model": "image",
+                "name": "images"
+            },
+            "designerId": "9498b748-7823-4887-b1d2-8793b05405a0"
+        }
+    ]
+}

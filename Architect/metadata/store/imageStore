@@ -1,0 +1,41 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "image",
+        "designer|userClassName": "imageStore"
+    },
+    "designerId": "54618e1f-0c7d-459e-ba47-4f426ffb2aac",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "imageAjaxProperty"
+            },
+            "designerId": "2137759a-7d63-4f0d-a329-c95d01eaf962",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "imageReader"
+                    },
+                    "designerId": "f2590f18-b728-4b22-9af9-b5fbb4b658af"
+                }
+            ]
+        }
+    ]
+}

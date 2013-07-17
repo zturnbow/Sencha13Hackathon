@@ -1,0 +1,94 @@
+{
+    "name": "Architect",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "7dc7745b-f467-445d-9ea0-fe60358dabb3": {
+            "paths": [
+                "metadata/store/userStore",
+                "app/store/override/userStore.js",
+                "app/store/userStore.js"
+            ],
+            "className": "userStore"
+        },
+        "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf": {
+            "paths": [
+                "metadata/store/meetingStore",
+                "app/store/override/meetingStore.js",
+                "app/store/meetingStore.js"
+            ],
+            "className": "meetingStore"
+        },
+        "54618e1f-0c7d-459e-ba47-4f426ffb2aac": {
+            "paths": [
+                "metadata/store/imageStore",
+                "app/store/override/imageStore.js",
+                "app/store/imageStore.js"
+            ],
+            "className": "imageStore"
+        },
+        "300bf1ee-bbe8-48ff-8fde-cfa6099da00f": {
+            "paths": [
+                "metadata/model/Users",
+                "app/model/override/Users.js",
+                "app/model/Users.js"
+            ],
+            "className": "Users"
+        },
+        "1acff2bf-e6df-41c2-abe6-520ffdf03ad7": {
+            "paths": [
+                "metadata/model/meetings",
+                "app/model/override/meetings.js",
+                "app/model/meetings.js"
+            ],
+            "className": "meetings"
+        },
+        "961c5402-96fe-4533-a73f-293d40ba2d74": {
+            "paths": [
+                "metadata/model/image",
+                "app/model/override/image.js",
+                "app/model/image.js"
+            ],
+            "className": "image"
+        },
+        "f3e4ad26-5dc1-4929-bb42-163b689f747d": {
+            "paths": [
+                "metadata/model/meeting",
+                "app/model/override/meeting.js",
+                "app/model/meeting.js"
+            ],
+            "className": "meeting"
+        },
+        "6a6457cf-590c-4bed-8798-99dcfccd4bb3": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [],
+        "store": [
+            "7dc7745b-f467-445d-9ea0-fe60358dabb3",
+            "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
+            "54618e1f-0c7d-459e-ba47-4f426ffb2aac"
+        ],
+        "controller": [],
+        "model": [
+            "300bf1ee-bbe8-48ff-8fde-cfa6099da00f",
+            "1acff2bf-e6df-41c2-abe6-520ffdf03ad7",
+            "961c5402-96fe-4533-a73f-293d40ba2d74",
+            "f3e4ad26-5dc1-4929-bb42-163b689f747d"
+        ],
+        "resource": [
+            "6a6457cf-590c-4bed-8798-99dcfccd4bb3"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

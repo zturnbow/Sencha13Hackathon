@@ -1,0 +1,23 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Users",
+            "meetings",
+            "image",
+            "meeting"
+        ],
+        "stores": [
+            "userStore",
+            "meetingStore",
+            "imageStore"
+        ],
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

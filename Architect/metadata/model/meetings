@@ -1,0 +1,42 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "meetings"
+    },
+    "designerId": "1acff2bf-e6df-41c2-abe6-520ffdf03ad7",
+    "cn": [
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "meetingAssociation",
+                "model": "meeting",
+                "name": "meetings"
+            },
+            "designerId": "4f17fced-cfd0-479c-8617-c5a0e3d98e00"
+        },
+        {
+            "type": "Ext.data.association.HasMany",
+            "reference": {
+                "name": "hasMany",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "userAssociation",
+                "model": "Users",
+                "name": "users"
+            },
+            "designerId": "40e41f31-2c51-47d9-ba7c-af89ef6caa0b"
+        }
+    ]
+}

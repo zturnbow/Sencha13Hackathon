@@ -33,11 +33,11 @@
         },
         "300bf1ee-bbe8-48ff-8fde-cfa6099da00f": {
             "paths": [
-                "metadata/model/Users",
-                "app/model/override/Users.js",
-                "app/model/Users.js"
+                "metadata/model/users",
+                "app/model/override/users.js",
+                "app/model/users.js"
             ],
-            "className": "Users"
+            "className": "users"
         },
         "1acff2bf-e6df-41c2-abe6-520ffdf03ad7": {
             "paths": [

@@ -20,7 +20,7 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'Users',
+        'users',
         'meetings',
         'image',
         'meeting'

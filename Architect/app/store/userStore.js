@@ -17,11 +17,11 @@ Ext.define('MyApp.store.userStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.Users'
+        'MyApp.model.users'
     ],
 
     config: {
-        model: 'MyApp.model.Users',
+        model: 'MyApp.model.users',
         storeId: 'MyJsonStore',
         proxy: {
             type: 'ajax',

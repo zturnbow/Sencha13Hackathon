@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "model": "Users",
+        "model": "users",
         "storeId": "MyJsonStore",
         "designer|userClassName": "userStore"
     },

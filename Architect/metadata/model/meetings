@@ -33,7 +33,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|displayName": "userAssociation",
-                "model": "Users",
+                "model": "users",
                 "name": "users"
             },
             "designerId": "40e41f31-2c51-47d9-ba7c-af89ef6caa0b"

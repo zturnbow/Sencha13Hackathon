@@ -15,6 +15,7 @@
 
 Ext.define('app.view.MainMenuView', {
     extend: 'Ext.navigation.View',
+    alias: 'widget.mainMenuView',
 
     config: {
         hideAnimation: 'fadeOut',

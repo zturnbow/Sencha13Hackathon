@@ -117,21 +117,13 @@
             ],
             "className": "RegisterController"
         },
-        "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c": {
+        "f8250694-b2c7-4d2e-acb9-b8b4105ae901": {
             "paths": [
-                "metadata/store/WhiteboardStore",
-                "app/store/override/WhiteboardStore.js",
-                "app/store/WhiteboardStore.js"
+                "metadata/controller/LogoutController",
+                "app/controller/override/LogoutController.js",
+                "app/controller/LogoutController.js"
             ],
-            "className": "WhiteboardStore"
-        },
-        "871de5e9-26b2-43ff-bc2f-0878d57b6eb0": {
-            "paths": [
-                "metadata/model/Whiteboard",
-                "app/model/override/Whiteboard.js",
-                "app/model/Whiteboard.js"
-            ],
-            "className": "Whiteboard"
+            "className": "LogoutController"
         }
     },
     "viewOrderMap": {
@@ -148,7 +140,8 @@
         ],
         "controller": [
             "a520ca8e-f72a-45cc-8089-f3241bf019e4",
-            "280ed071-8545-4627-a5ee-93f90ac99ab6"
+            "280ed071-8545-4627-a5ee-93f90ac99ab6",
+            "f8250694-b2c7-4d2e-acb9-b8b4105ae901"
         ],
         "model": [
             "300bf1ee-bbe8-48ff-8fde-cfa6099da00f",

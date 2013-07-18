@@ -39,7 +39,8 @@ Ext.application({
     ],
     controllers: [
         'LoginController',
-        'RegisterController'
+        'RegisterController',
+        'LogoutController'
     ],
     name: 'app',
 

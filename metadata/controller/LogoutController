@@ -1,0 +1,41 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "user"
+        ],
+        "views": [
+            "MainMenuView"
+        ],
+        "designer|userClassName": "LogoutController"
+    },
+    "designerId": "f8250694-b2c7-4d2e-acb9-b8b4105ae901",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLogout",
+                "implHandler": [
+                    "var loginView = Ext.create(\"app.view.LoginView\");",
+                    "Ext.Viewport.remove(Ext.ComponentMgr.get(\"mainMenuView\"));",
+                    "Ext.Viewport.add(loginView);",
+                    "Ext.Viewport.setActiveItem(loginView);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "mainMenuView #logout"
+            },
+            "designerId": "41c4f32d-c30e-4e37-b985-39995a290eb7"
+        }
+    ]
+}

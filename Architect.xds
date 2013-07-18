@@ -152,6 +152,12 @@
                 "metadata/resource/js1"
             ],
             "className": "js1"
+        },
+        "3662be31-cc5e-4d2a-95ce-a06d550d6e06": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
         }
     },
     "viewOrderMap": {
@@ -181,7 +187,8 @@
         "resource": [
             "6a6457cf-590c-4bed-8798-99dcfccd4bb3",
             "4667094e-d269-4dd6-938b-57fa7ec93d2d",
-            "c30706f9-cc4c-4141-8add-f9669fac7ddb"
+            "c30706f9-cc4c-4141-8add-f9669fac7ddb",
+            "3662be31-cc5e-4d2a-95ce-a06d550d6e06"
         ],
         "app": [
             "application"

@@ -9,9 +9,6 @@
         "models": [
             "User"
         ],
-        "views": [
-            "LoginView"
-        ],
         "designer|userClassName": "LoginController"
     },
     "designerId": "a520ca8e-f72a-45cc-8089-f3241bf019e4",
@@ -66,6 +63,7 @@
                 "implHandler": [
                     "console.log(\"register view!!!\");",
                     "var register = Ext.create(\"app.view.RegisterView\");",
+                    "register.config.title=\"Register New User\";",
                     "Ext.ComponentMgr.get(\"MainMenuView\").push(register);"
                 ],
                 "name": "tap",

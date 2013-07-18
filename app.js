@@ -21,8 +21,8 @@ Ext.Loader.setConfig({
 Ext.application({
     models: [
         'User',
-        'projects',
-        'image',
+        'Projects',
+        'Image',
         'Project',
         'Whiteboard'
     ],

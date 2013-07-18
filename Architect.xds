@@ -49,19 +49,19 @@
         },
         "1acff2bf-e6df-41c2-abe6-520ffdf03ad7": {
             "paths": [
-                "metadata/model/projects",
-                "app/model/override/projects.js",
-                "app/model/projects.js"
+                "metadata/model/Projects",
+                "app/model/override/Projects.js",
+                "app/model/Projects.js"
             ],
-            "className": "projects"
+            "className": "Projects"
         },
         "961c5402-96fe-4533-a73f-293d40ba2d74": {
             "paths": [
-                "metadata/model/image",
-                "app/model/override/image.js",
-                "app/model/image.js"
+                "metadata/model/Image",
+                "app/model/override/Image.js",
+                "app/model/Image.js"
             ],
-            "className": "image"
+            "className": "Image"
         },
         "f3e4ad26-5dc1-4929-bb42-163b689f747d": {
             "paths": [

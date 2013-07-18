@@ -17,12 +17,12 @@ Ext.define('app.store.ProjectStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'app.model.projects'
+        'app.model.Projects'
     ],
 
     config: {
         autoLoad: true,
-        model: 'app.model.projects',
+        model: 'app.model.Projects',
         storeId: 'projectStore',
         proxy: {
             type: 'rest',

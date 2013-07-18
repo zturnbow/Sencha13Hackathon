@@ -109,6 +109,16 @@ Ext.define('app.view.MainMenuView', {
                 ]
             }
         ]
+    },
+
+    initialize: function() {
+        this.callParent();
+        settings.getUsername();
+        if(settings.username && settings.username !== null && settings.username !== ""){
+            Ext.ComponentMgr.get("MainMenuView").pop();
+            Ext.ComponentMgr.get("MainMenuView").push(Ext.create("app.view.ProjectList"));
+            alert(settings.getUsername());
+        }
     }
 
 });

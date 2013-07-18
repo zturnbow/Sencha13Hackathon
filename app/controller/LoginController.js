@@ -36,23 +36,24 @@ Ext.define('app.controller.LoginController', {
         var pass = Ext.ComponentMgr.get("password").getValue();
 
         Ext.Ajax.request({
-            url: "http://localhost:8080/api/login",
+            url: settings.server_host+"/api/login",
             method: "POST",
             params: { username: uname, password: pass },
             success: function(response) {
                 var msg = Ext.JSON.decode(response.responseText);
                 if(msg.authenticated == true){
                     console.log("YEEEAAHHH!");
+                    settings.setUsername(uname);
+                    var listView = Ext.create("app.view.ProjectList");
+                    listView.config.title = "Projects";
+                    Ext.ComponentMgr.get("MainMenuView").push(listView);
                 }else{
                     Ext.Msg.alert('Login Failure', 'Username or Password Not Found');
                 }
             }
         });
 
-        var mainMenu = Ext.create("app.view.MainMenuView");
-        Ext.Viewport.remove(Ext.ComponentMgr.get("loginView"));
-        Ext.Viewport.add(mainMenu);
-        Ext.Viewport.setActiveItem(mainMenu);
+
     },
 
     onRegister: function(button, e, eOpts) {

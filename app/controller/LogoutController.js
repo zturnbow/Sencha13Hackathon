@@ -33,7 +33,8 @@ Ext.define('app.controller.LogoutController', {
 
     onLogout: function(button, e, eOpts) {
         var loginView = Ext.create("app.view.LoginView");
-        Ext.Viewport.remove(Ext.ComponentMgr.get("mainMenuView"));
+        settings.setUsername("");
+        Ext.Viewport.remove(Ext.ComponentMgr.get("MainMenuView"));
         Ext.Viewport.add(loginView);
         Ext.Viewport.setActiveItem(loginView);
     }

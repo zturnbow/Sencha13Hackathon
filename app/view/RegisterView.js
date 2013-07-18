@@ -27,11 +27,9 @@ Ext.define('app.view.RegisterView', {
         items: [
             {
                 xtype: 'container',
-                centered: false,
                 items: [
                     {
                         xtype: 'fieldset',
-                        itemId: 'registerForm',
                         title: 'Register',
                         items: [
                             {

@@ -49,12 +49,13 @@ Ext.define('app.controller.RegisterController', {
             };
 
             Ext.Ajax.request({
-                url: "http://localhost:8080/api/users",
+                url: settings.server_host+"/api/users",
                 method: "POST",
                 params: submission,
                 success: function(response){
                     console.log(response);
                     Ext.ComponentMgr.get("loginUsernameField").setValue(uname);
+                    Ext.Msg.alert('Successfully registered!');
                     Ext.ComponentMgr.get("MainMenuView").pop();
                 }
             });

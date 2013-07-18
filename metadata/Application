@@ -19,7 +19,8 @@
         ],
         "views": [
             "LoginView",
-            "MainMenuView"
+            "MainMenuView",
+            "ProjectList"
         ],
         "controllers": [
             "LoginController"

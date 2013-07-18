@@ -6,11 +6,28 @@
     },
     "codeClass": null,
     "userConfig": {
+        "container|animation": "slide",
+        "container|animation.duration": 200,
         "hideAnimation": "fadeOut",
         "id": "mainMenuView",
         "itemId": "mainMenuView",
         "showAnimation": "fadeIn",
         "designer|userClassName": "MainMenuView"
     },
-    "designerId": "2fcf1215-e5ee-4c09-8e7b-8b191f261c24"
+    "designerId": "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "androidAnimation": false
+            },
+            "designerId": "585368ec-c112-4ee4-9469-b32e5cf3c80e"
+        }
+    ]
 }

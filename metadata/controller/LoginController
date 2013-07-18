@@ -30,7 +30,7 @@
                     "var pass = Ext.ComponentMgr.get(\"password\").getValue();",
                     "",
                     "/*Ext.Ajax.request({",
-                    "    ",
+                    "",
                     "});*/",
                     "",
                     "var mainMenu = Ext.create(\"app.view.MainMenuView\");",

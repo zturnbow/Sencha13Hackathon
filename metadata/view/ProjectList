@@ -1,0 +1,33 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "hideAnimation": "fadeOut",
+        "id": "projectListView",
+        "itemId": "projectListView",
+        "showAnimation": "fadeIn",
+        "designer|userClassName": "ProjectList"
+    },
+    "designerId": "87b30d0b-0bbb-4340-b43e-5a6cd16ec7ff",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "implHandler": [
+                    "<div>List Item {string}</div>"
+                ],
+                "designer|displayName": "itemTpl"
+            },
+            "designerId": "822425d0-f21a-4fb1-929d-fbda0ad873af"
+        }
+    ]
+}

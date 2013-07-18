@@ -25,11 +25,11 @@
         },
         "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf": {
             "paths": [
-                "metadata/store/meetingStore",
-                "app/store/override/meetingStore.js",
-                "app/store/meetingStore.js"
+                "metadata/store/projectStore",
+                "app/store/override/projectStore.js",
+                "app/store/projectStore.js"
             ],
-            "className": "meetingStore"
+            "className": "projectStore"
         },
         "54618e1f-0c7d-459e-ba47-4f426ffb2aac": {
             "paths": [
@@ -49,11 +49,11 @@
         },
         "1acff2bf-e6df-41c2-abe6-520ffdf03ad7": {
             "paths": [
-                "metadata/model/meetings",
-                "app/model/override/meetings.js",
-                "app/model/meetings.js"
+                "metadata/model/projects",
+                "app/model/override/projects.js",
+                "app/model/projects.js"
             ],
-            "className": "meetings"
+            "className": "projects"
         },
         "961c5402-96fe-4533-a73f-293d40ba2d74": {
             "paths": [
@@ -65,11 +65,11 @@
         },
         "f3e4ad26-5dc1-4929-bb42-163b689f747d": {
             "paths": [
-                "metadata/model/meeting",
-                "app/model/override/meeting.js",
-                "app/model/meeting.js"
+                "metadata/model/project",
+                "app/model/override/project.js",
+                "app/model/project.js"
             ],
-            "className": "meeting"
+            "className": "project"
         },
         "6a6457cf-590c-4bed-8798-99dcfccd4bb3": {
             "paths": [
@@ -100,12 +100,21 @@
                 "app/view/MainMenuView.js"
             ],
             "className": "MainMenuView"
+        },
+        "87b30d0b-0bbb-4340-b43e-5a6cd16ec7ff": {
+            "paths": [
+                "metadata/view/ProjectList",
+                "app/view/override/ProjectList.js",
+                "app/view/ProjectList.js"
+            ],
+            "className": "ProjectList"
         }
     },
     "viewOrderMap": {
         "view": [
             "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",
-            "2fcf1215-e5ee-4c09-8e7b-8b191f261c24"
+            "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
+            "87b30d0b-0bbb-4340-b43e-5a6cd16ec7ff"
         ],
         "store": [
             "7dc7745b-f467-445d-9ea0-fe60358dabb3",

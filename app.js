@@ -21,18 +21,19 @@ Ext.Loader.setConfig({
 Ext.application({
     models: [
         'user',
-        'meetings',
+        'projects',
         'image',
-        'meeting'
+        'project'
     ],
     stores: [
         'userStore',
-        'meetingStore',
+        'projectStore',
         'imageStore'
     ],
     views: [
         'LoginView',
-        'MainMenuView'
+        'MainMenuView',
+        'ProjectList'
     ],
     controllers: [
         'LoginController'

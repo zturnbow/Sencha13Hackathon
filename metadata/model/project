@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "meeting"
+        "designer|userClassName": "project"
     },
     "designerId": "f3e4ad26-5dc1-4929-bb42-163b689f747d",
     "cn": [
@@ -25,6 +25,19 @@
                 "name": "images"
             },
             "designerId": "9498b748-7823-4887-b1d2-8793b05405a0"
+        },
+        {
+            "type": "Ext.data.association.BelongsTo",
+            "reference": {
+                "name": "belongsTo",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "belongsToUser",
+                "model": "user"
+            },
+            "designerId": "d20e86dc-76b5-4339-9cb6-7936ccdbaae9"
         }
     ]
 }

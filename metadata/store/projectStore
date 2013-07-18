@@ -6,8 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "model": "meetings",
-        "designer|userClassName": "meetingStore"
+        "model": "projects",
+        "storeId": "projectStore",
+        "designer|userClassName": "projectStore"
     },
     "designerId": "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
     "cn": [

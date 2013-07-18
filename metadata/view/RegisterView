@@ -38,6 +38,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "itemId": "registerForm",
                         "title": "Register"
                     },
                     "designerId": "fe831ebb-5fe8-4c65-92a6-acf5e1a364cc",
@@ -50,6 +51,8 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "id": "registerUsername",
+                                "itemId": "username",
                                 "designer|displayName": "username",
                                 "designer|createAlias": null,
                                 "label": null,
@@ -65,6 +68,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "itemId": "password1",
                                 "designer|displayName": "password1",
                                 "designer|createAlias": null,
                                 "label": null,
@@ -80,6 +84,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "itemId": "password2",
                                 "designer|displayName": "password2",
                                 "designer|createAlias": null,
                                 "label": null,
@@ -95,6 +100,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
+                                "itemId": "email",
                                 "designer|displayName": "email",
                                 "designer|createAlias": null,
                                 "label": null,

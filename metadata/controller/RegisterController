@@ -26,7 +26,15 @@
             "userConfig": {
                 "fn": "onRegister",
                 "implHandler": [
-                    "alert(\"!\");"
+                    "var password1 = Ext.ComponentMgr.get(\"registerView#password1\");",
+                    "alert(password1);",
+                    "debugger;",
+                    "",
+                    "if(Ext.ComponentMgr.get(\"registerView #password1\") !== Ext.ComponentMgr.get(\"registerView #password2\")){",
+                    " alert(\"Passwords must match\");   ",
+                    "} else {",
+                    "    ",
+                    "}"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",

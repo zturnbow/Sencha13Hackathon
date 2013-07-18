@@ -15,6 +15,7 @@
 
 Ext.define('app.view.MainMenuView', {
     extend: 'Ext.navigation.View',
+    alias: 'widget.mainMenuView',
 
     config: {
         hideAnimation: 'fadeOut',
@@ -30,7 +31,26 @@ Ext.define('app.view.MainMenuView', {
         },
         navigationBar: {
             docked: 'top',
-            androidAnimation: false
+            androidAnimation: false,
+            items: [
+                {
+                    xtype: 'button',
+                    align: 'right',
+                    itemId: 'logout',
+                    ui: 'small',
+                    text: 'Logout'
+                },
+                {
+                    xtype: 'button',
+                    ui: 'back',
+                    text: 'Back'
+                },
+                {
+                    xtype: 'label',
+                    html: 'Whiteboard Capture',
+                    ui: 'dark'
+                }
+            ]
         }
     }
 

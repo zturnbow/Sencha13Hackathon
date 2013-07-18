@@ -18,6 +18,7 @@ Ext.define('app.view.RegisterView', {
     alias: 'widget.registerView',
 
     config: {
+        fullscreen: true,
         hidden: false,
         id: 'registerView',
         itemId: 'registerView',
@@ -27,6 +28,7 @@ Ext.define('app.view.RegisterView', {
         items: [
             {
                 xtype: 'container',
+                centered: false,
                 items: [
                     {
                         xtype: 'fieldset',

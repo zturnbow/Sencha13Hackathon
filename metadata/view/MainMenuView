@@ -68,6 +68,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "centered": false,
                         "html": "Whiteboard Capture",
                         "ui": "dark",
                         "designer|displayName": "title"
@@ -75,6 +76,19 @@
                     "designerId": "5ed66d93-0333-45a1-bc9c-6d134ec165cf"
                 }
             ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMainMenuViewActivate",
+                "name": "activate"
+            },
+            "designerId": "8022e067-3607-4601-a7e7-5ba49d24c87e"
         }
     ]
 }

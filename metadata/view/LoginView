@@ -37,6 +37,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "centered": false,
                 "docked": "top",
                 "style": null,
                 "designer|displayName": "LoginContainer",
@@ -69,14 +70,14 @@
                             "codeClass": null,
                             "userConfig": {
                                 "centered": false,
-                                "docked": "top",
+                                "docked": null,
                                 "id": "username",
                                 "showAnimation": "fadeIn",
                                 "designer|displayName": "username",
                                 "designer|createAlias": null,
                                 "label": null,
-                                "labelAlign": "bottom",
-                                "labelWidth": "100%",
+                                "labelAlign": null,
+                                "labelWidth": null,
                                 "required": true,
                                 "placeHolder": "Username"
                             },
@@ -91,12 +92,12 @@
                             "codeClass": null,
                             "userConfig": {
                                 "centered": false,
-                                "docked": "top",
+                                "docked": null,
                                 "id": "password",
                                 "designer|displayName": "password",
                                 "designer|createAlias": null,
                                 "label": null,
-                                "labelAlign": "bottom",
+                                "labelAlign": null,
                                 "required": true,
                                 "placeHolder": "Password"
                             },

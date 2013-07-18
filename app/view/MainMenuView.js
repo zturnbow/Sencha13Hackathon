@@ -47,11 +47,22 @@ Ext.define('app.view.MainMenuView', {
                 },
                 {
                     xtype: 'label',
+                    centered: false,
                     html: 'Whiteboard Capture',
                     ui: 'dark'
                 }
             ]
-        }
+        },
+        listeners: [
+            {
+                fn: 'onMainMenuViewActivate',
+                event: 'activate'
+            }
+        ]
+    },
+
+    onMainMenuViewActivate: function(newActiveItem, container, oldActiveItem, eOpts) {
+
     }
 
 });

@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "fullscreen": true,
         "hidden": false,
         "id": "registerView",
         "itemId": "registerView",
@@ -23,7 +24,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "FormContainer"
+                "centered": false,
+                "designer|displayName": "FormContainer",
+                "layout": null
             },
             "designerId": "7e48b03d-97c5-46b7-9b91-91887f7f846b",
             "cn": [

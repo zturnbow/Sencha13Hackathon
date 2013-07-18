@@ -35,7 +35,15 @@ Ext.define('app.controller.RegisterController', {
     },
 
     onRegister: function(button, e, eOpts) {
-        alert("!");
+        var password1 = Ext.ComponentMgr.get("registerView#password1");
+        alert(password1);
+        debugger;
+
+        if(Ext.ComponentMgr.get("registerView #password1") !== Ext.ComponentMgr.get("registerView #password2")){
+            alert("Passwords must match");   
+        } else {
+
+        }
     },
 
     onCancel: function(button, e, eOpts) {

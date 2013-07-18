@@ -124,6 +124,14 @@
                 "app/controller/RegisterController.js"
             ],
             "className": "RegisterController"
+        },
+        "f8250694-b2c7-4d2e-acb9-b8b4105ae901": {
+            "paths": [
+                "metadata/controller/LogoutController",
+                "app/controller/override/LogoutController.js",
+                "app/controller/LogoutController.js"
+            ],
+            "className": "LogoutController"
         }
     },
     "viewOrderMap": {
@@ -140,7 +148,8 @@
         ],
         "controller": [
             "a520ca8e-f72a-45cc-8089-f3241bf019e4",
-            "280ed071-8545-4627-a5ee-93f90ac99ab6"
+            "280ed071-8545-4627-a5ee-93f90ac99ab6",
+            "f8250694-b2c7-4d2e-acb9-b8b4105ae901"
         ],
         "model": [
             "300bf1ee-bbe8-48ff-8fde-cfa6099da00f",

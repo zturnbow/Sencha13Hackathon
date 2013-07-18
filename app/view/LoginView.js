@@ -40,6 +40,7 @@ Ext.define('app.view.LoginView', {
         items: [
             {
                 xtype: 'container',
+                centered: false,
                 docked: 'top',
                 items: [
                     {
@@ -55,20 +56,15 @@ Ext.define('app.view.LoginView', {
                             {
                                 xtype: 'textfield',
                                 centered: false,
-                                docked: 'top',
                                 id: 'username',
                                 showAnimation: 'fadeIn',
-                                labelAlign: 'bottom',
-                                labelWidth: '100%',
                                 required: true,
                                 placeHolder: 'Username'
                             },
                             {
                                 xtype: 'passwordfield',
                                 centered: false,
-                                docked: 'top',
                                 id: 'password',
-                                labelAlign: 'bottom',
                                 required: true,
                                 placeHolder: 'Password'
                             }

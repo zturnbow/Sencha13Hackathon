@@ -18,6 +18,7 @@ Ext.define('app.view.RegisterView', {
     alias: 'widget.registerView',
 
     config: {
+        fullscreen: true,
         hidden: false,
         id: 'registerView',
         itemId: 'registerView',
@@ -27,25 +28,32 @@ Ext.define('app.view.RegisterView', {
         items: [
             {
                 xtype: 'container',
+                centered: false,
                 items: [
                     {
                         xtype: 'fieldset',
+                        itemId: 'registerForm',
                         title: 'Register',
                         items: [
                             {
                                 xtype: 'textfield',
+                                id: 'registerUsername',
+                                itemId: 'username',
                                 placeHolder: 'Username'
                             },
                             {
                                 xtype: 'passwordfield',
+                                itemId: 'password1',
                                 placeHolder: 'Password'
                             },
                             {
                                 xtype: 'passwordfield',
+                                itemId: 'password2',
                                 placeHolder: 'Confirm Password'
                             },
                             {
                                 xtype: 'emailfield',
+                                itemId: 'email',
                                 placeHolder: 'email@example.com'
                             }
                         ]

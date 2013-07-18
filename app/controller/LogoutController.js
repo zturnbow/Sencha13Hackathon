@@ -18,7 +18,7 @@ Ext.define('app.controller.LogoutController', {
 
     config: {
         models: [
-            'user'
+            'User'
         ],
         views: [
             'MainMenuView'

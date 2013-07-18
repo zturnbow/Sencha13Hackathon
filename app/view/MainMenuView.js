@@ -15,7 +15,6 @@
 
 Ext.define('app.view.MainMenuView', {
     extend: 'Ext.navigation.View',
-    alias: 'widget.mainMenuView',
 
     config: {
         hideAnimation: 'fadeOut',
@@ -36,7 +35,6 @@ Ext.define('app.view.MainMenuView', {
             {
                 xtype: 'formpanel',
                 title: 'Login',
-                fullscreen: true,
                 hideAnimation: 'fadeOut',
                 id: 'LoginView',
                 itemId: 'loginView',

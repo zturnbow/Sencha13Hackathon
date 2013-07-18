@@ -117,6 +117,30 @@
             ],
             "className": "RegisterController"
         },
+        "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c": {
+            "paths": [
+                "metadata/store/WhiteboardStore",
+                "app/store/override/WhiteboardStore.js",
+                "app/store/WhiteboardStore.js"
+            ],
+            "className": "WhiteboardStore"
+        },
+        "871de5e9-26b2-43ff-bc2f-0878d57b6eb0": {
+            "paths": [
+                "metadata/model/Whiteboard",
+                "app/model/override/Whiteboard.js",
+                "app/model/Whiteboard.js"
+            ],
+            "className": "Whiteboard"
+        },
+        "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c": {
+            "paths": [
+                "metadata/view/LoginView",
+                "app/view/override/LoginView.js",
+                "app/view/LoginView.js"
+            ],
+            "className": "LoginView"
+        },
         "f8250694-b2c7-4d2e-acb9-b8b4105ae901": {
             "paths": [
                 "metadata/controller/LogoutController",
@@ -129,26 +153,27 @@
     "viewOrderMap": {
         "view": [
             "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
+            "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",
             "87b30d0b-0bbb-4340-b43e-5a6cd16ec7ff",
             "dac7811a-406f-45f7-98a5-2c6965558888"
         ],
         "store": [
             "7dc7745b-f467-445d-9ea0-fe60358dabb3",
-            "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
             "54618e1f-0c7d-459e-ba47-4f426ffb2aac",
-            "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c"
+            "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c",
+            "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf"
         ],
         "controller": [
             "a520ca8e-f72a-45cc-8089-f3241bf019e4",
-            "280ed071-8545-4627-a5ee-93f90ac99ab6",
-            "f8250694-b2c7-4d2e-acb9-b8b4105ae901"
+            "f8250694-b2c7-4d2e-acb9-b8b4105ae901",
+            "280ed071-8545-4627-a5ee-93f90ac99ab6"
         ],
         "model": [
             "300bf1ee-bbe8-48ff-8fde-cfa6099da00f",
-            "1acff2bf-e6df-41c2-abe6-520ffdf03ad7",
             "961c5402-96fe-4533-a73f-293d40ba2d74",
+            "871de5e9-26b2-43ff-bc2f-0878d57b6eb0",
             "f3e4ad26-5dc1-4929-bb42-163b689f747d",
-            "871de5e9-26b2-43ff-bc2f-0878d57b6eb0"
+            "1acff2bf-e6df-41c2-abe6-520ffdf03ad7"
         ],
         "resource": [
             "6a6457cf-590c-4bed-8798-99dcfccd4bb3"

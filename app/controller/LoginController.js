@@ -21,7 +21,7 @@ Ext.define('app.controller.LoginController', {
             'User'
         ],
         views: [
-            null
+            'LoginView'
         ],
 
         control: {

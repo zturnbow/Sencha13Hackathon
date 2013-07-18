@@ -26,12 +26,22 @@
             "userConfig": {
                 "fn": "onLogin",
                 "implHandler": [
-                    "var uname = Ext.ComponentMgr.get(\"username\").getValue();",
+                    "var uname = Ext.ComponentMgr.get(\"loginUsernameField\").getValue();",
                     "var pass = Ext.ComponentMgr.get(\"password\").getValue();",
                     "",
-                    "/*Ext.Ajax.request({",
-                    "",
-                    "});*/",
+                    "Ext.Ajax.request({",
+                    "    url: \"http://localhost:8080/api/login\",",
+                    "    method: \"POST\",",
+                    "    params: { username: uname, password: pass },",
+                    "    success: function(response) {",
+                    "        var msg = Ext.JSON.decode(response.responseText);",
+                    "        if(msg.authenticated == true){",
+                    "            console.log(\"YEEEAAHHH!\");",
+                    "        }else{",
+                    "            Ext.Msg.alert('Login Failure', 'Username or Password Not Found');",
+                    "        }",
+                    "    }",
+                    "});",
                     "",
                     "var mainMenu = Ext.create(\"app.view.MainMenuView\");",
                     "Ext.Viewport.remove(Ext.ComponentMgr.get(\"loginView\"));",
@@ -40,7 +50,7 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "loginView #submit"
+                "designer|controlQuery": "#loginButton"
             },
             "designerId": "b2b7236a-f4f9-4aff-8c0a-7d19a215e709"
         },
@@ -54,15 +64,13 @@
             "userConfig": {
                 "fn": "onRegister",
                 "implHandler": [
+                    "console.log(\"register view!!!\");",
                     "var register = Ext.create(\"app.view.RegisterView\");",
-                    "console.log(register);",
-                    "Ext.Viewport.remove(Ext.ComponentMgr.get(\"loginView\"));",
-                    "Ext.Viewport.add(register);",
-                    "Ext.Viewport.setActiveItem(register);"
+                    "Ext.ComponentMgr.get(\"MainMenuView\").push(register);"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "loginView #register"
+                "designer|controlQuery": "#registerNewUserButton"
             },
             "designerId": "0c3d3c8b-d02d-43f2-ae03-d01b6ad16693"
         }

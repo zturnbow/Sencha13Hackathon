@@ -6,9 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Project"
+        "designer|userClassName": "Whiteboard"
     },
-    "designerId": "f3e4ad26-5dc1-4929-bb42-163b689f747d",
+    "designerId": "871de5e9-26b2-43ff-bc2f-0878d57b6eb0",
     "cn": [
         {
             "type": "Ext.data.Field",
@@ -21,7 +21,7 @@
                 "mapping": "_id",
                 "name": "id"
             },
-            "designerId": "1395cfba-6841-4335-9a04-f28ea556f91d"
+            "designerId": "88e13c0a-d648-4117-8b67-5449c7cf5618"
         },
         {
             "type": "Ext.data.Field",
@@ -31,21 +31,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "name"
+                "name": "title"
             },
-            "designerId": "49f57d17-8220-451f-91f4-dd21099d91b6"
-        },
-        {
-            "type": "Ext.data.Field",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "name": "user"
-            },
-            "designerId": "4020a329-4f6b-4347-b33f-115c288117f0"
+            "designerId": "cadddbbf-e966-4ed0-9194-1a20a76d879e"
         },
         {
             "type": "Ext.data.Field",
@@ -57,7 +45,7 @@
             "userConfig": {
                 "name": "description"
             },
-            "designerId": "f9e3387e-3ee0-43e2-ab6d-98b0868fa742"
+            "designerId": "682d8b53-1380-4d96-85b9-6ab9a598488c"
         },
         {
             "type": "Ext.data.Field",
@@ -67,10 +55,21 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "participants",
-                "type": "string"
+                "name": "image"
             },
-            "designerId": "c5c65320-3295-4203-b5ce-3ee55e5b0c90"
+            "designerId": "780a9048-6a5d-4500-9d2f-46d961ee7353"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "mimeType"
+            },
+            "designerId": "619a9864-1a11-4fe6-9789-b209590223fa"
         }
     ]
 }

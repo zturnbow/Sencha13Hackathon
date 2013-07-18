@@ -7,18 +7,19 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "user",
+            "User",
             "projects",
             "image",
-            "project"
+            "Project",
+            "Whiteboard"
         ],
         "stores": [
-            "userStore",
-            "projectStore",
-            "imageStore"
+            "UserStore",
+            "ProjectStore",
+            "imageStore",
+            "WhiteboardStore"
         ],
         "views": [
-            "LoginView",
             "MainMenuView",
             "ProjectList",
             "RegisterView"

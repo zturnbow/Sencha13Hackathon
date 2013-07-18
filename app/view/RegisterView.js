@@ -34,24 +34,29 @@ Ext.define('app.view.RegisterView', {
                         items: [
                             {
                                 xtype: 'textfield',
+                                id: 'usernameField',
                                 placeHolder: 'Username'
                             },
                             {
                                 xtype: 'passwordfield',
+                                id: 'password1Field',
                                 placeHolder: 'Password'
                             },
                             {
                                 xtype: 'passwordfield',
+                                id: 'password2Field',
                                 placeHolder: 'Confirm Password'
                             },
                             {
                                 xtype: 'emailfield',
+                                id: 'emailField',
                                 placeHolder: 'email@example.com'
                             }
                         ]
                     },
                     {
                         xtype: 'button',
+                        id: 'registerButton',
                         itemId: 'register',
                         margin: '10%',
                         ui: 'confirm',

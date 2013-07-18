@@ -19,7 +19,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|displayName": "projectAssociation",
-                "model": "project",
+                "model": "Project",
                 "name": "projects"
             },
             "designerId": "4f17fced-cfd0-479c-8617-c5a0e3d98e00"
@@ -33,7 +33,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|displayName": "userAssociation",
-                "model": "user",
+                "model": "User",
                 "name": "user"
             },
             "designerId": "40e41f31-2c51-47d9-ba7c-af89ef6caa0b"

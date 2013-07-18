@@ -6,12 +6,11 @@
     },
     "codeClass": null,
     "userConfig": {
-        "autoLoad": true,
-        "model": "projects",
-        "storeId": "projectStore",
-        "designer|userClassName": "ProjectStore"
+        "model": "Whiteboard",
+        "storeId": "MyJsonStore",
+        "designer|userClassName": "WhiteboardStore"
     },
-    "designerId": "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
+    "designerId": "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c",
     "cn": [
         {
             "type": "Ext.data.proxy.Rest",
@@ -21,9 +20,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "https://whiteboard-latchd.rhcloud.com/api/projects"
+                "url": "https://whiteboard-latchd.rhcloud.com/api/whiteboards/Milton"
             },
-            "designerId": "d03b6466-4326-4c08-bd26-30014c9674ea",
+            "designerId": "f8e1c5f3-fc36-46f6-8d6a-98f38d416e42",
             "cn": [
                 {
                     "type": "Ext.data.reader.Json",
@@ -32,7 +31,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "designerId": "bdca60b6-05a9-46e7-b0c1-bb35c9d319fc"
+                    "designerId": "88a722c9-28ae-44b9-ab77-4bdc562f8410"
                 }
             ]
         }

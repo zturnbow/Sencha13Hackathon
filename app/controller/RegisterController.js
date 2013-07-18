@@ -18,14 +18,14 @@ Ext.define('app.controller.RegisterController', {
 
     config: {
         models: [
-            'user'
+            'User'
         ],
         views: [
             'RegisterView'
         ],
 
         control: {
-            "registerView #register": {
+            "#registerButton": {
                 tap: 'onRegister'
             },
             "registerView #cancel": {
@@ -35,7 +35,36 @@ Ext.define('app.controller.RegisterController', {
     },
 
     onRegister: function(button, e, eOpts) {
-        alert("!");
+        var uname = Ext.ComponentMgr.get("usernameField").getValue();
+        var pass1 = Ext.ComponentMgr.get("password1Field").getValue();
+        var pass2 = Ext.ComponentMgr.get("password2Field").getValue();
+        var email = Ext.ComponentMgr.get("emailField").getValue();
+
+        if(pass1 == pass2){
+
+            var submission = {
+                username: uname,
+                password: pass1,
+                email: email
+            };
+
+            Ext.Ajax.request({
+                url: "http://localhost:8080/api/users",
+                method: "POST",
+                params: submission,
+                success: function(response){
+                    console.log(response);
+                    Ext.ComponentMgr.get("loginUsernameField").setValue(uname);
+                    Ext.ComponentMgr.get("MainMenuView").pop();
+                }
+            });
+
+
+        }else{
+            Ext.Msg.alert('Validation Failure', 'Your Passwords Must Match');
+
+        }
+
     },
 
     onCancel: function(button, e, eOpts) {

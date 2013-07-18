@@ -18,29 +18,39 @@ Ext.define('app.controller.LoginController', {
 
     config: {
         models: [
-            'user'
+            'User'
         ],
         views: [
-            'LoginView'
+            null
         ],
 
         control: {
-            "loginView #submit": {
+            "#loginButton": {
                 tap: 'onLogin'
             },
-            "loginView #register": {
+            "#registerNewUserButton": {
                 tap: 'onRegister'
             }
         }
     },
 
     onLogin: function(button, e, eOpts) {
-        var uname = Ext.ComponentMgr.get("username").getValue();
+        var uname = Ext.ComponentMgr.get("loginUsernameField").getValue();
         var pass = Ext.ComponentMgr.get("password").getValue();
 
-        /*Ext.Ajax.request({
-
-        });*/
+        Ext.Ajax.request({
+            url: "http://localhost:8080/api/login",
+            method: "POST",
+            params: { username: uname, password: pass },
+            success: function(response) {
+                var msg = Ext.JSON.decode(response.responseText);
+                if(msg.authenticated == true){
+                    console.log("YEEEAAHHH!");
+                }else{
+                    Ext.Msg.alert('Login Failure', 'Username or Password Not Found');
+                }
+            }
+        });
 
         var mainMenu = Ext.create("app.view.MainMenuView");
         Ext.Viewport.remove(Ext.ComponentMgr.get("loginView"));
@@ -49,11 +59,9 @@ Ext.define('app.controller.LoginController', {
     },
 
     onRegister: function(button, e, eOpts) {
+        console.log("register view!!!");
         var register = Ext.create("app.view.RegisterView");
-        console.log(register);
-        Ext.Viewport.remove(Ext.ComponentMgr.get("loginView"));
-        Ext.Viewport.add(register);
-        Ext.Viewport.setActiveItem(register);
+        Ext.ComponentMgr.get("MainMenuView").push(register);
     }
 
 });

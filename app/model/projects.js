@@ -17,18 +17,18 @@ Ext.define('app.model.projects', {
     extend: 'Ext.data.Model',
 
     uses: [
-        'app.model.project',
-        'app.model.user'
+        'app.model.Project',
+        'app.model.User'
     ],
 
     config: {
         hasMany: [
             {
-                model: 'app.model.project',
+                model: 'app.model.Project',
                 name: 'projects'
             },
             {
-                model: 'app.model.user',
+                model: 'app.model.User',
                 name: 'user'
             }
         ]

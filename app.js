@@ -20,18 +20,19 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'user',
+        'User',
         'projects',
         'image',
-        'project'
+        'Project',
+        'Whiteboard'
     ],
     stores: [
-        'userStore',
-        'projectStore',
-        'imageStore'
+        'UserStore',
+        'ProjectStore',
+        'imageStore',
+        'WhiteboardStore'
     ],
     views: [
-        'LoginView',
         'MainMenuView',
         'ProjectList',
         'RegisterView'
@@ -44,7 +45,7 @@ Ext.application({
 
     launch: function() {
 
-        Ext.create('app.view.LoginView', {fullscreen: true});
+        Ext.create('app.view.MainMenuView', {fullscreen: true});
     }
 
 });

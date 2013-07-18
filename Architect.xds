@@ -108,13 +108,30 @@
                 "app/view/ProjectList.js"
             ],
             "className": "ProjectList"
+        },
+        "dac7811a-406f-45f7-98a5-2c6965558888": {
+            "paths": [
+                "metadata/view/RegisterView",
+                "app/view/override/RegisterView.js",
+                "app/view/RegisterView.js"
+            ],
+            "className": "RegisterView"
+        },
+        "280ed071-8545-4627-a5ee-93f90ac99ab6": {
+            "paths": [
+                "metadata/controller/RegisterController",
+                "app/controller/override/RegisterController.js",
+                "app/controller/RegisterController.js"
+            ],
+            "className": "RegisterController"
         }
     },
     "viewOrderMap": {
         "view": [
             "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",
             "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
-            "87b30d0b-0bbb-4340-b43e-5a6cd16ec7ff"
+            "87b30d0b-0bbb-4340-b43e-5a6cd16ec7ff",
+            "dac7811a-406f-45f7-98a5-2c6965558888"
         ],
         "store": [
             "7dc7745b-f467-445d-9ea0-fe60358dabb3",
@@ -122,7 +139,8 @@
             "54618e1f-0c7d-459e-ba47-4f426ffb2aac"
         ],
         "controller": [
-            "a520ca8e-f72a-45cc-8089-f3241bf019e4"
+            "a520ca8e-f72a-45cc-8089-f3241bf019e4",
+            "280ed071-8545-4627-a5ee-93f90ac99ab6"
         ],
         "model": [
             "300bf1ee-bbe8-48ff-8fde-cfa6099da00f",

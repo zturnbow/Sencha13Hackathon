@@ -24,7 +24,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "fn": "onButtonTap",
+                "fn": "onLogin",
                 "implHandler": [
                     "var uname = Ext.ComponentMgr.get(\"username\").getValue();",
                     "var pass = Ext.ComponentMgr.get(\"password\").getValue();",
@@ -40,9 +40,30 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "#submit"
+                "designer|controlQuery": "loginView #submit"
             },
             "designerId": "b2b7236a-f4f9-4aff-8c0a-7d19a215e709"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onRegister",
+                "implHandler": [
+                    "var register = Ext.create(\"app.view.RegisterView\");",
+                    "Ext.Viewport.remove(Ext.ComponentMgr.get(\"loginView\"));",
+                    "Ext.Viewport.add(register);",
+                    "Ext.Viewport.setActiveItem(register);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "loginView #register"
+            },
+            "designerId": "0c3d3c8b-d02d-43f2-ae03-d01b6ad16693"
         }
     ]
 }

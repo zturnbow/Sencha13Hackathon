@@ -25,13 +25,16 @@ Ext.define('app.controller.LoginController', {
         ],
 
         control: {
-            "#submit": {
-                tap: 'onButtonTap'
+            "loginView #submit": {
+                tap: 'onLogin'
+            },
+            "loginView #register": {
+                tap: 'onRegister'
             }
         }
     },
 
-    onButtonTap: function(button, e, eOpts) {
+    onLogin: function(button, e, eOpts) {
         var uname = Ext.ComponentMgr.get("username").getValue();
         var pass = Ext.ComponentMgr.get("password").getValue();
 
@@ -43,6 +46,13 @@ Ext.define('app.controller.LoginController', {
         Ext.Viewport.remove(Ext.ComponentMgr.get("loginView"));
         Ext.Viewport.add(mainMenu);
         Ext.Viewport.setActiveItem(mainMenu);
+    },
+
+    onRegister: function(button, e, eOpts) {
+        var register = Ext.create("app.view.RegisterView");
+        Ext.Viewport.remove(Ext.ComponentMgr.get("loginView"));
+        Ext.Viewport.add(register);
+        Ext.Viewport.setActiveItem(register);
     }
 
 });

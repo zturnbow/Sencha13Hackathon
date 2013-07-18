@@ -20,7 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "meetingAjaxProxy"
+                "designer|displayName": "projectAjaxProxy"
             },
             "designerId": "919bfc66-ef46-4153-90ac-7a91e47bc8eb",
             "cn": [
@@ -32,7 +32,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|displayName": "meetingReader"
+                        "designer|displayName": "projectReader"
                     },
                     "designerId": "ff616804-24cf-4b07-8449-4c011345f3e5"
                 }

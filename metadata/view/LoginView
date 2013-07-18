@@ -11,6 +11,7 @@
         "id": "loginView",
         "itemId": "loginView",
         "showAnimation": "fadeIn",
+        "style": "",
         "ui": "dark",
         "designer|userClassName": "LoginView",
         "designer|userAlias": "loginView",
@@ -29,25 +30,6 @@
     "designerId": "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",
     "cn": [
         {
-            "type": "Ext.Button",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "docked": null,
-                "height": 32,
-                "id": "submit",
-                "itemId": "submit",
-                "ui": "confirm",
-                "designer|displayName": "submit",
-                "designer|createAlias": null,
-                "text": "Login"
-            },
-            "designerId": "a68feab9-8790-439d-bc64-e21cb5e0d085"
-        },
-        {
             "type": "Ext.Container",
             "reference": {
                 "name": "items",
@@ -55,30 +37,15 @@
             },
             "codeClass": null,
             "userConfig": {
-                "centered": false,
                 "docked": "top",
-                "padding": 45
+                "style": null,
+                "designer|displayName": "LoginContainer",
+                "layout": null
             },
-            "designerId": "e4f8f614-dad8-42fb-8910-0ff0c8034049"
-        },
-        {
-            "type": "Ext.Container",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "centered": false,
-                "docked": "top",
-                "showAnimation": "fadeIn",
-                "ui": "dark",
-                "layout": "fit"
-            },
-            "designerId": "05dcbd81-99a2-44f0-83bc-2714d722c3c5",
+            "designerId": "df3cc6f3-64c5-4031-9a61-2c482520e6d3",
             "cn": [
                 {
-                    "type": "Ext.field.Text",
+                    "type": "Ext.form.FieldSet",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -87,18 +54,58 @@
                     "userConfig": {
                         "centered": false,
                         "docked": "top",
-                        "id": "username",
                         "showAnimation": "fadeIn",
-                        "designer|displayName": "username",
-                        "label": "Username",
-                        "labelAlign": "bottom",
-                        "labelWidth": "100%",
-                        "required": true
+                        "ui": "dark",
+                        "layout": "fit"
                     },
-                    "designerId": "38d2b5f0-914c-42de-8370-2b80762743ad"
+                    "designerId": "05dcbd81-99a2-44f0-83bc-2714d722c3c5",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": false,
+                                "docked": "top",
+                                "id": "username",
+                                "showAnimation": "fadeIn",
+                                "designer|displayName": "username",
+                                "designer|createAlias": null,
+                                "label": null,
+                                "labelAlign": "bottom",
+                                "labelWidth": "100%",
+                                "required": true,
+                                "placeHolder": "Username"
+                            },
+                            "designerId": "38d2b5f0-914c-42de-8370-2b80762743ad"
+                        },
+                        {
+                            "type": "Ext.field.Password",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "centered": false,
+                                "docked": "top",
+                                "id": "password",
+                                "designer|displayName": "password",
+                                "designer|createAlias": null,
+                                "label": null,
+                                "labelAlign": "bottom",
+                                "required": true,
+                                "placeHolder": "Password"
+                            },
+                            "designerId": "7c26df30-1811-493e-985e-d17eec311b81"
+                        }
+                    ]
                 },
                 {
-                    "type": "Ext.field.Password",
+                    "type": "Ext.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -106,13 +113,42 @@
                     "codeClass": null,
                     "userConfig": {
                         "centered": false,
-                        "docked": "top",
-                        "id": "password",
-                        "label": "Password",
-                        "labelAlign": "bottom",
-                        "required": true
+                        "docked": null,
+                        "height": 32,
+                        "id": null,
+                        "itemId": "submit",
+                        "margin": "10%",
+                        "maxWidth": null,
+                        "style": "",
+                        "ui": "confirm",
+                        "width": "80%",
+                        "designer|displayName": "submit",
+                        "designer|createAlias": null,
+                        "iconAlign": null,
+                        "text": "Login"
                     },
-                    "designerId": "7c26df30-1811-493e-985e-d17eec311b81"
+                    "designerId": "a68feab9-8790-439d-bc64-e21cb5e0d085"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": null,
+                        "itemId": "register",
+                        "margin": "10%",
+                        "padding": null,
+                        "top": "",
+                        "ui": "action",
+                        "width": "80%",
+                        "designer|displayName": "register",
+                        "designer|createAlias": null,
+                        "text": "Register"
+                    },
+                    "designerId": "4fd52e57-4b78-4f2b-a0a8-5df66b7de677"
                 }
             ]
         }

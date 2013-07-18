@@ -31,6 +31,7 @@ Ext.define('app.view.LoginView', {
         id: 'loginView',
         itemId: 'loginView',
         showAnimation: 'fadeIn',
+        style: '',
         ui: 'dark',
         layout: {
             type: 'fit'
@@ -39,48 +40,60 @@ Ext.define('app.view.LoginView', {
         standardSubmit: true,
         items: [
             {
-                xtype: 'button',
-                height: 32,
-                id: 'submit',
-                itemId: 'submit',
-                ui: 'confirm',
-                text: 'Login'
-            },
-            {
                 xtype: 'container',
-                centered: false,
                 docked: 'top',
-                padding: 45
-            },
-            {
-                xtype: 'container',
-                centered: false,
-                docked: 'top',
-                showAnimation: 'fadeIn',
-                ui: 'dark',
-                layout: {
-                    type: 'fit'
-                },
                 items: [
                     {
-                        xtype: 'textfield',
+                        xtype: 'fieldset',
                         centered: false,
                         docked: 'top',
-                        id: 'username',
                         showAnimation: 'fadeIn',
-                        label: 'Username',
-                        labelAlign: 'bottom',
-                        labelWidth: '100%',
-                        required: true
+                        ui: 'dark',
+                        layout: {
+                            type: 'fit'
+                        },
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                centered: false,
+                                docked: 'top',
+                                id: 'username',
+                                showAnimation: 'fadeIn',
+                                labelAlign: 'bottom',
+                                labelWidth: '100%',
+                                required: true,
+                                placeHolder: 'Username'
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                centered: false,
+                                docked: 'top',
+                                id: 'password',
+                                labelAlign: 'bottom',
+                                required: true,
+                                placeHolder: 'Password'
+                            }
+                        ]
                     },
                     {
-                        xtype: 'passwordfield',
+                        xtype: 'button',
                         centered: false,
-                        docked: 'top',
-                        id: 'password',
-                        label: 'Password',
-                        labelAlign: 'bottom',
-                        required: true
+                        height: 32,
+                        itemId: 'submit',
+                        margin: '10%',
+                        style: '',
+                        ui: 'confirm',
+                        width: '80%',
+                        text: 'Login'
+                    },
+                    {
+                        xtype: 'button',
+                        itemId: 'register',
+                        margin: '10%',
+                        top: '',
+                        ui: 'action',
+                        width: '80%',
+                        text: 'Register'
                     }
                 ]
             }

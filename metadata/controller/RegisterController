@@ -1,0 +1,59 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "user"
+        ],
+        "views": [
+            "RegisterView"
+        ],
+        "designer|userClassName": "RegisterController"
+    },
+    "designerId": "280ed071-8545-4627-a5ee-93f90ac99ab6",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onRegister",
+                "implHandler": [
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "registerView #register"
+            },
+            "designerId": "bb82df04-b571-4f8e-8341-28e58ec60a58"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCancel",
+                "implHandler": [
+                    "var login = Ext.create(\"app.view.LoginView\",{fullscreen:true});",
+                    "Ext.Viewport.remove(Ext.ComponentMgr.get(\"registerView\"));",
+                    "Ext.Viewport.add(login);",
+                    "Ext.Viewport.setActiveItem(login);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "registerView #cancel"
+            },
+            "designerId": "183840ce-5917-4853-bcd3-74f670d5e636"
+        }
+    ]
+}

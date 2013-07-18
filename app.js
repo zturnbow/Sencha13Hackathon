@@ -33,10 +33,12 @@ Ext.application({
     views: [
         'LoginView',
         'MainMenuView',
-        'ProjectList'
+        'ProjectList',
+        'RegisterView'
     ],
     controllers: [
-        'LoginController'
+        'LoginController',
+        'RegisterController'
     ],
     name: 'app',
 

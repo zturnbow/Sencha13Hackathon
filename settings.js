@@ -1,5 +1,6 @@
 settings = {};
-settings.server_host = "localhost:8080";
+//settings.server_host = "localhost:8080";
+settings.server_host = "whiteboard-latchd.rhcloud.com"
 settings.username = null;
 
 

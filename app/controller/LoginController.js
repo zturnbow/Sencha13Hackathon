@@ -36,7 +36,7 @@ Ext.define('app.controller.LoginController', {
         var pass = Ext.ComponentMgr.get("password").getValue();
 
         Ext.Ajax.request({
-            url: settings.server_host+"/api/login",
+            url: "https://"+settings.server_host+"/api/login",
             method: "POST",
             params: { username: uname, password: pass },
             success: function(response) {
@@ -45,7 +45,7 @@ Ext.define('app.controller.LoginController', {
                     console.log("YEEEAAHHH!");
                     settings.setUsername(uname);
                     var listView = Ext.create("app.view.ProjectList");
-                    listView.config.title = "Projects";
+                    listView.config.title = "Project List";
                     Ext.ComponentMgr.get("MainMenuView").push(listView);
                 }else{
                     Ext.Msg.alert('Login Failure', 'Username or Password Not Found');

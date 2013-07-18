@@ -8,6 +8,8 @@
     "userConfig": {
         "models": [
             "User",
+            "projects",
+            "image",
             "Project",
             "Whiteboard"
         ],

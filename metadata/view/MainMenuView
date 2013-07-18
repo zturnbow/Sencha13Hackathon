@@ -12,7 +12,8 @@
         "id": "mainMenuView",
         "itemId": "mainMenuView",
         "showAnimation": "fadeIn",
-        "designer|userClassName": "MainMenuView"
+        "designer|userClassName": "MainMenuView",
+        "designer|userAlias": "mainMenuView"
     },
     "designerId": "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
     "cn": [
@@ -27,7 +28,67 @@
                 "docked": "top",
                 "androidAnimation": false
             },
-            "designerId": "585368ec-c112-4ee4-9469-b32e5cf3c80e"
+            "designerId": "585368ec-c112-4ee4-9469-b32e5cf3c80e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "itemId": "logout",
+                        "ui": "small",
+                        "designer|displayName": "logout",
+                        "text": "Logout"
+                    },
+                    "designerId": "fa568e1f-56a9-4579-bd16-a235de71d2b3"
+                },
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "ui": "back",
+                        "designer|displayName": "back",
+                        "text": "Back"
+                    },
+                    "designerId": "d9198492-35fd-4939-8312-2f7b2bacd771"
+                },
+                {
+                    "type": "Ext.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "html": "Whiteboard Capture",
+                        "ui": "dark",
+                        "designer|displayName": "title"
+                    },
+                    "designerId": "5ed66d93-0333-45a1-bc9c-6d134ec165cf"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onMainMenuViewActivate",
+                "name": "activate"
+            },
+            "designerId": "8022e067-3607-4601-a7e7-5ba49d24c87e"
         }
     ]
 }

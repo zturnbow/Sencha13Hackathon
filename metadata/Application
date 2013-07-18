@@ -25,7 +25,8 @@
         ],
         "controllers": [
             "LoginController",
-            "RegisterController"
+            "RegisterController",
+            "LogoutController"
         ],
         "name": "app"
     },

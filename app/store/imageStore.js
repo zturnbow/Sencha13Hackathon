@@ -17,11 +17,11 @@ Ext.define('app.store.imageStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'app.model.image'
+        'app.model.Image'
     ],
 
     config: {
-        model: 'app.model.image',
+        model: 'app.model.Image',
         storeId: 'imageStore',
         proxy: {
             type: 'ajax',

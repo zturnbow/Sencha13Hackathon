@@ -6,23 +6,24 @@
     },
     "codeClass": null,
     "userConfig": {
-        "model": "Image",
-        "storeId": "imageStore",
-        "designer|userClassName": "imageStore"
+        "autoLoad": true,
+        "model": "Projects",
+        "storeId": "projectStore",
+        "designer|userClassName": "ProjectStore"
     },
-    "designerId": "54618e1f-0c7d-459e-ba47-4f426ffb2aac",
+    "designerId": "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
     "cn": [
         {
-            "type": "Ext.data.proxy.Ajax",
+            "type": "Ext.data.proxy.Rest",
             "reference": {
                 "name": "proxy",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|displayName": "imageAjaxProperty"
+                "url": "https://whiteboard-latchd.rhcloud.com/api/projects"
             },
-            "designerId": "2137759a-7d63-4f0d-a329-c95d01eaf962",
+            "designerId": "d03b6466-4326-4c08-bd26-30014c9674ea",
             "cn": [
                 {
                     "type": "Ext.data.reader.Json",
@@ -31,10 +32,7 @@
                         "type": "object"
                     },
                     "codeClass": null,
-                    "userConfig": {
-                        "designer|displayName": "imageReader"
-                    },
-                    "designerId": "f2590f18-b728-4b22-9af9-b5fbb4b658af"
+                    "designerId": "bdca60b6-05a9-46e7-b0c1-bb35c9d319fc"
                 }
             ]
         }

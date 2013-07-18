@@ -13,15 +13,15 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.store.imageStore', {
+Ext.define('app.store.imageStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.image'
+        'app.model.image'
     ],
 
     config: {
-        model: 'MyApp.model.image',
+        model: 'app.model.image',
         storeId: 'imageStore',
         proxy: {
             type: 'ajax',

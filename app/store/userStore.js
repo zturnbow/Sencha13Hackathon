@@ -13,20 +13,21 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.store.userStore', {
+Ext.define('app.store.userStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.user'
+        'app.model.user'
     ],
 
     config: {
-        model: 'MyApp.model.user',
+        model: 'app.model.user',
         storeId: 'MyJsonStore',
         proxy: {
             type: 'ajax',
             reader: {
-                type: 'json'
+                type: 'json',
+                idProperty: 'id'
             }
         }
     }

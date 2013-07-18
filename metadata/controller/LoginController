@@ -26,12 +26,19 @@
             "userConfig": {
                 "fn": "onButtonTap",
                 "implHandler": [
-                    "/*var user = Ext.create('app.model.user', {",
-                    "    username : result.username,",
-                    "    password : result.password",
-                    "}); */",
-                    "console.log(button.parent());",
-                    "return true;"
+                    "var uname = Ext.ComponentMgr.get(\"username\").getValue();",
+                    "var pass = Ext.ComponentMgr.get(\"password\").getValue();",
+                    "",
+                    "var Users = Ext.ModelMgr.getModel(\"app.model.user\");",
+                    "var user = Users.findby(new function(record, id){",
+                    "    if(record.username == uname && record.password == pass){",
+                    "     alert(\"found!\");",
+                    "     return record;",
+                    "    } else {",
+                    "     alert(\"notfound!\");",
+                    "     return null;",
+                    "    }",
+                    "});"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",

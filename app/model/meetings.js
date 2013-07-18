@@ -13,22 +13,22 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.model.meetings', {
+Ext.define('app.model.meetings', {
     extend: 'Ext.data.Model',
 
     uses: [
-        'MyApp.model.meeting',
-        'MyApp.model.user'
+        'app.model.meeting',
+        'app.model.user'
     ],
 
     config: {
         hasMany: [
             {
-                model: 'MyApp.model.meeting',
+                model: 'app.model.meeting',
                 name: 'meetings'
             },
             {
-                model: 'MyApp.model.user',
+                model: 'app.model.user',
                 name: 'users'
             }
         ]

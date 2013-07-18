@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.controller.LoginController', {
+Ext.define('app.controller.LoginController', {
     extend: 'Ext.app.Controller',
 
     config: {
@@ -32,12 +32,21 @@ Ext.define('MyApp.controller.LoginController', {
     },
 
     onButtonTap: function(button, e, eOpts) {
-        /*var user = Ext.create('app.model.user', {
-        username : result.username,
-        password : result.password
-        }); */
-        console.log(button);
-        return true;
+		var Users = Ext.getStore('app.store.userStore');
+        var uname = Ext.ComponentMgr.get("username").getValue();
+        var pass = Ext.ComponentMgr.get("password").getValue();
+
+        
+        var user = Users.findBy(function(record, id){
+            if(record.username == uname && record.password == pass){
+                alert("found!");
+                return id;
+            } else {
+                alert("notfound!");
+                return -1;
+            }
+        });
+		console.log(user);
     }
 
 });

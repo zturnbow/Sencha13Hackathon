@@ -13,15 +13,15 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.store.meetingStore', {
+Ext.define('app.store.meetingStore', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'MyApp.model.meetings'
+        'app.model.meetings'
     ],
 
     config: {
-        model: 'MyApp.model.meetings',
+        model: 'app.model.meetings',
         storeId: 'meetingStore',
         proxy: {
             type: 'ajax',

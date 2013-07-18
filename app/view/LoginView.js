@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.view.LoginView', {
+Ext.define('app.view.LoginView', {
     extend: 'Ext.form.Panel',
     alias: 'widget.loginView',
 

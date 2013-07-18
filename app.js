@@ -36,11 +36,12 @@ Ext.application({
     controllers: [
         'LoginController'
     ],
-    name: 'MyApp',
+    name: 'app',
 
     launch: function() {
-
-        Ext.create('MyApp.view.LoginView', {fullscreen: true});
+		Ext.create('app.store.userStore', {});
+		Ext.create('app.store.meetingStore', {});
+        Ext.create('app.view.LoginView', {fullscreen: true});
     }
 
 });

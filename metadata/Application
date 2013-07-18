@@ -23,7 +23,7 @@
         "controllers": [
             "LoginController"
         ],
-        "name": "MyApp"
+        "name": "app"
     },
     "designerId": "application"
 }

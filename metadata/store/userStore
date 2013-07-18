@@ -32,6 +32,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "idProperty": "id",
                         "designer|displayName": "userReader"
                     },
                     "designerId": "1f28bc64-a568-436e-9a4c-b27df8f51c76"

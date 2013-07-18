@@ -13,16 +13,16 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.model.meeting', {
+Ext.define('app.model.meeting', {
     extend: 'Ext.data.Model',
 
     uses: [
-        'MyApp.model.image'
+        'app.model.image'
     ],
 
     config: {
         hasMany: {
-            model: 'MyApp.model.image',
+            model: 'app.model.image',
             name: 'images'
         }
     }

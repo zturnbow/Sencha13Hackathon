@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.model.user', {
+Ext.define('app.model.user', {
     extend: 'Ext.data.Model',
 
     config: {

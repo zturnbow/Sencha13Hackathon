@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('MyApp.model.image', {
+Ext.define('app.model.image', {
     extend: 'Ext.data.Model',
 
     config: {

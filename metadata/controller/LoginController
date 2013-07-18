@@ -26,17 +26,17 @@
             "userConfig": {
                 "fn": "onButtonTap",
                 "implHandler": [
+					"var Users = Ext.getStore('app.store.userStore');",
                     "var uname = Ext.ComponentMgr.get(\"username\").getValue();",
                     "var pass = Ext.ComponentMgr.get(\"password\").getValue();",
                     "",
-                    "var Users = Ext.ModelMgr.getModel(\"app.model.user\");",
                     "var user = Users.findby(new function(record, id){",
                     "    if(record.username == uname && record.password == pass){",
                     "     alert(\"found!\");",
-                    "     return record;",
+                    "     return id;",
                     "    } else {",
                     "     alert(\"notfound!\");",
-                    "     return null;",
+                    "     return -1;",
                     "    }",
                     "});"
                 ],

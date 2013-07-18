@@ -32,6 +32,7 @@ Ext.define('app.controller.LoginController', {
     },
 
     onButtonTap: function(button, e, eOpts) {
+		
 		var Users = Ext.getStore('app.store.userStore');
         var uname = Ext.ComponentMgr.get("username").getValue();
         var pass = Ext.ComponentMgr.get("password").getValue();

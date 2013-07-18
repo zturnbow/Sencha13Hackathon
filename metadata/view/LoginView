@@ -6,11 +6,21 @@
     },
     "codeClass": null,
     "userConfig": {
+        "fullscreen": true,
+        "hideAnimation": "fadeOut",
         "id": "loginView",
         "itemId": "loginView",
+        "showAnimation": "fadeIn",
         "ui": "dark",
         "designer|userClassName": "LoginView",
         "designer|userAlias": "loginView",
+        "requires": [
+            "Ext.form.FieldSet",
+            "Ext.form.Password",
+            "Ext.Label",
+            "Ext.Img",
+            "Ext.util.DelayedTask"
+        ],
         "designer|initialView": true,
         "layout": "fit",
         "scrollable": false,

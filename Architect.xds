@@ -92,11 +92,20 @@
                 "app/controller/LoginController.js"
             ],
             "className": "LoginController"
+        },
+        "2fcf1215-e5ee-4c09-8e7b-8b191f261c24": {
+            "paths": [
+                "metadata/view/MainMenuView",
+                "app/view/override/MainMenuView.js",
+                "app/view/MainMenuView.js"
+            ],
+            "className": "MainMenuView"
         }
     },
     "viewOrderMap": {
         "view": [
-            "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c"
+            "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",
+            "2fcf1215-e5ee-4c09-8e7b-8b191f261c24"
         ],
         "store": [
             "7dc7745b-f467-445d-9ea0-fe60358dabb3",

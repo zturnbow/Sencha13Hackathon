@@ -1,0 +1,16 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "hideAnimation": "fadeOut",
+        "id": "mainMenuView",
+        "itemId": "mainMenuView",
+        "showAnimation": "fadeIn",
+        "designer|userClassName": "MainMenuView"
+    },
+    "designerId": "2fcf1215-e5ee-4c09-8e7b-8b191f261c24"
+}

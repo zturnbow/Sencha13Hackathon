@@ -18,7 +18,8 @@
             "imageStore"
         ],
         "views": [
-            "LoginView"
+            "LoginView",
+            "MainMenuView"
         ],
         "controllers": [
             "LoginController"

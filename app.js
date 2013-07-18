@@ -31,7 +31,8 @@ Ext.application({
         'imageStore'
     ],
     views: [
-        'LoginView'
+        'LoginView',
+        'MainMenuView'
     ],
     controllers: [
         'LoginController'
@@ -39,8 +40,7 @@ Ext.application({
     name: 'app',
 
     launch: function() {
-		Ext.create('app.store.userStore', {});
-		Ext.create('app.store.meetingStore', {});
+
         Ext.create('app.view.LoginView', {fullscreen: true});
     }
 

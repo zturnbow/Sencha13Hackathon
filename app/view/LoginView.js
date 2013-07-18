@@ -17,9 +17,20 @@ Ext.define('app.view.LoginView', {
     extend: 'Ext.form.Panel',
     alias: 'widget.loginView',
 
+    requires: [
+        'Ext.form.FieldSet',
+        'Ext.form.Password',
+        'Ext.Label',
+        'Ext.Img',
+        'Ext.util.DelayedTask'
+    ],
+
     config: {
+        fullscreen: true,
+        hideAnimation: 'fadeOut',
         id: 'loginView',
         itemId: 'loginView',
+        showAnimation: 'fadeIn',
         ui: 'dark',
         layout: {
             type: 'fit'

@@ -55,6 +55,7 @@
                 "fn": "onRegister",
                 "implHandler": [
                     "var register = Ext.create(\"app.view.RegisterView\");",
+                    "console.log(register);",
                     "Ext.Viewport.remove(Ext.ComponentMgr.get(\"loginView\"));",
                     "Ext.Viewport.add(register);",
                     "Ext.Viewport.setActiveItem(register);"

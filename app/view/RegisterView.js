@@ -15,48 +15,58 @@
 
 Ext.define('app.view.RegisterView', {
     extend: 'Ext.form.Panel',
+    alias: 'widget.registerView',
 
     config: {
+        hidden: false,
         id: 'registerView',
         itemId: 'registerView',
+        layout: {
+            type: 'fit'
+        },
         items: [
             {
-                xtype: 'fieldset',
-                title: 'Register',
+                xtype: 'container',
                 items: [
                     {
-                        xtype: 'textfield',
-                        placeHolder: 'Username'
+                        xtype: 'fieldset',
+                        title: 'Register',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                placeHolder: 'Username'
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                placeHolder: 'Password'
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                placeHolder: 'Confirm Password'
+                            },
+                            {
+                                xtype: 'emailfield',
+                                placeHolder: 'email@example.com'
+                            }
+                        ]
                     },
                     {
-                        xtype: 'passwordfield',
-                        placeHolder: 'Password'
+                        xtype: 'button',
+                        itemId: 'register',
+                        margin: '10%',
+                        ui: 'confirm',
+                        width: '80%',
+                        text: 'register'
                     },
                     {
-                        xtype: 'passwordfield',
-                        placeHolder: 'Confirm Password'
-                    },
-                    {
-                        xtype: 'emailfield',
-                        placeHolder: 'email@example.com'
+                        xtype: 'button',
+                        itemId: 'cancel',
+                        margin: '10%',
+                        ui: 'decline',
+                        width: '80%',
+                        text: 'cancel'
                     }
                 ]
-            },
-            {
-                xtype: 'button',
-                itemId: 'register',
-                margin: '10%',
-                ui: 'confirm',
-                width: '80%',
-                text: 'register'
-            },
-            {
-                xtype: 'button',
-                itemId: 'cancel',
-                margin: '10%',
-                ui: 'decline',
-                width: '80%',
-                text: 'cancel'
             }
         ]
     }

@@ -29,5 +29,22 @@
         ],
         "name": "app"
     },
-    "designerId": "application"
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "60988bcc-7671-470c-8d1e-2cd06718065f"
+        }
+    ]
 }

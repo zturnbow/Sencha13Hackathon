@@ -50,6 +50,7 @@ Ext.define('app.controller.LoginController', {
 
     onRegister: function(button, e, eOpts) {
         var register = Ext.create("app.view.RegisterView");
+        console.log(register);
         Ext.Viewport.remove(Ext.ComponentMgr.get("loginView"));
         Ext.Viewport.add(register);
         Ext.Viewport.setActiveItem(register);

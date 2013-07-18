@@ -35,11 +35,11 @@ Ext.define('app.controller.RegisterController', {
     },
 
     onRegister: function(button, e, eOpts) {
-
+        alert("!");
     },
 
     onCancel: function(button, e, eOpts) {
-        var login = Ext.create("app.view.LoginView",{fullscreen:true});
+        var login = Ext.create("app.view.LoginView");
         Ext.Viewport.remove(Ext.ComponentMgr.get("registerView"));
         Ext.Viewport.add(login);
         Ext.Viewport.setActiveItem(login);

@@ -6,122 +6,139 @@
     },
     "codeClass": null,
     "userConfig": {
+        "hidden": false,
         "id": "registerView",
         "itemId": "registerView",
-        "designer|userClassName": "RegisterView"
+        "designer|userClassName": "RegisterView",
+        "designer|userAlias": "registerView",
+        "layout": "fit"
     },
     "designerId": "dac7811a-406f-45f7-98a5-2c6965558888",
     "cn": [
         {
-            "type": "Ext.form.FieldSet",
+            "type": "Ext.Container",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Register"
+                "designer|displayName": "FormContainer"
             },
-            "designerId": "fe831ebb-5fe8-4c65-92a6-acf5e1a364cc",
+            "designerId": "7e48b03d-97c5-46b7-9b91-91887f7f846b",
             "cn": [
                 {
-                    "type": "Ext.field.Text",
+                    "type": "Ext.form.FieldSet",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|displayName": "username",
-                        "designer|createAlias": null,
-                        "label": null,
-                        "placeHolder": "Username"
+                        "title": "Register"
                     },
-                    "designerId": "b0c7435e-f313-40bd-9576-028b6cb4fa7e"
+                    "designerId": "fe831ebb-5fe8-4c65-92a6-acf5e1a364cc",
+                    "cn": [
+                        {
+                            "type": "Ext.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "username",
+                                "designer|createAlias": null,
+                                "label": null,
+                                "placeHolder": "Username"
+                            },
+                            "designerId": "b0c7435e-f313-40bd-9576-028b6cb4fa7e"
+                        },
+                        {
+                            "type": "Ext.field.Password",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "password1",
+                                "designer|createAlias": null,
+                                "label": null,
+                                "placeHolder": "Password"
+                            },
+                            "designerId": "8dbcac75-8b8a-42ea-bb73-769b5f2160e5"
+                        },
+                        {
+                            "type": "Ext.field.Password",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "password2",
+                                "designer|createAlias": null,
+                                "label": null,
+                                "placeHolder": "Confirm Password"
+                            },
+                            "designerId": "688f3abb-fb72-452b-aed3-2df380379760"
+                        },
+                        {
+                            "type": "Ext.field.Email",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": "email",
+                                "designer|createAlias": null,
+                                "label": null,
+                                "placeHolder": "email@example.com"
+                            },
+                            "designerId": "79932a24-4e27-4c22-a2f6-57d196196ac4"
+                        }
+                    ]
                 },
                 {
-                    "type": "Ext.field.Password",
+                    "type": "Ext.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|displayName": "password1",
+                        "itemId": "register",
+                        "margin": "10%",
+                        "ui": "confirm",
+                        "width": "80%",
+                        "designer|displayName": "register",
                         "designer|createAlias": null,
-                        "label": null,
-                        "placeHolder": "Password"
+                        "text": "register"
                     },
-                    "designerId": "8dbcac75-8b8a-42ea-bb73-769b5f2160e5"
+                    "designerId": "fc14b046-b618-47ba-b21a-b00af9dd27f7"
                 },
                 {
-                    "type": "Ext.field.Password",
+                    "type": "Ext.Button",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|displayName": "password2",
+                        "id": null,
+                        "itemId": "cancel",
+                        "margin": "10%",
+                        "ui": "decline",
+                        "width": "80%",
+                        "designer|displayName": "cancel",
                         "designer|createAlias": null,
-                        "label": null,
-                        "placeHolder": "Confirm Password"
+                        "text": "cancel"
                     },
-                    "designerId": "688f3abb-fb72-452b-aed3-2df380379760"
-                },
-                {
-                    "type": "Ext.field.Email",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|displayName": "email",
-                        "designer|createAlias": null,
-                        "label": null,
-                        "placeHolder": "email@example.com"
-                    },
-                    "designerId": "79932a24-4e27-4c22-a2f6-57d196196ac4"
+                    "designerId": "29f57ce1-a22e-4bfb-8dc5-cb5009dc2769"
                 }
             ]
-        },
-        {
-            "type": "Ext.Button",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "itemId": "register",
-                "margin": "10%",
-                "ui": "confirm",
-                "width": "80%",
-                "designer|displayName": "register",
-                "designer|createAlias": null,
-                "text": "register"
-            },
-            "designerId": "fc14b046-b618-47ba-b21a-b00af9dd27f7"
-        },
-        {
-            "type": "Ext.Button",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "id": null,
-                "itemId": "cancel",
-                "margin": "10%",
-                "ui": "decline",
-                "width": "80%",
-                "designer|displayName": "cancel",
-                "designer|createAlias": null,
-                "text": "cancel"
-            },
-            "designerId": "29f57ce1-a22e-4bfb-8dc5-cb5009dc2769"
         }
     ]
 }

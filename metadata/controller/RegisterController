@@ -26,7 +26,7 @@
             "userConfig": {
                 "fn": "onRegister",
                 "implHandler": [
-                    ""
+                    "alert(\"!\");"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
@@ -44,7 +44,7 @@
             "userConfig": {
                 "fn": "onCancel",
                 "implHandler": [
-                    "var login = Ext.create(\"app.view.LoginView\",{fullscreen:true});",
+                    "var login = Ext.create(\"app.view.LoginView\");",
                     "Ext.Viewport.remove(Ext.ComponentMgr.get(\"registerView\"));",
                     "Ext.Viewport.add(login);",
                     "Ext.Viewport.setActiveItem(login);"

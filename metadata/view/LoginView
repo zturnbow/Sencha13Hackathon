@@ -24,7 +24,7 @@
         ],
         "designer|initialView": true,
         "layout": "fit",
-        "scrollable": false,
+        "scrollable": null,
         "standardSubmit": true
     },
     "designerId": "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",

@@ -36,7 +36,6 @@ Ext.define('app.view.LoginView', {
         layout: {
             type: 'fit'
         },
-        scrollable: false,
         standardSubmit: true,
         items: [
             {

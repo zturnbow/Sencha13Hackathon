@@ -49,6 +49,15 @@ Ext.application({
         'ProjectAddController'
     ],
     name: 'app',
+    startupImage: {
+        '320x460': 'resources/images/splash-screen-hi-res.png',
+        '640x920': 'resources/images/splash-screen-hi-res.png',
+        '640x1096': 'resources/images/splash-screen-hi-res.png',
+        '768x1004': 'resources/images/splash-screen-hi-res.png',
+        '748x1024': 'resources/images/splash-screen-hi-res.png',
+        '1536x2008': 'resources/images/splash-screen-hi-res.png',
+        '1496x2048': 'resources/images/splash-screen-hi-res.png'
+    },
 
     launch: function() {
 

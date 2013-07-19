@@ -44,7 +44,7 @@ Ext.define('app.controller.WhiteboardController', {
         scope: this
         });*/
         var _this = this;
-        $('body').one('photo_capture', function(event, data){
+        $('body').once('photo_capture', function(event, data){
             Ext.ComponentMgr.get("capturedPhoto").setSrc(data);
             Ext.ComponentMgr.get("whiteboardAddPhoto").hide();
             Ext.ComponentMgr.get("whiteboardSavePhoto").show();

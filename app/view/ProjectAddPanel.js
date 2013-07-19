@@ -47,7 +47,7 @@ Ext.define('app.view.ProjectAddPanel', {
             },
             {
                 xtype: 'fieldset',
-                flex: 3,
+                flex: 2,
                 layout: {
                     type: 'fit'
                 },

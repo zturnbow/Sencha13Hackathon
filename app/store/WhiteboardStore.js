@@ -27,7 +27,7 @@ Ext.define('app.store.WhiteboardStore', {
         syncRemovedRecords: false,
         proxy: {
             type: 'ajax',
-            url: 'http://166.78.17.230:8080/api/whiteboards/Milton',
+            url: 'https://whiteboard-latchd.rhcloud.com/api/whiteboards/Milton',
             reader: {
                 type: 'json'
             }

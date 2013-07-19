@@ -22,7 +22,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "http://166.78.17.230:8080/api/whiteboards/Milton"
+                "url": "https://whiteboard-latchd.rhcloud.com/api/whiteboards/Milton"
             },
             "designerId": "f8e1c5f3-fc36-46f6-8d6a-98f38d416e42",
             "cn": [

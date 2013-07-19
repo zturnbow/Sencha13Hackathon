@@ -68,6 +68,8 @@ Ext.define('app.controller.ProjectController', {
         var view = Ext.ComponentManager.get("MainMenuView");
         var newProject = Ext.create("app.view.ProjectAddPanel");
         var newWhite = Ext.create("app.view.WhiteboardAddPanel");
+        var reg = Ext.create("app.view.RegisterView");
+
         var id = view.getActiveItem().id;
 
         switch(id){
@@ -76,13 +78,21 @@ Ext.define('app.controller.ProjectController', {
             break;
             case "WhiteboardPanel":
             view.push(newWhite);
+            break;
+            case "Login View":
+            //view.push(reg);
+            break;
             default:
             break;
         }
     },
 
     onProjectPanelActivate: function(newActiveItem, container, oldActiveItem, eOpts) {
-        Ext.ComponentManager.get("AddNewButton").setText("Project");
+        var button = Ext.ComponentManager.get("AddNewButton");
+        if(button){
+            button.setVisibility(true);
+            button.setText("Project");
+        }
     }
 
 });

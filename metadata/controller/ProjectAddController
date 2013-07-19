@@ -1,0 +1,60 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Project"
+        ],
+        "views": [
+            "ProjectAddPanel"
+        ],
+        "designer|userClassName": "ProjectAddController"
+    },
+    "designerId": "c44c4282-e1c4-47fa-ae2f-0478f5f4e7e0",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "var name = Ext.ComponentMgr.get(\"projectName\").getValue();",
+                    "var desc = Ext.ComponentMgr.get(\"projectDesc\").getValue();",
+                    "if(!name || name == \"\"){",
+                    "    Ext.Msg.alert('A project name is required');",
+                    "    return;",
+                    "}",
+                    "",
+                    "if(!desc || desc == \"\"){",
+                    "    Ext.Msg.alert('A project description is required');",
+                    "    return;",
+                    "}",
+                    "",
+                    "Ext.Ajax.request({",
+                    "     url: \"https://\"+settings.server_host+\"/api/projects\",",
+                    "     method: \"POST\",",
+                    "     params: submission,",
+                    "     success: function(response){",
+                    "         console.log(response);",
+                    "         Ext.ComponentMgr.get(\"WhiteboardAddPanel\").pop();",
+                    "     }",
+                    "});",
+                    "",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#submitButton"
+            },
+            "designerId": "bad0a3f2-020c-4f8b-bfcd-4d0f341a7e56"
+        }
+    ]
+}

@@ -44,10 +44,11 @@ Ext.define('app.controller.WhiteboardController', {
         scope: this
         });*/
         var _this = this;
-        $('body').once('photo_capture', function(event, data){
+        $('body').on('photo_capture', function(event, data){
             Ext.ComponentMgr.get("capturedPhoto").setSrc(data);
             Ext.ComponentMgr.get("whiteboardAddPhoto").hide();
             Ext.ComponentMgr.get("whiteboardSavePhoto").show();
+            $('body').off('photo_capture');
         });
         $('#picture').click();
     },
@@ -67,9 +68,9 @@ Ext.define('app.controller.WhiteboardController', {
         var photodata = Ext.ComponentMgr.get("capturedPhoto").getSrc();
         Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Saving Photo...' });
         Ext.Ajax.request({
-            url: settings.server_prefix+settings.server_host+"/api/whiteboards/"+settings.current_project,
+            url: encodeURI(settings.server_prefix+settings.server_host+"/api/whiteboards/"+settings.current_project),
             method: "POST",
-            params: { mimetype: "image/jpeg", image:photodata, project: settings.current_project },
+            params: { mimetype: "image/png", image:photodata, project: settings.current_project },
             success: function(response) {
                 var msg = Ext.JSON.decode(response.responseText);
                 if(msg.success){
@@ -79,6 +80,10 @@ Ext.define('app.controller.WhiteboardController', {
                     Ext.Viewport.setMasked(false);
                     Ext.Msg.alert('Save Failure', 'Unable to save image.');
                 }
+            },
+            failure: function(response){
+                Ext.Viewport.setMasked(false);
+                Ext.Msg.alert('Save Failure', 'Unable to save image.');
             }
         });
     }

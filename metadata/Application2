@@ -8,26 +8,28 @@
     "userConfig": {
         "models": [
             "User",
-            "Projects",
-            "Image",
             "Project",
             "Whiteboard"
         ],
         "stores": [
             "UserStore",
             "ProjectStore",
-            "imageStore",
             "WhiteboardStore"
         ],
         "views": [
             "MainMenuView",
-            "ProjectList",
-            "RegisterView"
+            "RegisterView",
+            "ProjectPanel",
+            "WhiteboardPanel",
+            "WhiteboardAddPanel"
         ],
         "controllers": [
             "LoginController",
             "RegisterController",
-            "LogoutController"
+            "LogoutController",
+            "ProjectController",
+            "WhiteboardController",
+            "ProjectAddController"
         ],
         "name": "app"
     },

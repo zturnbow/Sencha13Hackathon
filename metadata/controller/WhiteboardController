@@ -1,0 +1,109 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WhiteboardController"
+    },
+    "designerId": "517b2505-e531-4ba7-b350-b551d5a44e42",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAddPhoto",
+                "implHandler": [
+                    "/*Ext.device.Camera.capture({",
+                    "quality:100,",
+                    "destination: 'data',",
+                    "source:'camera',",
+                    "success: function(data) {",
+                    "this.fireEvent('change', this, data);",
+                    "},",
+                    "failure: function() {",
+                    "Ext.Msg.alert('Error', 'There was an error when acquiring the picture.');",
+                    "},",
+                    "scope: this",
+                    "});*/",
+                    "var _this = this;",
+                    "$('body').once('photo_capture', function(event, data){",
+                    "    Ext.ComponentMgr.get(\"capturedPhoto\").setSrc(data);",
+                    "    Ext.ComponentMgr.get(\"whiteboardAddPhoto\").hide();",
+                    "    Ext.ComponentMgr.get(\"whiteboardSavePhoto\").show();",
+                    "});",
+                    "$('#picture').click();"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#whiteboardAddPhoto"
+            },
+            "designerId": "e7b6522e-0e83-4cb8-959e-d2fcc14d3927"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWhiteboardPanelActivate",
+                "implHandler": [
+                    "var button = Ext.ComponentManager.get(\"AddNewButton\");",
+                    "if(button){",
+                    "    button.setVisibility(true);",
+                    "    button.setText(\"Whiteboard\");",
+                    "}",
+                    "",
+                    "Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Loading Whiteboards...' });",
+                    ""
+                ],
+                "name": "activate",
+                "designer|targetType": "WhiteboardPanel",
+                "designer|controlQuery": "#WhiteboardPanel"
+            },
+            "designerId": "29ed7dea-c74c-4a77-86b5-9ac04a4217fa"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSavePhoto",
+                "implHandler": [
+                    "var photodata = Ext.ComponentMgr.get(\"capturedPhoto\").getSrc();",
+                    "Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Saving Photo...' });",
+                    "Ext.Ajax.request({",
+                    "    url: settings.server_prefix+settings.server_host+\"/api/whiteboards/\"+settings.record.data.name,",
+                    "    method: \"POST\",",
+                    "    params: { mimetype: \"image/jpeg\", image:photodata },",
+                    "    success: function(response) {",
+                    "        var msg = Ext.JSON.decode(response.responseText);",
+                    "        if(msg.success){",
+                    "            Ext.Viewport.setMasked(false);",
+                    "            Ext.ComponentMgr.get(\"MainMenuView\").pop();",
+                    "        } else {",
+                    "            Ext.Viewport.setMasked(false);",
+                    "            Ext.Msg.alert('Save Failure', 'Unable to save image.');",
+                    "        }",
+                    "    }",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#whiteboardSavePhoto"
+            },
+            "designerId": "8a642502-a44b-479f-b175-7c9627261596"
+        }
+    ]
+}

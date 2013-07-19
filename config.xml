@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        version="1.0.0.0" id="WhiteboardCapture">
+
+  <author href="http://www.brighthouse.com" rim:copyright="Copyright 2013 Bright House Networks">Team Bright House</author>
+
+  <name>Whiteboard Capture</name> 
+
+  <description>
+    Some description here
+  </description>
+
+  <icon src="resources/icons/app-icon-hi-res.png"/>
+  <rim:splash src="resources/images/splash-screen-hi-res.png" />
+  
+  <access uri="*" subdomains="true" />
+  <access url="https://whiteboard-latchd.rhcloud.com" subdomains="true"/>
+
+  <feature id="blackberry.app" required="true" version="1.0.0.0">
+        <param name="websecurity" value="disable" />
+  </feature>
+  <rim:permissions>
+	<rim:permit>use_camera</rim:permit>
+	<rim:permit>access_shared</rim:permit>
+  </rim:permissions>
+  <content src="app.html" rim:allowInvokeParams="true"/>
+
+</widget>

@@ -19,8 +19,9 @@ Ext.define('app.view.ProjectPanel', {
     config: {
         id: 'ProjectPanel',
         layout: {
-            type: 'fit'
+            type: 'card'
         },
+        scrollable: true,
         items: [
             {
                 xtype: 'list',
@@ -28,10 +29,19 @@ Ext.define('app.view.ProjectPanel', {
                 id: 'ProjectListView',
                 itemId: 'projectListView',
                 showAnimation: 'fadeIn',
+                scrollable: 'vertical',
                 itemTpl: [
-                    '<div>{name}</div>'
+                    '<div class="title">{name}</div>',
+                    '<div class="desc">{description}</div>',
+                    '<div class="group">{participants}</div>',
+                    '<div class="creator">-Created By: {user}</div>'
                 ],
-                store: 'projectStore'
+                store: 'projectStore',
+                plugins: [
+                    {
+                        type: 'pullrefresh'
+                    }
+                ]
             }
         ]
     }

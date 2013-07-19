@@ -31,7 +31,27 @@
                 "docked": "top",
                 "androidAnimation": false
             },
-            "designerId": "585368ec-c112-4ee4-9469-b32e5cf3c80e"
+            "designerId": "585368ec-c112-4ee4-9469-b32e5cf3c80e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "id": "logout",
+                        "itemId": "logout",
+                        "ui": "decline",
+                        "designer|displayName": "logout",
+                        "iconAlign": "center",
+                        "text": "Logout"
+                    },
+                    "designerId": "1f5cfb3d-de70-4a76-b4e8-ac24a3802dd0"
+                }
+            ]
         },
         {
             "type": "Ext.form.Panel",
@@ -142,7 +162,7 @@
                                 "height": 32,
                                 "id": "loginButton",
                                 "itemId": "submit",
-                                "margin": "10%",
+                                "margin": "0 0 0 10%",
                                 "maxWidth": null,
                                 "style": "",
                                 "ui": "confirm",
@@ -164,7 +184,7 @@
                             "userConfig": {
                                 "id": "registerNewUserButton",
                                 "itemId": "register",
-                                "margin": "10%",
+                                "margin": "5 0 0 10%",
                                 "padding": null,
                                 "top": "",
                                 "ui": "action",
@@ -191,17 +211,52 @@
                 "implHandler": [
                     "this.callParent();",
                     "try{",
-                    "settings.getUsername();",
+                    "    settings.getUsername();",
                     "}catch(e){}",
                     "",
-                    "if(settings.username && settings.username !== null && settings.username !== \"\"){",
-                    "    //Ext.ComponentMgr.get(\"MainMenuView\").pop();",
-                    "    Ext.ComponentMgr.get(\"MainMenuView\").push(Ext.create(\"app.view.ProjectPanel\"));",
-                    "    //alert(settings.getUsername());",
-                    "}"
+                    "    if(settings.username && settings.username !== null && settings.username !== \"\"){",
+                    "        //Ext.ComponentMgr.get(\"MainMenuView\").pop();",
+                    "        Ext.ComponentMgr.get(\"MainMenuView\").push(Ext.create(\"app.view.ProjectPanel\"));",
+                    "        //alert(settings.getUsername());",
+                    "    }"
                 ]
             },
             "designerId": "fdbaa9c6-a682-408c-bbc3-4788ed17c9c0"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "docked": "bottom",
+                "designer|displayName": "BottomToolbar"
+            },
+            "designerId": "aa0074ec-f6af-46f9-9fec-1f9a888e8b4e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 0,
+                        "height": 38,
+                        "id": "AddNewButton",
+                        "ui": "action",
+                        "width": null,
+                        "iconAlign": "center",
+                        "iconCls": "add",
+                        "text": "Add"
+                    },
+                    "designerId": "4ae5c3be-52b9-4d32-ba4f-3ed9f05b4407"
+                }
+            ]
         }
     ]
 }

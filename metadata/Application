@@ -19,13 +19,20 @@
         "views": [
             "MainMenuView",
             "RegisterView",
-            "ProjectPanel"
+            "ProjectPanel",
+            "WhiteboardPanel",
+            "WhiteboardAddPanel"
+        ],
+        "requires": [
+            "Ext.device.Camera"
         ],
         "controllers": [
             "LoginController",
             "RegisterController",
             "LogoutController",
-            "ProjectController"
+            "ProjectController",
+            "WhiteboardController",
+            "ProjectAddController"
         ],
         "name": "app"
     },

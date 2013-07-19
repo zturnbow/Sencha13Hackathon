@@ -115,7 +115,7 @@
                     "userConfig": {
                         "id": "registerButton",
                         "itemId": "register",
-                        "margin": "10%",
+                        "margin": "0 0 0 10%",
                         "ui": "confirm",
                         "width": "80%",
                         "designer|displayName": "register",
@@ -123,25 +123,6 @@
                         "text": "register"
                     },
                     "designerId": "fc14b046-b618-47ba-b21a-b00af9dd27f7"
-                },
-                {
-                    "type": "Ext.Button",
-                    "reference": {
-                        "name": "items",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "id": "registerFormCancel",
-                        "itemId": "registerFormCancel",
-                        "margin": "10%",
-                        "ui": "decline",
-                        "width": "80%",
-                        "designer|displayName": "cancel",
-                        "designer|createAlias": null,
-                        "text": "cancel"
-                    },
-                    "designerId": "29f57ce1-a22e-4bfb-8dc5-cb5009dc2769"
                 }
             ]
         }

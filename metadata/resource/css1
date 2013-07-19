@@ -1,0 +1,14 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css1",
+        "url": "tweaks.css",
+        "id": "tweaks"
+    },
+    "designerId": "f507b986-2baa-4387-aa69-bc91ffd5f2e2"
+}

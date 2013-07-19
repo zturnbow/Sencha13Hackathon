@@ -56,19 +56,10 @@ Ext.define('app.view.RegisterView', {
                         xtype: 'button',
                         id: 'registerButton',
                         itemId: 'register',
-                        margin: '10%',
+                        margin: '0 0 0 10%',
                         ui: 'confirm',
                         width: '80%',
                         text: 'register'
-                    },
-                    {
-                        xtype: 'button',
-                        id: 'registerFormCancel',
-                        itemId: 'registerFormCancel',
-                        margin: '10%',
-                        ui: 'decline',
-                        width: '80%',
-                        text: 'cancel'
                     }
                 ]
             }

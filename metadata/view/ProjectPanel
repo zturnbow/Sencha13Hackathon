@@ -8,7 +8,8 @@
     "userConfig": {
         "id": "ProjectPanel",
         "designer|userClassName": "ProjectPanel",
-        "layout": "fit"
+        "layout": "card",
+        "scrollable": true
     },
     "designerId": "76c06b80-6f31-4cb0-b99c-79173bcf8867",
     "cn": [
@@ -24,6 +25,9 @@
                 "id": "ProjectListView",
                 "itemId": "projectListView",
                 "showAnimation": "fadeIn",
+                "scrollable": [
+                    "vertical"
+                ],
                 "store": "projectStore"
             },
             "designerId": "87b30d0b-0bbb-4340-b43e-5a6cd16ec7ff",
@@ -37,11 +41,23 @@
                     "codeClass": null,
                     "userConfig": {
                         "implHandler": [
-                            "<div>{name}</div>"
+                            "<div class=\"title\">{name}</div>",
+                            "<div class=\"desc\">{description}</div>",
+                            "<div class=\"group\">{participants}</div>",
+                            "<div class=\"creator\">-Created By: {user}</div>"
                         ],
                         "designer|displayName": "itemTpl"
                     },
                     "designerId": "822425d0-f21a-4fb1-929d-fbda0ad873af"
+                },
+                {
+                    "type": "Ext.plugin.PullRefresh",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "e99cfdf1-ca6d-49a2-9d87-8ccbf3eabb14"
                 }
             ]
         }

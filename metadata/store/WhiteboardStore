@@ -6,21 +6,23 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoLoad": true,
         "model": "Whiteboard",
-        "storeId": "MyJsonStore",
+        "storeId": "WhiteboardStore",
+        "syncRemovedRecords": false,
         "designer|userClassName": "WhiteboardStore"
     },
     "designerId": "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c",
     "cn": [
         {
-            "type": "Ext.data.proxy.Rest",
+            "type": "Ext.data.proxy.Ajax",
             "reference": {
                 "name": "proxy",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "url": "https://whiteboard-latchd.rhcloud.com/api/whiteboards/Milton"
+                "url": "http://166.78.17.230:8080/api/whiteboards/Milton"
             },
             "designerId": "f8e1c5f3-fc36-46f6-8d6a-98f38d416e42",
             "cn": [

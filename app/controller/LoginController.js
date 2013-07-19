@@ -27,6 +27,9 @@ Ext.define('app.controller.LoginController', {
             },
             "#registerNewUserButton": {
                 tap: 'onRegister'
+            },
+            "#LoginView": {
+                activate: 'onFormpanelActivate'
             }
         }
     },
@@ -34,9 +37,9 @@ Ext.define('app.controller.LoginController', {
     onLogin: function(button, e, eOpts) {
         var uname = Ext.ComponentMgr.get("loginUsernameField").getValue();
         var pass = Ext.ComponentMgr.get("password").getValue();
-
+        Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Logging in...' });
         Ext.Ajax.request({
-            url: "https://"+settings.server_host+"/api/login",
+            url: settings.server_prefix+settings.server_host+"/api/login",
             method: "POST",
             params: { username: uname, password: pass },
             success: function(response) {
@@ -46,8 +49,18 @@ Ext.define('app.controller.LoginController', {
                     settings.setUsername(uname);
                     var listView = Ext.create("app.view.ProjectPanel");
                     listView.config.title = "Project List";
+
+                    var button = Ext.ComponentManager.get("AddNewButton");
+                    if(button){
+                        button.setVisibility(true);
+                        button.setText("Project");
+                    }
+
+
+                    Ext.Viewport.setMasked(false);
                     Ext.ComponentMgr.get("MainMenuView").push(listView);
                 }else{
+                    Ext.Viewport.setMasked(false);
                     Ext.Msg.alert('Login Failure', 'Username or Password Not Found');
                 }
             }
@@ -58,9 +71,19 @@ Ext.define('app.controller.LoginController', {
 
     onRegister: function(button, e, eOpts) {
         console.log("register view!!!");
-        var register = Ext.create("app.view.RegisterView");
+        var register;
+        register = Ext.ComponentMgr.get("registerView");
+        if(!register)
+        register = Ext.create("app.view.RegisterView");
         register.config.title="Register New User";
         Ext.ComponentMgr.get("MainMenuView").push(register);
+    },
+
+    onFormpanelActivate: function(newActiveItem, container, oldActiveItem, eOpts) {
+        var button = Ext.ComponentManager.get("AddNewButton");
+        if(button){
+            button.setVisibility(false);
+        }
     }
 
 });

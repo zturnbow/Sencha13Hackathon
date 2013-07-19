@@ -35,7 +35,18 @@ Ext.define('app.view.MainMenuView', {
             layout: {
                 pack: 'center',
                 type: 'hbox'
-            }
+            },
+            items: [
+                {
+                    xtype: 'button',
+                    align: 'right',
+                    id: 'logout',
+                    itemId: 'logout',
+                    ui: 'decline',
+                    iconAlign: 'center',
+                    text: 'Logout'
+                }
+            ]
         },
         items: [
             {
@@ -90,7 +101,7 @@ Ext.define('app.view.MainMenuView', {
                                 height: 32,
                                 id: 'loginButton',
                                 itemId: 'submit',
-                                margin: '10%',
+                                margin: '0 0 0 10%',
                                 style: '',
                                 ui: 'confirm',
                                 width: '80%',
@@ -100,13 +111,33 @@ Ext.define('app.view.MainMenuView', {
                                 xtype: 'button',
                                 id: 'registerNewUserButton',
                                 itemId: 'register',
-                                margin: '10%',
+                                margin: '5 0 0 10%',
                                 top: '',
                                 ui: 'action',
                                 width: '80%',
                                 text: 'Register'
                             }
                         ]
+                    }
+                ]
+            },
+            {
+                xtype: 'toolbar',
+                docked: 'bottom',
+                layout: {
+                    align: 'center',
+                    type: 'hbox'
+                },
+                items: [
+                    {
+                        xtype: 'button',
+                        flex: 0,
+                        height: 38,
+                        id: 'AddNewButton',
+                        ui: 'action',
+                        iconAlign: 'center',
+                        iconCls: 'add',
+                        text: 'Add'
                     }
                 ]
             }

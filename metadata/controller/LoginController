@@ -25,9 +25,9 @@
                 "implHandler": [
                     "var uname = Ext.ComponentMgr.get(\"loginUsernameField\").getValue();",
                     "var pass = Ext.ComponentMgr.get(\"password\").getValue();",
-                    "",
+                    "Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Logging in...' });",
                     "Ext.Ajax.request({",
-                    "    url: \"https://\"+settings.server_host+\"/api/login\",",
+                    "    url: settings.server_prefix+settings.server_host+\"/api/login\",",
                     "    method: \"POST\",",
                     "    params: { username: uname, password: pass },",
                     "    success: function(response) {",
@@ -37,8 +37,18 @@
                     "            settings.setUsername(uname);",
                     "            var listView = Ext.create(\"app.view.ProjectPanel\");",
                     "            listView.config.title = \"Project List\";",
+                    "            ",
+                    "            var button = Ext.ComponentManager.get(\"AddNewButton\");",
+                    "\t\t\tif(button){",
+                    "    \t\t\tbutton.setVisibility(true);",
+                    "   \t\t\t    button.setText(\"Project\");",
+                    "\t\t\t}",
+                    "            ",
+                    "            ",
+                    "            Ext.Viewport.setMasked(false);",
                     "            Ext.ComponentMgr.get(\"MainMenuView\").push(listView);",
                     "        }else{",
+                    "            Ext.Viewport.setMasked(false);",
                     "            Ext.Msg.alert('Login Failure', 'Username or Password Not Found');",
                     "        }",
                     "    }",
@@ -63,7 +73,10 @@
                 "fn": "onRegister",
                 "implHandler": [
                     "console.log(\"register view!!!\");",
-                    "var register = Ext.create(\"app.view.RegisterView\");",
+                    "var register;",
+                    "register = Ext.ComponentMgr.get(\"registerView\");",
+                    "if(!register)",
+                    "register = Ext.create(\"app.view.RegisterView\");",
                     "register.config.title=\"Register New User\";",
                     "Ext.ComponentMgr.get(\"MainMenuView\").push(register);"
                 ],
@@ -72,6 +85,27 @@
                 "designer|controlQuery": "#registerNewUserButton"
             },
             "designerId": "0c3d3c8b-d02d-43f2-ae03-d01b6ad16693"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFormpanelActivate",
+                "implHandler": [
+                    "var button = Ext.ComponentManager.get(\"AddNewButton\");",
+                    "if(button){",
+                    "    button.setVisibility(false);",
+                    "}"
+                ],
+                "name": "activate",
+                "designer|targetType": "Ext.form.Panel",
+                "designer|controlQuery": "#LoginView"
+            },
+            "designerId": "6c619ab2-6354-4a2a-a5b7-8e0740df4ff8"
         }
     ]
 }

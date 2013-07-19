@@ -1,0 +1,141 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "ProjectAddPanel",
+        "ui": null,
+        "designer|userClassName": "ProjectAddPanel",
+        "designer|userAlias": "projectaddpanel",
+        "layout": "vbox",
+        "scrollable": "vertical"
+    },
+    "designerId": "0b61d83c-ed08-4205-b0bd-e43a2459b662",
+    "cn": [
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "title": null
+            },
+            "designerId": "1957ba50-4eb0-4391-b77b-7444f32b676d",
+            "cn": [
+                {
+                    "type": "Ext.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "id": "projectName",
+                        "itemId": "projectName",
+                        "designer|displayName": "projectName",
+                        "designer|createAlias": "",
+                        "label": "Name"
+                    },
+                    "designerId": "9edd1d9c-5b60-48a1-990d-a5d2df2e4d88"
+                },
+                {
+                    "type": "Ext.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "docked": "top",
+                        "id": "projectDesc",
+                        "itemId": "projectDesc",
+                        "designer|displayName": "projectDesc",
+                        "designer|createAlias": null,
+                        "label": "Desc",
+                        "autoCapitalize": true
+                    },
+                    "designerId": "1832d5b9-850c-43a4-8fef-ad8bea4a520b"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 3,
+                "docked": null,
+                "height": null,
+                "ui": null,
+                "layout": "fit",
+                "title": "Peeps"
+            },
+            "designerId": "c6784432-0f71-46c9-a608-8ff8957542c1",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": null,
+                        "id": "PeepsList",
+                        "padding": null,
+                        "ui": "round",
+                        "designer|displayName": "PeepList",
+                        "modal": true,
+                        "mode": "MULTI",
+                        "store": "UserStore"
+                    },
+                    "designerId": "bda48221-f5a5-4523-8c08-1f0f86c10c22",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "implHandler": [
+                                    "<div>{username}</div>"
+                                ],
+                                "designer|displayName": "itemTpl"
+                            },
+                            "designerId": "9ebaaeca-1f99-4d41-a57b-075782b5aa93"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "submitButton",
+                "itemId": "submit",
+                "margin": "10 0 0 0",
+                "ui": "confirm",
+                "designer|displayName": "submit",
+                "text": "Submit"
+            },
+            "designerId": "34b28d7f-42ec-4acd-b1c9-51aba036cafc"
+        }
+    ]
+}

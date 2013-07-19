@@ -14,14 +14,14 @@
     "designerId": "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
     "cn": [
         {
-            "type": "Ext.data.proxy.Rest",
+            "type": "Ext.data.proxy.Ajax",
             "reference": {
                 "name": "proxy",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "url": "https://whiteboard-latchd.rhcloud.com/api/projects"
+                "url": "http://166.78.17.230:8080/api/projects"
             },
             "designerId": "d03b6466-4326-4c08-bd26-30014c9674ea",
             "cn": [

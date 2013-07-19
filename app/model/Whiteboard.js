@@ -23,7 +23,7 @@ Ext.define('app.model.Whiteboard', {
                 name: 'id'
             },
             {
-                name: 'title'
+                name: 'project'
             },
             {
                 name: 'description'

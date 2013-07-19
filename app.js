@@ -19,6 +19,10 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+
+    requires: [
+        'Ext.device.Camera'
+    ],
     models: [
         'User',
         'Project',
@@ -32,13 +36,17 @@ Ext.application({
     views: [
         'MainMenuView',
         'RegisterView',
-        'ProjectPanel'
+        'ProjectPanel',
+        'WhiteboardPanel',
+        'WhiteboardAddPanel'
     ],
     controllers: [
         'LoginController',
         'RegisterController',
         'LogoutController',
-        'ProjectController'
+        'ProjectController',
+        'WhiteboardController',
+        'ProjectAddController'
     ],
     name: 'app',
 

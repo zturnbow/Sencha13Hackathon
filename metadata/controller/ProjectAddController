@@ -1,0 +1,85 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Project"
+        ],
+        "views": [
+            "ProjectAddPanel"
+        ],
+        "designer|userClassName": "ProjectAddController"
+    },
+    "designerId": "c44c4282-e1c4-47fa-ae2f-0478f5f4e7e0",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "var name = Ext.ComponentMgr.get(\"projectName\").getValue();",
+                    "var desc = Ext.ComponentMgr.get(\"projectDesc\").getValue();",
+                    "",
+                    "if(!name || name === \"\"){",
+                    "    Ext.Msg.alert('A name is required');",
+                    "    return;",
+                    "}",
+                    "",
+                    "if(!desc || desc === \"\"){",
+                    "    Ext.Msg.alert('A description is required');",
+                    "    return;",
+                    "}",
+                    "",
+                    "var submission = {",
+                    "    name: name,",
+                    "    description: desc,",
+                    "    user: settings.getUsername(),",
+                    "    participants: []",
+                    "};",
+                    "",
+                    "var list = Ext.ComponentMgr.get(\"PeepsList\")",
+                    "",
+                    "if(list){",
+                    "",
+                    "    Ext.Array.forEach(list.getSelection(), function(x) {",
+                    "        submission.participants.push(x.data.username); ",
+                    "    });",
+                    "",
+                    "}",
+                    "",
+                    "console.log(submission);",
+                    "",
+                    "Ext.Ajax.request({",
+                    "    url: settings.server_prefix+settings.server_host+\"/api/projects\",",
+                    "    method: \"POST\",",
+                    "    params: submission,",
+                    "    success: function(response){",
+                    "        console.log(response);",
+                    "        Ext.StoreManager.get(\"projectStore\").load({",
+                    "            callback: function(records,operation,success){",
+                    "                Ext.ComponentMgr.get(\"MainMenuView\").pop();",
+                    "            }",
+                    "        });",
+                    "    }",
+                    "",
+                    "});",
+                    "",
+                    ""
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#submitButton"
+            },
+            "designerId": "bad0a3f2-020c-4f8b-bfcd-4d0f341a7e56"
+        }
+    ]
+}

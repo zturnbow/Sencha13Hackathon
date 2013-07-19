@@ -8,5 +8,22 @@
     "userConfig": {
         "designer|userClassName": "WhiteboardController"
     },
-    "designerId": "517b2505-e531-4ba7-b350-b551d5a44e42"
+    "designerId": "517b2505-e531-4ba7-b350-b551d5a44e42",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAddPhoto",
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#whiteboardAddPhoto"
+            },
+            "designerId": "e7b6522e-0e83-4cb8-959e-d2fcc14d3927"
+        }
+    ]
 }

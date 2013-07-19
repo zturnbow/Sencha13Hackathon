@@ -107,9 +107,10 @@
                 "implHandler": [
                     "var button = Ext.ComponentManager.get(\"AddNewButton\");",
                     "if(button){",
-                    "\tbutton.setVisibility(true);",
-                    "\tbutton.setText(\"Project\");",
-                    "}"
+                    "    button.setVisibility(true);",
+                    "    button.setText(\"Project\");",
+                    "}",
+                    ""
                 ],
                 "name": "activate",
                 "designer|targetType": "ProjectPanel",

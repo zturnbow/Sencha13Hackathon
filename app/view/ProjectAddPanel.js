@@ -14,7 +14,7 @@
  */
 
 Ext.define('app.view.ProjectAddPanel', {
-    extend: 'Ext.form.Panel',
+    extend: 'Ext.Panel',
     alias: 'widget.projectaddpanel',
 
     config: {
@@ -25,26 +25,38 @@ Ext.define('app.view.ProjectAddPanel', {
         scrollable: 'vertical',
         items: [
             {
-                xtype: 'textfield',
-                id: 'projectName',
-                itemId: 'projectName',
-                label: 'Name'
-            },
-            {
-                xtype: 'textareafield',
-                id: 'projectDesc',
-                itemId: 'projectDesc',
-                label: 'Desc',
-                autoCapitalize: true
+                xtype: 'fieldset',
+                flex: 1,
+                items: [
+                    {
+                        xtype: 'textfield',
+                        docked: 'top',
+                        id: 'projectName',
+                        itemId: 'projectName',
+                        label: 'Name'
+                    },
+                    {
+                        xtype: 'textareafield',
+                        docked: 'top',
+                        id: 'projectDesc',
+                        itemId: 'projectDesc',
+                        label: 'Desc',
+                        autoCapitalize: true
+                    }
+                ]
             },
             {
                 xtype: 'fieldset',
+                flex: 3,
+                layout: {
+                    type: 'fit'
+                },
                 title: 'Peeps',
                 items: [
                     {
                         xtype: 'list',
-                        height: 300,
                         id: 'PeepsList',
+                        ui: 'round',
                         modal: true,
                         mode: 'MULTI',
                         itemTpl: [

@@ -31,7 +31,10 @@ Ext.define('app.view.ProjectPanel', {
                 showAnimation: 'fadeIn',
                 scrollable: 'vertical',
                 itemTpl: [
-                    '<div>{name}</div>'
+                    '<div class="title">{name}</div>',
+                    '<div class="desc">{description}</div>',
+                    '<div class="group">{participants}</div>',
+                    '<div class="creator">-Created By: {user}</div>'
                 ],
                 store: 'projectStore',
                 plugins: [

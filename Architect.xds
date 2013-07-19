@@ -145,12 +145,6 @@
             ],
             "className": "js1"
         },
-        "3662be31-cc5e-4d2a-95ce-a06d550d6e06": {
-            "paths": [
-                "metadata/resource/css"
-            ],
-            "className": "css"
-        },
         "76c06b80-6f31-4cb0-b99c-79173bcf8867": {
             "paths": [
                 "metadata/view/ProjectPanel",
@@ -214,6 +208,12 @@
                 "app/controller/ProjectAddController.js"
             ],
             "className": "ProjectAddController"
+        },
+        "f507b986-2baa-4387-aa69-bc91ffd5f2e2": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
         }
     },
     "viewOrderMap": {
@@ -251,7 +251,7 @@
             "6a6457cf-590c-4bed-8798-99dcfccd4bb3",
             "4667094e-d269-4dd6-938b-57fa7ec93d2d",
             "c30706f9-cc4c-4141-8add-f9669fac7ddb",
-            "3662be31-cc5e-4d2a-95ce-a06d550d6e06"
+            "f507b986-2baa-4387-aa69-bc91ffd5f2e2"
         ],
         "app": [
             "application"

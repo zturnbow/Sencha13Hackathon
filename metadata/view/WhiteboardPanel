@@ -42,6 +42,7 @@
                             "    <div>",
                             "        <p>{description}</p>",
                             "    </div>",
+                            "    ",
                             "</div>"
                         ],
                         "designer|displayName": "itemTpl"

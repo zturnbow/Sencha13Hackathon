@@ -81,7 +81,7 @@
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "registerView #cancel"
+                "designer|controlQuery": "registerFormCancel"
             },
             "designerId": "183840ce-5917-4853-bcd3-74f670d5e636"
         }

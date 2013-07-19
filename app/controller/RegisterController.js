@@ -28,7 +28,7 @@ Ext.define('app.controller.RegisterController', {
             "#registerButton": {
                 tap: 'onRegister'
             },
-            "registerView #cancel": {
+            "registerFormCancel": {
                 tap: 'onCancel'
             }
         }

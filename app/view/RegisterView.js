@@ -21,9 +21,7 @@ Ext.define('app.view.RegisterView', {
         hidden: false,
         id: 'registerView',
         itemId: 'registerView',
-        layout: {
-            type: 'fit'
-        },
+        scrollable: false,
         items: [
             {
                 xtype: 'container',
@@ -65,7 +63,8 @@ Ext.define('app.view.RegisterView', {
                     },
                     {
                         xtype: 'button',
-                        itemId: 'cancel',
+                        id: 'registerFormCancel',
+                        itemId: 'registerFormCancel',
                         margin: '10%',
                         ui: 'decline',
                         width: '80%',

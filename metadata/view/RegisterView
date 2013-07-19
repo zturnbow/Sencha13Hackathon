@@ -11,7 +11,7 @@
         "itemId": "registerView",
         "designer|userClassName": "RegisterView",
         "designer|userAlias": "registerView",
-        "layout": "fit"
+        "scrollable": false
     },
     "designerId": "dac7811a-406f-45f7-98a5-2c6965558888",
     "cn": [
@@ -132,8 +132,8 @@
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": null,
-                        "itemId": "cancel",
+                        "id": "registerFormCancel",
+                        "itemId": "registerFormCancel",
                         "margin": "10%",
                         "ui": "decline",
                         "width": "80%",

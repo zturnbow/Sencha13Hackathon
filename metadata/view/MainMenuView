@@ -94,7 +94,7 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "centered": false,
-                                        "docked": "top",
+                                        "docked": null,
                                         "id": "loginUsernameField",
                                         "showAnimation": "fadeIn",
                                         "designer|displayName": "username",
@@ -116,7 +116,7 @@
                                     "codeClass": null,
                                     "userConfig": {
                                         "centered": false,
-                                        "docked": "top",
+                                        "docked": null,
                                         "id": "password",
                                         "designer|displayName": "password",
                                         "designer|createAlias": null,

@@ -67,7 +67,6 @@ Ext.define('app.view.MainMenuView', {
                                     {
                                         xtype: 'textfield',
                                         centered: false,
-                                        docked: 'top',
                                         id: 'loginUsernameField',
                                         showAnimation: 'fadeIn',
                                         labelAlign: 'bottom',
@@ -78,7 +77,6 @@ Ext.define('app.view.MainMenuView', {
                                     {
                                         xtype: 'passwordfield',
                                         centered: false,
-                                        docked: 'top',
                                         id: 'password',
                                         labelAlign: 'bottom',
                                         required: true,

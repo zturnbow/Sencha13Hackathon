@@ -19,8 +19,9 @@ Ext.define('app.view.ProjectPanel', {
     config: {
         id: 'ProjectPanel',
         layout: {
-            type: 'fit'
+            type: 'card'
         },
+        scrollable: true,
         items: [
             {
                 xtype: 'list',

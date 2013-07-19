@@ -25,6 +25,9 @@
                 "id": "ProjectListView",
                 "itemId": "projectListView",
                 "showAnimation": "fadeIn",
+                "scrollable": [
+                    "vertical"
+                ],
                 "store": "projectStore"
             },
             "designerId": "87b30d0b-0bbb-4340-b43e-5a6cd16ec7ff",

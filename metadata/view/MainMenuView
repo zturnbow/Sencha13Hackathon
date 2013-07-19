@@ -160,7 +160,7 @@
                                 "height": 32,
                                 "id": "loginButton",
                                 "itemId": "submit",
-                                "margin": "10%",
+                                "margin": "0 0 0 10%",
                                 "maxWidth": null,
                                 "style": "",
                                 "ui": "confirm",
@@ -182,7 +182,7 @@
                             "userConfig": {
                                 "id": "registerNewUserButton",
                                 "itemId": "register",
-                                "margin": "10%",
+                                "margin": "5 0 0 10%",
                                 "padding": null,
                                 "top": "",
                                 "ui": "action",

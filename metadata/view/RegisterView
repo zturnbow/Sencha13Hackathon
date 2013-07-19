@@ -115,7 +115,7 @@
                     "userConfig": {
                         "id": "registerButton",
                         "itemId": "register",
-                        "margin": "10%",
+                        "margin": "0 0 0 10%",
                         "ui": "confirm",
                         "width": "80%",
                         "designer|displayName": "register",

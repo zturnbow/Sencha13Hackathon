@@ -132,6 +132,7 @@ Ext.define('app.view.MainMenuView', {
                         xtype: 'button',
                         flex: 0,
                         height: 38,
+                        id: 'AddNewButton',
                         ui: 'action',
                         iconAlign: 'center',
                         iconCls: 'add',

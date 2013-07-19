@@ -57,6 +57,32 @@
                 "designer|controlQuery": "#ProjectListView"
             },
             "designerId": "3df5466b-11fe-4ca3-8ecf-c5627cfe62a7"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onButtonTap",
+                "implHandler": [
+                    "var view = Ext.ComponentManager.get(\"MainMenuView\");",
+                    "",
+                    "switch(view.getActiveItem().id){",
+                    "    case \"LoginView\":",
+                    "        console.log(\"login view\");",
+                    "        break;",
+                    "    default:",
+                    "        break;",
+                    "}"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#AddNewButton"
+            },
+            "designerId": "5cdaf755-4027-4a92-9f45-6037225e2476"
         }
     ]
 }

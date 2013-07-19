@@ -230,7 +230,8 @@
             "codeClass": null,
             "userConfig": {
                 "container|align": "center",
-                "docked": "bottom"
+                "docked": "bottom",
+                "designer|displayName": "BottomToolbar"
             },
             "designerId": "aa0074ec-f6af-46f9-9fec-1f9a888e8b4e",
             "cn": [
@@ -244,6 +245,7 @@
                     "userConfig": {
                         "layout|flex": 0,
                         "height": 38,
+                        "id": "AddNewButton",
                         "ui": "action",
                         "width": null,
                         "iconAlign": "center",

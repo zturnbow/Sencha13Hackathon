@@ -20,6 +20,9 @@ Ext.define('app.controller.ProjectController', {
         control: {
             "#ProjectListView": {
                 itemtap: 'onListItemTap'
+            },
+            "#AddNewButton": {
+                tap: 'onButtonTap'
             }
         }
     },
@@ -56,6 +59,18 @@ Ext.define('app.controller.ProjectController', {
         }
 
 
+    },
+
+    onButtonTap: function(button, e, eOpts) {
+        var view = Ext.ComponentManager.get("MainMenuView");
+
+        switch(view.getActiveItem().id){
+            case "LoginView":
+            console.log("login view");
+            break;
+            default:
+            break;
+        }
     }
 
 });

@@ -12,8 +12,8 @@
     Some description here
   </description>
 
-  <icon src="resources/icons/app-icon.png"/>
-  <rim:splash src="resources/images/splash-screen.png" />
+  <icon src="resources/icons/app-icon-hi-res.png"/>
+  <rim:splash src="resources/images/splash-screen-hi-res.png" />
   
   <access uri="*" subdomains="true" />
   <access url="https://whiteboard-latchd.rhcloud.com" subdomains="true"/>

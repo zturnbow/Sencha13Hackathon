@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "autoLoad": true,
-        "model": "Project",
+        "model": "Projects",
         "storeId": "projectStore",
         "designer|userClassName": "ProjectStore"
     },

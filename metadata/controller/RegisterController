@@ -30,6 +30,15 @@
                     "var pass1 = Ext.ComponentMgr.get(\"password1Field\").getValue();",
                     "var pass2 = Ext.ComponentMgr.get(\"password2Field\").getValue();",
                     "var email = Ext.ComponentMgr.get(\"emailField\").getValue();",
+                    "if(!uname || uname == \"\"){",
+                    " \tExt.Msg.alert('Username is required');",
+                    "    return;",
+                    "}",
+                    "",
+                    "if(!email || email == \"\"){",
+                    "    Ext.Msg.alert('email is required');",
+                    "    return;",
+                    "}",
                     "",
                     "if(pass1 == pass2){",
                     "",
@@ -63,27 +72,6 @@
                 "designer|controlQuery": "#registerButton"
             },
             "designerId": "bb82df04-b571-4f8e-8341-28e58ec60a58"
-        },
-        {
-            "type": "controlleraction",
-            "reference": {
-                "name": "listeners",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "fn": "onCancel",
-                "implHandler": [
-                    "var login = Ext.create(\"app.view.LoginView\");",
-                    "Ext.Viewport.remove(Ext.ComponentMgr.get(\"registerView\"));",
-                    "Ext.Viewport.add(login);",
-                    "Ext.Viewport.setActiveItem(login);"
-                ],
-                "name": "tap",
-                "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "registerFormCancel"
-            },
-            "designerId": "183840ce-5917-4853-bcd3-74f670d5e636"
         }
     ]
 }

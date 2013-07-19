@@ -20,7 +20,8 @@
             "MainMenuView",
             "RegisterView",
             "ProjectPanel",
-            "WhiteboardPanel"
+            "WhiteboardPanel",
+            "WhiteboardAddPanel"
         ],
         "controllers": [
             "LoginController",

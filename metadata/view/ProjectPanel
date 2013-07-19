@@ -46,6 +46,15 @@
                         "designer|displayName": "itemTpl"
                     },
                     "designerId": "822425d0-f21a-4fb1-929d-fbda0ad873af"
+                },
+                {
+                    "type": "Ext.plugin.PullRefresh",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "e99cfdf1-ca6d-49a2-9d87-8ccbf3eabb14"
                 }
             ]
         }

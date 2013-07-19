@@ -33,7 +33,12 @@ Ext.define('app.view.ProjectPanel', {
                 itemTpl: [
                     '<div>{name}</div>'
                 ],
-                store: 'projectStore'
+                store: 'projectStore',
+                plugins: [
+                    {
+                        type: 'pullrefresh'
+                    }
+                ]
             }
         ]
     }

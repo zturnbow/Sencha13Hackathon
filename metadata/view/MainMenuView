@@ -8,6 +8,8 @@
     "userConfig": {
         "container|animation": "slide",
         "container|animation.duration": 200,
+        "centered": false,
+        "fullscreen": false,
         "hideAnimation": "fadeOut",
         "id": "MainMenuView",
         "itemId": null,
@@ -25,6 +27,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "container|pack": "center",
                 "docked": "top",
                 "androidAnimation": false
             },
@@ -39,14 +42,14 @@
             "codeClass": null,
             "userConfig": {
                 "title": "Login",
+                "centered": false,
                 "hideAnimation": "fadeOut",
                 "id": "LoginView",
                 "itemId": "loginView",
                 "showAnimation": "fadeIn",
                 "style": "",
-                "ui": "dark",
-                "layout": "fit",
-                "scrollable": null,
+                "ui": null,
+                "scrollable": false,
                 "standardSubmit": true
             },
             "designerId": "ddcb10fa-71fe-4c45-afbf-cccaa1d4be2c",
@@ -61,8 +64,8 @@
                     "userConfig": {
                         "docked": null,
                         "style": null,
-                        "designer|displayName": "LoginContainer",
-                        "layout": null
+                        "ui": "",
+                        "designer|displayName": "LoginContainer"
                     },
                     "designerId": "df3cc6f3-64c5-4031-9a61-2c482520e6d3",
                     "cn": [
@@ -187,8 +190,10 @@
                 "fn": "initialize",
                 "implHandler": [
                     "this.callParent();",
+                    "try{",
                     "settings.getUsername();",
-                    "alert(settings.username);",
+                    "}catch(e){}",
+                    "",
                     "if(settings.username && settings.username !== null && settings.username !== \"\"){",
                     "    //Ext.ComponentMgr.get(\"MainMenuView\").pop();",
                     "    Ext.ComponentMgr.get(\"MainMenuView\").push(Ext.create(\"app.view.ProjectPanel\"));",

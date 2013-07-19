@@ -17,6 +17,8 @@ Ext.define('app.view.MainMenuView', {
     extend: 'Ext.navigation.View',
 
     config: {
+        centered: false,
+        fullscreen: false,
         hideAnimation: 'fadeOut',
         id: 'MainMenuView',
         showAnimation: 'fadeIn',
@@ -29,25 +31,28 @@ Ext.define('app.view.MainMenuView', {
         },
         navigationBar: {
             docked: 'top',
-            androidAnimation: false
+            androidAnimation: false,
+            layout: {
+                pack: 'center',
+                type: 'hbox'
+            }
         },
         items: [
             {
                 xtype: 'formpanel',
                 title: 'Login',
+                centered: false,
                 hideAnimation: 'fadeOut',
                 id: 'LoginView',
                 itemId: 'loginView',
                 showAnimation: 'fadeIn',
                 style: '',
-                ui: 'dark',
-                layout: {
-                    type: 'fit'
-                },
+                scrollable: false,
                 standardSubmit: true,
                 items: [
                     {
                         xtype: 'container',
+                        ui: '',
                         items: [
                             {
                                 xtype: 'fieldset',
@@ -112,13 +117,15 @@ Ext.define('app.view.MainMenuView', {
 
     initialize: function() {
         this.callParent();
-        settings.getUsername();
-        alert(settings.username);
-        if(settings.username && settings.username !== null && settings.username !== ""){
-            //Ext.ComponentMgr.get("MainMenuView").pop();
-            Ext.ComponentMgr.get("MainMenuView").push(Ext.create("app.view.ProjectPanel"));
-            //alert(settings.getUsername());
-        }
+        try{
+            settings.getUsername();
+        }catch(e){}
+
+            if(settings.username && settings.username !== null && settings.username !== ""){
+                //Ext.ComponentMgr.get("MainMenuView").pop();
+                Ext.ComponentMgr.get("MainMenuView").push(Ext.create("app.view.ProjectPanel"));
+                //alert(settings.getUsername());
+            }
     }
 
 });

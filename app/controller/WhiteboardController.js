@@ -23,23 +23,33 @@ Ext.define('app.controller.WhiteboardController', {
             },
             "#WhiteboardPanel": {
                 activate: 'onWhiteboardPanelActivate'
+            },
+            "#whiteboardSavePhoto": {
+                tap: 'onSavePhoto'
             }
         }
     },
 
     onAddPhoto: function(button, e, eOpts) {
-        Ext.device.Camera.capture({
-            source: 'camera',
-            destination: 'file',
-
-            success: function(url) {
-                this.fireEvent('change', this, url);
-            },
-            failure: function() {
-                Ext.Msg.alert('Error', 'There was an error when acquiring the picture.');
-            },
-            scope: this
+        /*Ext.device.Camera.capture({
+        quality:100,
+        destination: 'data',
+        source:'camera',
+        success: function(data) {
+        this.fireEvent('change', this, data);
+        },
+        failure: function() {
+        Ext.Msg.alert('Error', 'There was an error when acquiring the picture.');
+        },
+        scope: this
+        });*/
+        var _this = this;
+        $('body').on('photo_capture', function(event, data){
+            Ext.ComponentMgr.get("capturedPhoto").setSrc(data);
+            Ext.ComponentMgr.get("whiteboardAddPhoto").hide();
+            Ext.ComponentMgr.get("whiteboardSavePhoto").show();
         });
+        $('#picture').click();
     },
 
     onWhiteboardPanelActivate: function(newActiveItem, container, oldActiveItem, eOpts) {
@@ -48,9 +58,21 @@ Ext.define('app.controller.WhiteboardController', {
             button.setVisibility(true);
             button.setText("Whiteboard");
         }
+    },
 
-        Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Loading Whiteboards...' });
+    onSavePhoto: function(button, e, eOpts) {
+        var photodata = Ext.ComponentMgr.get("capturedPhoto").getSrc();
 
+        Ext.Ajax.request({
+            url: "https://"+settings.server_host+"/api/whiteboards",
+            method: "POST",
+            params: { mimetype: "image/jpeg", image:photodata },
+            success: function(response) {
+                var msg = Ext.JSON.decode(response.responseText);
+                alert(msg);
+                console.log(msg);
+            }
+        });
     }
 
 });

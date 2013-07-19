@@ -1,0 +1,14 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js2",
+        "url": "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js",
+        "id": "jquery"
+    },
+    "designerId": "44a34c6a-20da-4e21-995d-2fc60f7f8ce9"
+}

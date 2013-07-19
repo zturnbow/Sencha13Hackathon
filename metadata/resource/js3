@@ -1,0 +1,14 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "js3",
+        "url": "bb10.js",
+        "id": "bb10"
+    },
+    "designerId": "449ffb0b-9e6b-434e-8a20-0a7bdad6393a"
+}

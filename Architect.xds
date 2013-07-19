@@ -2,7 +2,6 @@
     "name": "Architect",
     "settings": {
         "urlPrefix": "http://localhost",
-        "exportPath": "/Users/JSDowning/Projects/SenchaCon",
         "spacesToIndent": 4,
         "lineEnding": "LF",
         "genTimestamps": false,
@@ -209,6 +208,26 @@
             ],
             "className": "ProjectAddController"
         },
+        "d3e78430-5064-478f-b819-928a1922ae5b": {
+            "paths": [
+                "metadata/resource/packager",
+                "",
+                "packager.json"
+            ],
+            "className": "packager"
+        },
+        "44a34c6a-20da-4e21-995d-2fc60f7f8ce9": {
+            "paths": [
+                "metadata/resource/js2"
+            ],
+            "className": "js2"
+        },
+        "449ffb0b-9e6b-434e-8a20-0a7bdad6393a": {
+            "paths": [
+                "metadata/resource/js3"
+            ],
+            "className": "js3"
+        },
         "f507b986-2baa-4387-aa69-bc91ffd5f2e2": {
             "paths": [
                 "metadata/resource/css1"
@@ -251,6 +270,10 @@
             "6a6457cf-590c-4bed-8798-99dcfccd4bb3",
             "4667094e-d269-4dd6-938b-57fa7ec93d2d",
             "c30706f9-cc4c-4141-8add-f9669fac7ddb",
+            "3662be31-cc5e-4d2a-95ce-a06d550d6e06",
+            "d3e78430-5064-478f-b819-928a1922ae5b",
+            "44a34c6a-20da-4e21-995d-2fc60f7f8ce9",
+            "449ffb0b-9e6b-434e-8a20-0a7bdad6393a",
             "f507b986-2baa-4387-aa69-bc91ffd5f2e2"
         ],
         "app": [

@@ -20,18 +20,25 @@
             "userConfig": {
                 "fn": "onAddPhoto",
                 "implHandler": [
-                    " Ext.device.Camera.capture({",
-                    "    source: 'camera',",
-                    "    destination: 'file',",
-                    "    ",
-                    "    success: function(url) {",
-                    "        this.fireEvent('change', this, url);",
-                    "    },",
-                    "    failure: function() {",
-                    "        Ext.Msg.alert('Error', 'There was an error when acquiring the picture.');",
-                    "    },",
-                    "    scope: this",
-                    "});"
+                    "/*Ext.device.Camera.capture({",
+                    "quality:100,",
+                    "destination: 'data',",
+                    "source:'camera',",
+                    "success: function(data) {",
+                    "this.fireEvent('change', this, data);",
+                    "},",
+                    "failure: function() {",
+                    "Ext.Msg.alert('Error', 'There was an error when acquiring the picture.');",
+                    "},",
+                    "scope: this",
+                    "});*/",
+                    "var _this = this;",
+                    "$('body').on('photo_capture', function(event, data){",
+                    "    Ext.ComponentMgr.get(\"capturedPhoto\").setSrc(data);",
+                    "    Ext.ComponentMgr.get(\"whiteboardAddPhoto\").hide();",
+                    "    Ext.ComponentMgr.get(\"whiteboardSavePhoto\").show();",
+                    "});",
+                    "$('#picture').click();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
@@ -63,6 +70,35 @@
                 "designer|controlQuery": "#WhiteboardPanel"
             },
             "designerId": "29ed7dea-c74c-4a77-86b5-9ac04a4217fa"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onSavePhoto",
+                "implHandler": [
+                    "var photodata = Ext.ComponentMgr.get(\"capturedPhoto\").getSrc();",
+                    "",
+                    "Ext.Ajax.request({",
+                    "    url: \"https://\"+settings.server_host+\"/api/whiteboards\",",
+                    "    method: \"POST\",",
+                    "    params: { mimetype: \"image/jpeg\", image:photodata },",
+                    "    success: function(response) {",
+                    "        var msg = Ext.JSON.decode(response.responseText);",
+                    "        alert(msg);",
+                    "        console.log(msg);",
+                    "    }",
+                    "});"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "#whiteboardSavePhoto"
+            },
+            "designerId": "8a642502-a44b-479f-b175-7c9627261596"
         }
     ]
 }

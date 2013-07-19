@@ -40,7 +40,8 @@ Ext.define('app.view.MainMenuView', {
                 {
                     xtype: 'button',
                     align: 'right',
-                    id: 'LogoutButton',
+                    id: 'logout',
+                    itemId: 'logout',
                     ui: 'decline',
                     iconAlign: 'center',
                     text: 'Logout'

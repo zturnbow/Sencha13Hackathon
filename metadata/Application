@@ -23,6 +23,9 @@
             "WhiteboardPanel",
             "WhiteboardAddPanel"
         ],
+        "requires": [
+            "Ext.device.Camera"
+        ],
         "controllers": [
             "LoginController",
             "RegisterController",

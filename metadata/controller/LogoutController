@@ -26,15 +26,16 @@
             "userConfig": {
                 "fn": "onLogout",
                 "implHandler": [
-                    "var loginView = Ext.create(\"app.view.LoginView\");",
+                    "//var loginView = Ext.create(\"app.view.LoginView\");",
                     "settings.setUsername(\"\");",
-                    "Ext.Viewport.remove(Ext.ComponentMgr.get(\"mainMenuView\"));",
-                    "Ext.Viewport.add(loginView);",
-                    "Ext.Viewport.setActiveItem(loginView);"
+                    "//Ext.Viewport.remove(Ext.ComponentMgr.get(\"mainMenuView\"));",
+                    "//Ext.Viewport.add(loginView);",
+                    "//Ext.Viewport.setActiveItem(loginView);",
+                    "Ext.ComponentMgr.get(\"MainMenuView\").pop();"
                 ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
-                "designer|controlQuery": "mainMenuView #logout"
+                "designer|controlQuery": "#logout"
             },
             "designerId": "41c4f32d-c30e-4e37-b985-39995a290eb7"
         }

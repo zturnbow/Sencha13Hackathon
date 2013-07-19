@@ -42,8 +42,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "align": "right",
-                        "id": "LogoutButton",
+                        "id": "logout",
+                        "itemId": "logout",
                         "ui": "decline",
+                        "designer|displayName": "logout",
                         "iconAlign": "center",
                         "text": "Logout"
                     },

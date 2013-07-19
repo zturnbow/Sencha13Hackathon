@@ -194,6 +194,45 @@
                                 "text": "Register"
                             },
                             "designerId": "4fd52e57-4b78-4f2b-a0a8-5df66b7de677"
+                        },
+                        {
+                            "type": "Ext.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "designerId": "f0ddad50-a2a3-460c-be6d-bd21b1df53a9",
+                            "cn": [
+                                {
+                                    "type": "Ext.Img",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 201,
+                                        "itemId": "myimg1"
+                                    },
+                                    "designerId": "afde7f6b-b8a8-4feb-866a-452c47b5bb1a",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMyimg1Tap",
+                                                "name": "tap"
+                                            },
+                                            "designerId": "853381ef-42f6-4f19-bf2d-d01e153ee92f"
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

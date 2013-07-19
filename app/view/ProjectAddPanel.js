@@ -15,16 +15,22 @@
 
 Ext.define('app.view.ProjectAddPanel', {
     extend: 'Ext.form.Panel',
+    alias: 'widget.projectaddpanel',
 
     config: {
         id: 'ProjectAddPanel',
+        scrollable: false,
         items: [
             {
                 xtype: 'textfield',
+                id: 'projectName',
+                itemId: 'projectName',
                 label: 'Name'
             },
             {
                 xtype: 'textareafield',
+                id: 'projectDesc',
+                itemId: 'projectDesc',
                 label: 'Desc',
                 autoCapitalize: true
             },

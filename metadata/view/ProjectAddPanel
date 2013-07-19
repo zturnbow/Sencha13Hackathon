@@ -7,7 +7,10 @@
     "codeClass": null,
     "userConfig": {
         "id": "ProjectAddPanel",
-        "designer|userClassName": "ProjectAddPanel"
+        "ui": null,
+        "designer|userClassName": "ProjectAddPanel",
+        "designer|userAlias": "projectaddpanel",
+        "scrollable": false
     },
     "designerId": "0b61d83c-ed08-4205-b0bd-e43a2459b662",
     "cn": [
@@ -19,7 +22,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "id": "projectName",
+                "itemId": "projectName",
                 "designer|displayName": "projectName",
+                "designer|createAlias": "",
                 "label": "Name"
             },
             "designerId": "9edd1d9c-5b60-48a1-990d-a5d2df2e4d88"
@@ -32,7 +38,10 @@
             },
             "codeClass": null,
             "userConfig": {
+                "id": "projectDesc",
+                "itemId": "projectDesc",
                 "designer|displayName": "projectDesc",
+                "designer|createAlias": null,
                 "label": "Desc",
                 "autoCapitalize": true
             },

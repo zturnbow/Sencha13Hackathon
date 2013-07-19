@@ -34,15 +34,21 @@ Ext.define('app.controller.ProjectAddController', {
     onButtonTap: function(button, e, eOpts) {
         var name = Ext.ComponentMgr.get("projectName").getValue();
         var desc = Ext.ComponentMgr.get("projectDesc").getValue();
-        if(!name || name == ""){
-            Ext.Msg.alert('A project name is required');
+
+        if(!name || name === ""){
+            Ext.Msg.alert('A name is required');
             return;
         }
 
-        if(!desc || desc == ""){
-            Ext.Msg.alert('A project description is required');
+        if(!desc || desc === ""){
+            Ext.Msg.alert('A description is required');
             return;
         }
+
+        var submission = {
+            name: name,
+            description: desc
+        };
 
         Ext.Ajax.request({
             url: "https://"+settings.server_host+"/api/projects",
@@ -50,7 +56,7 @@ Ext.define('app.controller.ProjectAddController', {
             params: submission,
             success: function(response){
                 console.log(response);
-                Ext.ComponentMgr.get("WhiteboardAddPanel").pop();
+                Ext.ComponentMgr.get("MainMenuView").pop();
             }
         });
 

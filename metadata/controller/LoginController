@@ -66,7 +66,7 @@
                     "var register;",
                     "register = Ext.ComponentMgr.get(\"registerView\");",
                     "if(!register)",
-                    "    register = Ext.create(\"app.view.RegisterView\");",
+                    "register = Ext.create(\"app.view.RegisterView\");",
                     "register.config.title=\"Register New User\";",
                     "Ext.ComponentMgr.get(\"MainMenuView\").push(register);"
                 ],

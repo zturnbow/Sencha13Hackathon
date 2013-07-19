@@ -47,7 +47,9 @@ Ext.define('app.controller.ProjectAddController', {
 
         var submission = {
             name: name,
-            description: desc
+            description: desc,
+            user: settings.getUsername(),
+            participants: []
         };
 
         Ext.Ajax.request({
@@ -56,8 +58,13 @@ Ext.define('app.controller.ProjectAddController', {
             params: submission,
             success: function(response){
                 console.log(response);
-                Ext.ComponentMgr.get("MainMenuView").pop();
+                Ext.StoreManager.get("projectStore").load({
+                    callback: function(records,operation,success){
+                        Ext.ComponentMgr.get("MainMenuView").pop();
+                    }
+                });
             }
+
         });
 
 

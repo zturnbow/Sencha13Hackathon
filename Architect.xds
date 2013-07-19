@@ -2,7 +2,7 @@
     "name": "Architect",
     "settings": {
         "urlPrefix": "http://localhost",
-        "exportPath": "/Library/WebServer/Documents/whiteboard",
+        "exportPath": "/Users/JSDowning/Projects/SenchaCon",
         "spacesToIndent": 4,
         "lineEnding": "LF",
         "genTimestamps": false,

@@ -19,6 +19,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|displayName": "projectName",
                 "label": "Name"
             },
             "designerId": "9edd1d9c-5b60-48a1-990d-a5d2df2e4d88"
@@ -31,7 +32,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "label": "Desc"
+                "designer|displayName": "projectDesc",
+                "label": "Desc",
+                "autoCapitalize": true
             },
             "designerId": "1832d5b9-850c-43a4-8fef-ad8bea4a520b"
         },
@@ -43,8 +46,11 @@
             },
             "codeClass": null,
             "userConfig": {
+                "id": "submitButton",
+                "itemId": "submit",
                 "margin": "10 0 0 0",
                 "ui": "confirm",
+                "designer|displayName": "submit",
                 "text": "Submit"
             },
             "designerId": "34b28d7f-42ec-4acd-b1c9-51aba036cafc"

@@ -25,10 +25,13 @@ Ext.define('app.view.ProjectAddPanel', {
             },
             {
                 xtype: 'textareafield',
-                label: 'Desc'
+                label: 'Desc',
+                autoCapitalize: true
             },
             {
                 xtype: 'button',
+                id: 'submitButton',
+                itemId: 'submit',
                 margin: '10 0 0 0',
                 ui: 'confirm',
                 text: 'Submit'

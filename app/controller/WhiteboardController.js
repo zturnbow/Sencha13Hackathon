@@ -66,7 +66,7 @@ Ext.define('app.controller.WhiteboardController', {
         Ext.Ajax.request({
             url: "https://"+settings.server_host+"/api/whiteboards",
             method: "POST",
-            params: { mimetype: "image/jpeg", data:photodata },
+            params: { mimetype: "image/jpeg", image:photodata },
             success: function(response) {
                 var msg = Ext.JSON.decode(response.responseText);
                 alert(msg);

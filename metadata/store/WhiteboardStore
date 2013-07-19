@@ -9,12 +9,13 @@
         "autoLoad": true,
         "model": "Whiteboard",
         "storeId": "WhiteboardStore",
+        "syncRemovedRecords": false,
         "designer|userClassName": "WhiteboardStore"
     },
     "designerId": "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c",
     "cn": [
         {
-            "type": "Ext.data.proxy.Rest",
+            "type": "Ext.data.proxy.Ajax",
             "reference": {
                 "name": "proxy",
                 "type": "object"

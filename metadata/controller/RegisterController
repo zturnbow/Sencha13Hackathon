@@ -31,7 +31,7 @@
                     "var pass2 = Ext.ComponentMgr.get(\"password2Field\").getValue();",
                     "var email = Ext.ComponentMgr.get(\"emailField\").getValue();",
                     "if(!uname || uname == \"\"){",
-                    " \tExt.Msg.alert('Username is required');",
+                    "    Ext.Msg.alert('Username is required');",
                     "    return;",
                     "}",
                     "",

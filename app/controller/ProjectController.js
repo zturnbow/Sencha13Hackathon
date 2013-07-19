@@ -25,8 +25,37 @@ Ext.define('app.controller.ProjectController', {
     },
 
     onListItemTap: function(dataview, index, target, record, e, eOpts) {
+        Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Loading Whiteboards...' });
+
         var newView = Ext.create("app.view.WhiteboardPanel");
-        Ext.ComponentMgr.get("MainMenuView").push(newView);
+
+        var store = Ext.StoreManager.get("WhiteboardStore");
+
+        if(store){
+            var url = encodeURI("https://"+settings.server_host+"/api/whiteboards/"+record.data.name);
+            store.config.proxy.url = url;
+            console.log("loading "+url);
+
+            store.setProxy({
+                type: 'ajax',
+                url: url,
+                reader: {
+                    type: 'json'
+                }
+            });
+
+
+            store.load({
+                callback: function(records,operation,success){
+                    Ext.ComponentMgr.get("WhiteboardList").refresh();
+                    Ext.ComponentMgr.get("MainMenuView").push(newView);
+                    Ext.Viewport.setMasked(false);
+                }
+            });
+
+        }
+
+
     }
 
 });

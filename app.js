@@ -33,16 +33,15 @@ Ext.application({
         'MainMenuView',
         'RegisterView',
         'ProjectPanel',
-        'WhiteboardPanel',
-        'ProjectAddPanel',
-        'WhiteboardAddPanel'
+        'WhiteboardPanel'
     ],
     controllers: [
         'LoginController',
         'RegisterController',
         'LogoutController',
         'ProjectController',
-        'WhiteboardController'
+        'WhiteboardController',
+        'ProjectAddController'
     ],
     name: 'app',
 

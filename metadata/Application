@@ -27,7 +27,8 @@
             "RegisterController",
             "LogoutController",
             "ProjectController",
-            "WhiteboardController"
+            "WhiteboardController",
+            "ProjectAddController"
         ],
         "name": "app"
     },

@@ -43,7 +43,11 @@ Ext.define('app.controller.WhiteboardController', {
     },
 
     onWhiteboardPanelActivate: function(newActiveItem, container, oldActiveItem, eOpts) {
-        Ext.ComponentManager.get("AddNewButton").setText("Whiteboard");
+        var button = Ext.ComponentManager.get("AddNewButton");
+        if(button){
+            button.setVisibility(true);
+            button.setText("Whiteboard");
+        }
     }
 
 });

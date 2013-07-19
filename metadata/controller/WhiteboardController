@@ -49,7 +49,11 @@
             "userConfig": {
                 "fn": "onWhiteboardPanelActivate",
                 "implHandler": [
-                    "Ext.ComponentManager.get(\"AddNewButton\").setText(\"Whiteboard\");"
+                    "var button = Ext.ComponentManager.get(\"AddNewButton\");",
+                    "if(button){",
+                    "\tbutton.setVisibility(true);",
+                    "    button.setText(\"Whiteboard\");",
+                    "}"
                 ],
                 "name": "activate",
                 "designer|targetType": "WhiteboardPanel",

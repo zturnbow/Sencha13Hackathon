@@ -27,6 +27,9 @@ Ext.define('app.controller.LoginController', {
             },
             "#registerNewUserButton": {
                 tap: 'onRegister'
+            },
+            "#LoginView": {
+                activate: 'onFormpanelActivate'
             }
         }
     },
@@ -64,6 +67,13 @@ Ext.define('app.controller.LoginController', {
         register = Ext.create("app.view.RegisterView");
         register.config.title="Register New User";
         Ext.ComponentMgr.get("MainMenuView").push(register);
+    },
+
+    onFormpanelActivate: function(newActiveItem, container, oldActiveItem, eOpts) {
+        var button = Ext.ComponentManager.get("AddNewButton");
+        if(button){
+            button.setVisibility(false);
+        }
     }
 
 });

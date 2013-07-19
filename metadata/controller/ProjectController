@@ -71,14 +71,20 @@
                     "var view = Ext.ComponentManager.get(\"MainMenuView\");",
                     "var newProject = Ext.create(\"app.view.ProjectAddPanel\");",
                     "var newWhite = Ext.create(\"app.view.WhiteboardAddPanel\");",
+                    "var reg = Ext.create(\"app.view.RegisterView\");",
+                    "",
                     "var id = view.getActiveItem().id;",
                     "",
                     "switch(id){",
                     "    case \"ProjectPanel\":",
-                    "    view.push(newProject);",
-                    "    break;",
+                    "    \tview.push(newProject);",
+                    "    \tbreak;",
                     "    case \"WhiteboardPanel\":",
-                    "    view.push(newWhite);",
+                    "    \tview.push(newWhite);",
+                    "    \tbreak;",
+                    "    case \"Login View\":",
+                    "        //view.push(reg);",
+                    "        break;",
                     "    default:",
                     "    break;",
                     "}"
@@ -99,7 +105,11 @@
             "userConfig": {
                 "fn": "onProjectPanelActivate",
                 "implHandler": [
-                    "Ext.ComponentManager.get(\"AddNewButton\").setText(\"Project\");"
+                    "var button = Ext.ComponentManager.get(\"AddNewButton\");",
+                    "if(button){",
+                    "\tbutton.setVisibility(true);",
+                    "\tbutton.setText(\"Project\");",
+                    "}"
                 ],
                 "name": "activate",
                 "designer|targetType": "ProjectPanel",

@@ -58,9 +58,11 @@ Ext.define('app.controller.WhiteboardController', {
             button.setVisibility(true);
             button.setText("Whiteboard");
         }
+<<<<<<< HEAD
 
         Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Loading Whiteboards...' });
 
+=======
     },
 
     onSavePhoto: function(button, e, eOpts) {
@@ -76,6 +78,7 @@ Ext.define('app.controller.WhiteboardController', {
                 console.log(msg);
             }
         });
+>>>>>>> 10474236b6560d8d5286223f840e7db00e4a7f53
     }
 
 });

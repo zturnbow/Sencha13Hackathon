@@ -8,26 +8,31 @@
     "userConfig": {
         "models": [
             "User",
-            "projects",
-            "image",
             "Project",
             "Whiteboard"
         ],
         "stores": [
             "UserStore",
             "ProjectStore",
-            "imageStore",
             "WhiteboardStore"
         ],
         "views": [
             "MainMenuView",
-            "ProjectList",
-            "RegisterView"
+            "RegisterView",
+            "ProjectPanel",
+            "WhiteboardPanel",
+            "WhiteboardAddPanel"
+        ],
+        "requires": [
+            "Ext.device.Camera"
         ],
         "controllers": [
             "LoginController",
             "RegisterController",
-            "LogoutController"
+            "LogoutController",
+            "ProjectController",
+            "WhiteboardController",
+            "ProjectAddController"
         ],
         "name": "app"
     },

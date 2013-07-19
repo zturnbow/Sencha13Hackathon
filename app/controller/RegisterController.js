@@ -27,9 +27,6 @@ Ext.define('app.controller.RegisterController', {
         control: {
             "#registerButton": {
                 tap: 'onRegister'
-            },
-            "registerFormCancel": {
-                tap: 'onCancel'
             }
         }
     },
@@ -39,6 +36,15 @@ Ext.define('app.controller.RegisterController', {
         var pass1 = Ext.ComponentMgr.get("password1Field").getValue();
         var pass2 = Ext.ComponentMgr.get("password2Field").getValue();
         var email = Ext.ComponentMgr.get("emailField").getValue();
+        if(!uname || uname == ""){
+            Ext.Msg.alert('Username is required');
+            return;
+        }
+
+        if(!email || email == ""){
+            Ext.Msg.alert('email is required');
+            return;
+        }
 
         if(pass1 == pass2){
 
@@ -66,13 +72,6 @@ Ext.define('app.controller.RegisterController', {
 
         }
 
-    },
-
-    onCancel: function(button, e, eOpts) {
-        var login = Ext.create("app.view.LoginView");
-        Ext.Viewport.remove(Ext.ComponentMgr.get("registerView"));
-        Ext.Viewport.add(login);
-        Ext.Viewport.setActiveItem(login);
     }
 
 });

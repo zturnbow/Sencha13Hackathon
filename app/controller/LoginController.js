@@ -58,7 +58,10 @@ Ext.define('app.controller.LoginController', {
 
     onRegister: function(button, e, eOpts) {
         console.log("register view!!!");
-        var register = Ext.create("app.view.RegisterView");
+        var register;
+        register = Ext.ComponentMgr.get("registerView");
+        if(!register)
+        register = Ext.create("app.view.RegisterView");
         register.config.title="Register New User";
         Ext.ComponentMgr.get("MainMenuView").push(register);
     }

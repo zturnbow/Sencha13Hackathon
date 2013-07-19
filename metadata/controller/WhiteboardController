@@ -51,9 +51,12 @@
                 "implHandler": [
                     "var button = Ext.ComponentManager.get(\"AddNewButton\");",
                     "if(button){",
-                    "\tbutton.setVisibility(true);",
+                    "    button.setVisibility(true);",
                     "    button.setText(\"Whiteboard\");",
-                    "}"
+                    "}",
+                    "",
+                    "Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Loading Whiteboards...' });",
+                    ""
                 ],
                 "name": "activate",
                 "designer|targetType": "WhiteboardPanel",

@@ -48,6 +48,9 @@ Ext.define('app.controller.WhiteboardController', {
             button.setVisibility(true);
             button.setText("Whiteboard");
         }
+
+        Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Loading Whiteboards...' });
+
     }
 
 });

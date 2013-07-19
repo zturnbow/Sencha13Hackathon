@@ -17,7 +17,20 @@ Ext.define('app.view.WhiteboardAddPanel', {
     extend: 'Ext.Panel',
 
     config: {
-        id: 'WhiteboardAddPanel'
+        id: 'WhiteboardAddPanel',
+        items: [
+            {
+                xtype: 'button',
+                centered: true,
+                id: 'whiteboardAddPhoto',
+                itemId: 'whiteboardAddPhoto',
+                left: '',
+                ui: 'plain',
+                iconAlign: 'center',
+                iconCls: 'add',
+                text: ' Add Photo'
+            }
+        ]
     }
 
 });

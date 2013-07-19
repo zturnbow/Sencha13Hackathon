@@ -17,5 +17,15 @@ Ext.define('app.controller.WhiteboardController', {
     extend: 'Ext.app.Controller',
 
     config: {
+        control: {
+            "#whiteboardAddPhoto": {
+                tap: 'onAddPhoto'
+            }
+        }
+    },
+
+    onAddPhoto: function(button, e, eOpts) {
+
     }
+
 });

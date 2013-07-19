@@ -33,8 +33,12 @@ Ext.application({
         'MainMenuView',
         'RegisterView',
         'ProjectPanel',
+<<<<<<< .merge_file_zwfA5j
         'WhiteboardPanel',
         'WhiteboardAddPanel'
+=======
+        'WhiteboardPanel'
+>>>>>>> .merge_file_3YPh3L
     ],
     controllers: [
         'LoginController',

@@ -13,6 +13,23 @@
     "designerId": "51339b7f-4be1-4002-aece-b703a2f2ea26",
     "cn": [
         {
+            "type": "Ext.Img",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": false,
+                "height": 201,
+                "id": "capturedPhoto",
+                "itemId": "capturedPhoto",
+                "margin": "20% 0 0 0",
+                "src": "resources/images/blank.png"
+            },
+            "designerId": "852ca8a6-181e-410a-9583-eb6b9e8d3a87"
+        },
+        {
             "type": "Ext.Button",
             "reference": {
                 "name": "items",
@@ -20,19 +37,42 @@
             },
             "codeClass": null,
             "userConfig": {
-                "centered": true,
+                "centered": false,
+                "html": null,
                 "id": "whiteboardAddPhoto",
                 "itemId": "whiteboardAddPhoto",
                 "left": "",
-                "margin": null,
+                "margin": "0 20% 0 20%",
+                "style": null,
                 "top": null,
-                "ui": "plain",
+                "ui": "action",
                 "width": null,
-                "iconAlign": "center",
+                "icon": "true",
+                "iconAlign": null,
                 "iconCls": "add",
-                "text": " Add Photo"
+                "text": "Take Photo"
             },
             "designerId": "ef972dfd-6ab9-4b5b-b4b5-a538381b0e57"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "hidden": true,
+                "id": "whiteboardSavePhoto",
+                "itemId": "whiteboardSavePhoto",
+                "margin": "10 20% 0 20%",
+                "ui": "confirm",
+                "icon": null,
+                "iconAlign": null,
+                "iconCls": "action",
+                "text": "Save Photo"
+            },
+            "designerId": "25f8d840-9d03-456d-8cbd-abf5fa4d4a5a"
         }
     ]
 }

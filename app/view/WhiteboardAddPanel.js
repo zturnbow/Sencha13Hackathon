@@ -20,15 +20,35 @@ Ext.define('app.view.WhiteboardAddPanel', {
         id: 'WhiteboardAddPanel',
         items: [
             {
+                xtype: 'image',
+                centered: false,
+                height: 201,
+                id: 'capturedPhoto',
+                itemId: 'capturedPhoto',
+                margin: '20% 0 0 0',
+                src: 'resources/images/blank.png'
+            },
+            {
                 xtype: 'button',
-                centered: true,
+                centered: false,
                 id: 'whiteboardAddPhoto',
                 itemId: 'whiteboardAddPhoto',
                 left: '',
-                ui: 'plain',
-                iconAlign: 'center',
+                margin: '0 20% 0 20%',
+                ui: 'action',
+                icon: 'true',
                 iconCls: 'add',
-                text: ' Add Photo'
+                text: 'Take Photo'
+            },
+            {
+                xtype: 'button',
+                hidden: true,
+                id: 'whiteboardSavePhoto',
+                itemId: 'whiteboardSavePhoto',
+                margin: '10 20% 0 20%',
+                ui: 'confirm',
+                iconCls: 'action',
+                text: 'Save Photo'
             }
         ]
     }

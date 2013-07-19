@@ -21,7 +21,10 @@
   <feature id="blackberry.app" required="true" version="1.0.0.0">
         <param name="websecurity" value="disable" />
   </feature>
-
+  <rim:permissions>
+	<rim:permit>use_camera</rim:permit>
+	<rim:permit>access_shared</rim:permit>
+  </rim:permissions>
   <content src="app.html" rim:allowInvokeParams="true"/>
 
 </widget>

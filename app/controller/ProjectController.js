@@ -36,6 +36,7 @@ Ext.define('app.controller.ProjectController', {
         var newView = Ext.create("app.view.WhiteboardPanel");
 
         var store = Ext.StoreManager.get("WhiteboardStore");
+        settings.current_project=record.data.name;
 
         if(store){
             var url = encodeURI(settings.server_prefix+settings.server_host+"/api/whiteboards/"+record.data.name);

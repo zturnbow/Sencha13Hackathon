@@ -67,9 +67,9 @@ Ext.define('app.controller.WhiteboardController', {
         var photodata = Ext.ComponentMgr.get("capturedPhoto").getSrc();
         Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Saving Photo...' });
         Ext.Ajax.request({
-            url: settings.server_prefix+settings.server_host+"/api/whiteboards/"+settings.record.data.name,
+            url: settings.server_prefix+settings.server_host+"/api/whiteboards/"+settings.current_project,
             method: "POST",
-            params: { mimetype: "image/jpeg", image:photodata },
+            params: { mimetype: "image/jpeg", image:photodata, project: settings.current_project },
             success: function(response) {
                 var msg = Ext.JSON.decode(response.responseText);
                 if(msg.success){

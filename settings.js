@@ -5,6 +5,7 @@ settings.server_prefix = "http://";
 settings.server_host = "166.78.17.230:8080";
 settings.username = null;
 settings.record = null;
+settings.current_project = "Milton";
 
 settings.setUsername = function(username){
  if(typeof(Storage)!=="undefined")

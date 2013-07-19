@@ -182,6 +182,22 @@
                 "app/controller/WhiteboardController.js"
             ],
             "className": "WhiteboardController"
+        },
+        "0b61d83c-ed08-4205-b0bd-e43a2459b662": {
+            "paths": [
+                "metadata/view/ProjectAddPanel",
+                "app/view/override/ProjectAddPanel.js",
+                "app/view/ProjectAddPanel.js"
+            ],
+            "className": "ProjectAddPanel"
+        },
+        "51339b7f-4be1-4002-aece-b703a2f2ea26": {
+            "paths": [
+                "metadata/view/WhiteboardAddPanel",
+                "app/view/override/WhiteboardAddPanel.js",
+                "app/view/WhiteboardAddPanel.js"
+            ],
+            "className": "WhiteboardAddPanel"
         }
     },
     "viewOrderMap": {
@@ -189,7 +205,9 @@
             "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
             "dac7811a-406f-45f7-98a5-2c6965558888",
             "76c06b80-6f31-4cb0-b99c-79173bcf8867",
-            "300389f4-f250-49f2-81d9-c5484720fd8e"
+            "300389f4-f250-49f2-81d9-c5484720fd8e",
+            "0b61d83c-ed08-4205-b0bd-e43a2459b662",
+            "51339b7f-4be1-4002-aece-b703a2f2ea26"
         ],
         "store": [
             "7dc7745b-f467-445d-9ea0-fe60358dabb3",

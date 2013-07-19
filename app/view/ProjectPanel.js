@@ -28,6 +28,7 @@ Ext.define('app.view.ProjectPanel', {
                 id: 'ProjectListView',
                 itemId: 'projectListView',
                 showAnimation: 'fadeIn',
+                scrollable: 'vertical',
                 itemTpl: [
                     '<div>{name}</div>'
                 ],

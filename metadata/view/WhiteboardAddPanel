@@ -1,0 +1,38 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "html": null,
+        "id": "WhiteboardAddPanel",
+        "designer|userClassName": "WhiteboardAddPanel"
+    },
+    "designerId": "51339b7f-4be1-4002-aece-b703a2f2ea26",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "centered": true,
+                "id": "whiteboardAddPhoto",
+                "itemId": "whiteboardAddPhoto",
+                "left": "",
+                "margin": null,
+                "top": null,
+                "ui": "plain",
+                "width": null,
+                "iconAlign": "center",
+                "iconCls": "add",
+                "text": " Add Photo"
+            },
+            "designerId": "ef972dfd-6ab9-4b5b-b4b5-a538381b0e57"
+        }
+    ]
+}

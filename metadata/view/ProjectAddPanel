@@ -1,0 +1,53 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "ProjectAddPanel",
+        "designer|userClassName": "ProjectAddPanel"
+    },
+    "designerId": "0b61d83c-ed08-4205-b0bd-e43a2459b662",
+    "cn": [
+        {
+            "type": "Ext.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Name"
+            },
+            "designerId": "9edd1d9c-5b60-48a1-990d-a5d2df2e4d88"
+        },
+        {
+            "type": "Ext.field.TextArea",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "label": "Desc"
+            },
+            "designerId": "1832d5b9-850c-43a4-8fef-ad8bea4a520b"
+        },
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "margin": "10 0 0 0",
+                "ui": "confirm",
+                "text": "Submit"
+            },
+            "designerId": "34b28d7f-42ec-4acd-b1c9-51aba036cafc"
+        }
+    ]
+}

@@ -33,7 +33,9 @@ Ext.application({
         'MainMenuView',
         'RegisterView',
         'ProjectPanel',
-        'WhiteboardPanel'
+        'WhiteboardPanel',
+        'ProjectAddPanel',
+        'WhiteboardAddPanel'
     ],
     controllers: [
         'LoginController',

@@ -12,10 +12,15 @@
     Some description here
   </description>
 
-  <!--<icon src="resources/icons/BB10Icon.png"/>-->
+  <icon src="resources/icons/app-icon.png"/>
   <rim:splash src="resources/images/splash-screen.png" />
   
   <access uri="*" subdomains="true" />
+  <access url="https://whiteboard-latchd.rhcloud.com" subdomains="true"/>
+
+  <feature id="blackberry.app" required="true" version="1.0.0.0">
+        <param name="websecurity" value="disable" />
+  </feature>
 
   <content src="app.html" rim:allowInvokeParams="true"/>
 

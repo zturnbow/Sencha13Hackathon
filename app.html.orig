@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!-- Auto Generated with Sencha Architect -->
+<!-- Modifications to this file will be overwritten. -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Architect</title>
+    <script>
+        var Ext = Ext || {};
+        Ext.theme = {
+            name: "Default"
+        };
+    </script>
+<<<<<<< HEAD
+    <script src="http://cdn.sencha.com/touch/sencha-touch-2.2.1/sencha-touch-all-debug.js?_dc=1374242320386"></script>
+    <link rel="stylesheet" href="http://cdn.sencha.com/touch/sencha-touch-2.2.1/resources/css/sencha-touch.css?_dc=1374242320386">
+    <script src="settings.js?_dc=1374242320386"></script>
+    <script src="util.js?_dc=1374242320386"></script>
+    <link rel="stylesheet" href="sencha-touch.css?_dc=1374242320386" id="sencha-touch">
+    <script type="text/javascript" src="app.js?_dc=1374242320386"></script>
+=======
+    <script src="http://cdn.sencha.com/touch/sencha-touch-2.2.1/sencha-touch-all-debug.js?_dc=1374241340335"></script>
+    <link rel="stylesheet" href="http://cdn.sencha.com/touch/sencha-touch-2.2.1/resources/css/sencha-touch.css?_dc=1374241340335">
+    <script src="settings.js?_dc=1374241340335"></script>
+    <script src="util.js?_dc=1374241340335"></script>
+    <link rel="stylesheet" href="sencha-touch.css?_dc=1374241340335" id="sencha-touch">
+    <script type="text/javascript" src="app.js?_dc=1374241340335"></script>
+
+>>>>>>> 160f7ce883bb869133baf832873c4ebf53df0350
+</head>
+<body></body>
+</html>

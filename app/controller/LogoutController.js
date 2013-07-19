@@ -37,7 +37,7 @@ Ext.define('app.controller.LogoutController', {
         //Ext.Viewport.remove(Ext.ComponentMgr.get("mainMenuView"));
         //Ext.Viewport.add(loginView);
         //Ext.Viewport.setActiveItem(loginView);
-        Ext.ComponentMgr.get("MainMenuView").pop();
+        Ext.ComponentMgr.get("MainMenuView").reset();
     }
 
 });

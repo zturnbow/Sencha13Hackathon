@@ -1,8 +1,9 @@
 settings = {};
 //settings.server_host = "localhost:8080";
 settings.server_host = "whiteboard-latchd.rhcloud.com";
+//settings.server_host = "166.78.17.230";
 settings.username = null;
-
+settings.record = null;
 
 settings.setUsername = function(username){
  if(typeof(Storage)!=="undefined")

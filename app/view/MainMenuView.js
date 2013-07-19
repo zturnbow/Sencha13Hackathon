@@ -119,11 +119,24 @@ Ext.define('app.view.MainMenuView', {
                             },
                             {
                                 xtype: 'container',
+                                style: 'text-align:center;',
+                                styleHtmlContent: true,
                                 items: [
                                     {
                                         xtype: 'image',
-                                        height: 201,
-                                        itemId: 'myimg1'
+                                        centered: true,
+                                        height: 45,
+                                        id: 'loginAboutImage',
+                                        itemId: 'loginAboutImage',
+                                        width: 45,
+                                        src: 'resources/images/icon_menu_info.png'
+                                    },
+                                    {
+                                        xtype: 'label',
+                                        html: 'About',
+                                        margin: '50 0 0 0',
+                                        style: 'text-align:center;',
+                                        styleHtmlContent: true
                                     }
                                 ]
                             }
@@ -156,13 +169,19 @@ Ext.define('app.view.MainMenuView', {
             {
                 fn: 'onMyimg1Tap',
                 event: 'tap',
-                delegate: '#myimg1'
+                delegate: '#loginAboutImage'
             }
         ]
     },
 
     onMyimg1Tap: function(image, e, eOpts) {
-
+        var about;
+        about = Ext.ComponentMgr.get("About");
+        if(!about){
+            about = Ext.create("app.view.About");
+        }
+        about.config.title = "About";
+        Ext.ComponentMgr.get("MainMenuView").push(register);
     },
 
     initialize: function() {

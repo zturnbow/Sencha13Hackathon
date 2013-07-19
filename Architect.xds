@@ -234,10 +234,19 @@
                 "packager.json"
             ],
             "className": "packager"
+        },
+        "0932c7d5-9875-4d75-ae28-a872e6c212c2": {
+            "paths": [
+                "metadata/view/About",
+                "app/view/override/About.js",
+                "app/view/About.js"
+            ],
+            "className": "About"
         }
     },
     "viewOrderMap": {
         "view": [
+            "0932c7d5-9875-4d75-ae28-a872e6c212c2",
             "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
             "dac7811a-406f-45f7-98a5-2c6965558888",
             "76c06b80-6f31-4cb0-b99c-79173bcf8867",

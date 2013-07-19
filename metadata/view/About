@@ -1,0 +1,16 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "html": "<br/><center><h2>Whiteboard Capture</h2><br/><h4>Team Bright House</h4><br/>Zac Turnbow<br/>Tommy Adamski<br/>Jeff Downing<br/>Sam Weirich<br/>Gabriel Reiser<br/><br/><img height=60 width=160 src=\"http://www.sencha.com/img/sencha-large.png\"><br/><br/><img src=\"http://julien.danjou.info/media/images/github.svg\" height=60 width=160><a href=\"https://github.com/zturnbow/Sencha13Hackathon\">https://github.com/zturnbow/Sencha13Hackathon</a></center>",
+        "id": "about",
+        "itemId": "about",
+        "styleHtmlContent": true,
+        "designer|userClassName": "About"
+    },
+    "designerId": "0932c7d5-9875-4d75-ae28-a872e6c212c2"
+}

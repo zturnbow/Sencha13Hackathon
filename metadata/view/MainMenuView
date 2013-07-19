@@ -202,6 +202,10 @@
                                 "type": "array"
                             },
                             "codeClass": null,
+                            "userConfig": {
+                                "style": "text-align:center;",
+                                "styleHtmlContent": true
+                            },
                             "designerId": "f0ddad50-a2a3-460c-be6d-bd21b1df53a9",
                             "cn": [
                                 {
@@ -212,8 +216,12 @@
                                     },
                                     "codeClass": null,
                                     "userConfig": {
-                                        "height": 201,
-                                        "itemId": "myimg1"
+                                        "centered": true,
+                                        "height": 45,
+                                        "id": "loginAboutImage",
+                                        "itemId": "loginAboutImage",
+                                        "width": 45,
+                                        "src": "resources/images/icon_menu_info.png"
                                     },
                                     "designerId": "afde7f6b-b8a8-4feb-866a-452c47b5bb1a",
                                     "cn": [
@@ -226,11 +234,35 @@
                                             "codeClass": null,
                                             "userConfig": {
                                                 "fn": "onMyimg1Tap",
+                                                "implHandler": [
+                                                    "var about;",
+                                                    "about = Ext.ComponentMgr.get(\"About\");",
+                                                    "if(!about){",
+                                                    " about = Ext.create(\"app.view.About\");",
+                                                    "}",
+                                                    "about.config.title = \"About\";",
+                                                    "Ext.ComponentMgr.get(\"MainMenuView\").push(register);"
+                                                ],
                                                 "name": "tap"
                                             },
                                             "designerId": "853381ef-42f6-4f19-bf2d-d01e153ee92f"
                                         }
                                     ]
+                                },
+                                {
+                                    "type": "Ext.Label",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": "About",
+                                        "margin": "50 0 0 0",
+                                        "style": "text-align:center;",
+                                        "styleHtmlContent": true
+                                    },
+                                    "designerId": "7bb1291c-7d67-468d-a5e5-4a956b9fab51"
                                 }
                             ]
                         }

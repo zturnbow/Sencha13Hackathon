@@ -34,15 +34,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "implHandler": [
-                            "<div>",
-                            "    <div>{project}</div>",
-                            "    <div>",
-                            "        <img src=\"{image}\"/>",
-                            "    </div>",
-                            "    <div>",
-                            "        <p>{description}</p>",
-                            "    </div>",
-                            "    ",
+                            "<div class=\"imageWrapper\">",
+                            "    <div class=\"projectTitle\">{project}</div>",
+                            "    <div class=\"image\"><img src=\"{image}\"/></div>",
+                            "    <div class=\"imageDesc\">{description}</div>",
                             "</div>"
                         ],
                         "designer|displayName": "itemTpl"

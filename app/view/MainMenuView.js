@@ -116,6 +116,16 @@ Ext.define('app.view.MainMenuView', {
                                 ui: 'action',
                                 width: '80%',
                                 text: 'Register'
+                            },
+                            {
+                                xtype: 'container',
+                                items: [
+                                    {
+                                        xtype: 'image',
+                                        height: 201,
+                                        itemId: 'myimg1'
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -141,7 +151,18 @@ Ext.define('app.view.MainMenuView', {
                     }
                 ]
             }
+        ],
+        listeners: [
+            {
+                fn: 'onMyimg1Tap',
+                event: 'tap',
+                delegate: '#myimg1'
+            }
         ]
+    },
+
+    onMyimg1Tap: function(image, e, eOpts) {
+
     },
 
     initialize: function() {

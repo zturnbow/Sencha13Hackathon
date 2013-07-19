@@ -20,6 +20,9 @@ Ext.define('app.controller.WhiteboardController', {
         control: {
             "#whiteboardAddPhoto": {
                 tap: 'onAddPhoto'
+            },
+            "#WhiteboardPanel": {
+                activate: 'onWhiteboardPanelActivate'
             }
         }
     },
@@ -37,6 +40,10 @@ Ext.define('app.controller.WhiteboardController', {
             },
             scope: this
         });
+    },
+
+    onWhiteboardPanelActivate: function(newActiveItem, container, oldActiveItem, eOpts) {
+        Ext.ComponentManager.get("AddNewButton").setText("Whiteboard");
     }
 
 });

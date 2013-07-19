@@ -23,6 +23,9 @@ Ext.define('app.controller.ProjectController', {
             },
             "#AddNewButton": {
                 tap: 'onButtonTap'
+            },
+            "#ProjectPanel": {
+                activate: 'onProjectPanelActivate'
             }
         }
     },
@@ -76,6 +79,10 @@ Ext.define('app.controller.ProjectController', {
             default:
             break;
         }
+    },
+
+    onProjectPanelActivate: function(newActiveItem, container, oldActiveItem, eOpts) {
+        Ext.ComponentManager.get("AddNewButton").setText("Project");
     }
 
 });

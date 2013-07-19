@@ -88,6 +88,24 @@
                 "designer|controlQuery": "#AddNewButton"
             },
             "designerId": "5cdaf755-4027-4a92-9f45-6037225e2476"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onProjectPanelActivate",
+                "implHandler": [
+                    "Ext.ComponentManager.get(\"AddNewButton\").setText(\"Project\");"
+                ],
+                "name": "activate",
+                "designer|targetType": "ProjectPanel",
+                "designer|controlQuery": "#ProjectPanel"
+            },
+            "designerId": "4050f85a-9e76-4d29-b3c7-1370c374d41e"
         }
     ]
 }

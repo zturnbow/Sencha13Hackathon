@@ -38,6 +38,24 @@
                 "designer|controlQuery": "#whiteboardAddPhoto"
             },
             "designerId": "e7b6522e-0e83-4cb8-959e-d2fcc14d3927"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWhiteboardPanelActivate",
+                "implHandler": [
+                    "Ext.ComponentManager.get(\"AddNewButton\").setText(\"Whiteboard\");"
+                ],
+                "name": "activate",
+                "designer|targetType": "WhiteboardPanel",
+                "designer|controlQuery": "#WhiteboardPanel"
+            },
+            "designerId": "29ed7dea-c74c-4a77-86b5-9ac04a4217fa"
         }
     ]
 }

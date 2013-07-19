@@ -1,0 +1,13 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "WhiteboardAddPanel",
+        "designer|userClassName": "WhiteboardAddPanel"
+    },
+    "designerId": "51339b7f-4be1-4002-aece-b703a2f2ea26"
+}

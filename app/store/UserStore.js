@@ -21,6 +21,7 @@ Ext.define('app.store.UserStore', {
     ],
 
     config: {
+        autoLoad: true,
         model: 'app.model.User',
         storeId: 'UserStore',
         proxy: {

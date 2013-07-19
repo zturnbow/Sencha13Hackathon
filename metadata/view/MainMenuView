@@ -42,8 +42,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "align": "right",
-                        "id": "LogoutButton",
+                        "id": "logout",
+                        "itemId": "logout",
                         "ui": "decline",
+                        "designer|displayName": "logout",
                         "iconAlign": "center",
                         "text": "Logout"
                     },
@@ -209,14 +211,14 @@
                 "implHandler": [
                     "this.callParent();",
                     "try{",
-                    "settings.getUsername();",
+                    "    settings.getUsername();",
                     "}catch(e){}",
                     "",
-                    "if(settings.username && settings.username !== null && settings.username !== \"\"){",
-                    "    //Ext.ComponentMgr.get(\"MainMenuView\").pop();",
-                    "    Ext.ComponentMgr.get(\"MainMenuView\").push(Ext.create(\"app.view.ProjectPanel\"));",
-                    "    //alert(settings.getUsername());",
-                    "}"
+                    "    if(settings.username && settings.username !== null && settings.username !== \"\"){",
+                    "        //Ext.ComponentMgr.get(\"MainMenuView\").pop();",
+                    "        Ext.ComponentMgr.get(\"MainMenuView\").push(Ext.create(\"app.view.ProjectPanel\"));",
+                    "        //alert(settings.getUsername());",
+                    "    }"
                 ]
             },
             "designerId": "fdbaa9c6-a682-408c-bbc3-4788ed17c9c0"

@@ -42,11 +42,21 @@
                             "    <div>",
                             "        <p>{description}</p>",
                             "    </div>",
+                            "    ",
                             "</div>"
                         ],
                         "designer|displayName": "itemTpl"
                     },
                     "designerId": "48dfa005-c28c-413b-b0e6-1e16c2792a29"
+                },
+                {
+                    "type": "Ext.plugin.PullRefresh",
+                    "reference": {
+                        "name": "plugins",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "designerId": "20245691-438c-4fa6-bbdc-610e0e957391"
                 }
             ]
         }

@@ -93,6 +93,7 @@ Ext.define('app.controller.ProjectController', {
             button.setVisibility(true);
             button.setText("Project");
         }
+
     }
 
 });

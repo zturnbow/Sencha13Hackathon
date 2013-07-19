@@ -34,9 +34,15 @@ Ext.define('app.view.WhiteboardPanel', {
                     '    <div>',
                     '        <p>{description}</p>',
                     '    </div>',
+                    '    ',
                     '</div>'
                 ],
-                store: 'WhiteboardStore'
+                store: 'WhiteboardStore',
+                plugins: [
+                    {
+                        type: 'pullrefresh'
+                    }
+                ]
             }
         ]
     }

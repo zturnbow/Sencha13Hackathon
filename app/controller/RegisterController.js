@@ -55,7 +55,7 @@ Ext.define('app.controller.RegisterController', {
             };
 
             Ext.Ajax.request({
-                url: "https://"+settings.server_host+"/api/users",
+                url: settings.server_prefix+settings.server_host+"/api/users",
                 method: "POST",
                 params: submission,
                 success: function(response){

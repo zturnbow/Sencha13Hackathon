@@ -21,7 +21,7 @@
             },
             "codeClass": null,
             "userConfig": {
-                "url": "https://whiteboard-latchd.rhcloud.com/api/projects"
+                "url": "http://166.78.17.230:8080/api/projects"
             },
             "designerId": "d03b6466-4326-4c08-bd26-30014c9674ea",
             "cn": [

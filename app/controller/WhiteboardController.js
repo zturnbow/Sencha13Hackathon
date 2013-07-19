@@ -59,7 +59,7 @@ Ext.define('app.controller.WhiteboardController', {
             button.setText("Whiteboard");
         }
 
-        Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Loading Whiteboards...' });
+        //Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Loading Whiteboards...' });
 
     },
 
@@ -67,7 +67,7 @@ Ext.define('app.controller.WhiteboardController', {
         var photodata = Ext.ComponentMgr.get("capturedPhoto").getSrc();
         Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Saving Photo...' });
         Ext.Ajax.request({
-            url: "https://"+settings.server_host+"/api/whiteboards/"+settings.record.data.name,
+            url: settings.server_prefix+settings.server_host+"/api/whiteboards/"+settings.record.data.name,
             method: "POST",
             params: { mimetype: "image/jpeg", image:photodata },
             success: function(response) {

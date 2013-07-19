@@ -26,7 +26,7 @@ Ext.define('app.store.ProjectStore', {
         storeId: 'projectStore',
         proxy: {
             type: 'ajax',
-            url: 'https://whiteboard-latchd.rhcloud.com/api/projects',
+            url: 'http://166.78.17.230:8080/api/projects',
             reader: {
                 type: 'json'
             }

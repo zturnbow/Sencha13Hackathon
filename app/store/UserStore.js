@@ -26,7 +26,7 @@ Ext.define('app.store.UserStore', {
         storeId: 'UserStore',
         proxy: {
             type: 'rest',
-            url: 'https://whiteboard-latchd.rhcloud.com/api/users',
+            url: 'http://166.78.17.230:8080/api/users',
             reader: {
                 type: 'json'
             }

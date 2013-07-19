@@ -39,7 +39,7 @@ Ext.define('app.controller.LoginController', {
         var pass = Ext.ComponentMgr.get("password").getValue();
         Ext.Viewport.setMasked({ xtype: 'loadmask', message: 'Logging in...' });
         Ext.Ajax.request({
-            url: "https://"+settings.server_host+"/api/login",
+            url: settings.server_prefix+settings.server_host+"/api/login",
             method: "POST",
             params: { username: uname, password: pass },
             success: function(response) {
@@ -49,6 +49,14 @@ Ext.define('app.controller.LoginController', {
                     settings.setUsername(uname);
                     var listView = Ext.create("app.view.ProjectPanel");
                     listView.config.title = "Project List";
+
+                    var button = Ext.ComponentManager.get("AddNewButton");
+                    if(button){
+                        button.setVisibility(true);
+                        button.setText("Project");
+                    }
+
+
                     Ext.Viewport.setMasked(false);
                     Ext.ComponentMgr.get("MainMenuView").push(listView);
                 }else{

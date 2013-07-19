@@ -1,0 +1,262 @@
+{
+    "name": "Architect",
+    "settings": {
+        "urlPrefix": "http://localhost",
+        "exportPath": "/Users/JSDowning/Projects/SenchaCon",
+        "spacesToIndent": 4,
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": true,
+        "buildShouldOverwriteIndex": true
+    },
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "touch22",
+    "topInstanceFileMap": {
+        "7dc7745b-f467-445d-9ea0-fe60358dabb3": {
+            "paths": [
+                "metadata/store/UserStore",
+                "app/store/override/UserStore.js",
+                "app/store/UserStore.js"
+            ],
+            "className": "UserStore"
+        },
+        "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf": {
+            "paths": [
+                "metadata/store/ProjectStore",
+                "app/store/override/ProjectStore.js",
+                "app/store/ProjectStore.js"
+            ],
+            "className": "ProjectStore"
+        },
+        "54618e1f-0c7d-459e-ba47-4f426ffb2aac": {
+            "paths": [
+                "metadata/store/imageStore",
+                "app/store/override/imageStore.js",
+                "app/store/imageStore.js"
+            ],
+            "className": "imageStore"
+        },
+        "300bf1ee-bbe8-48ff-8fde-cfa6099da00f": {
+            "paths": [
+                "metadata/model/User",
+                "app/model/override/User.js",
+                "app/model/User.js"
+            ],
+            "className": "User"
+        },
+        "1acff2bf-e6df-41c2-abe6-520ffdf03ad7": {
+            "paths": [
+                "metadata/model/Projects",
+                "app/model/override/Projects.js",
+                "app/model/Projects.js"
+            ],
+            "className": "Projects"
+        },
+        "961c5402-96fe-4533-a73f-293d40ba2d74": {
+            "paths": [
+                "metadata/model/Image",
+                "app/model/override/Image.js",
+                "app/model/Image.js"
+            ],
+            "className": "Image"
+        },
+        "f3e4ad26-5dc1-4929-bb42-163b689f747d": {
+            "paths": [
+                "metadata/model/Project",
+                "app/model/override/Project.js",
+                "app/model/Project.js"
+            ],
+            "className": "Project"
+        },
+        "6a6457cf-590c-4bed-8798-99dcfccd4bb3": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "a520ca8e-f72a-45cc-8089-f3241bf019e4": {
+            "paths": [
+                "metadata/controller/LoginController",
+                "app/controller/override/LoginController.js",
+                "app/controller/LoginController.js"
+            ],
+            "className": "LoginController"
+        },
+        "2fcf1215-e5ee-4c09-8e7b-8b191f261c24": {
+            "paths": [
+                "metadata/view/MainMenuView",
+                "app/view/override/MainMenuView.js",
+                "app/view/MainMenuView.js"
+            ],
+            "className": "MainMenuView"
+        },
+        "dac7811a-406f-45f7-98a5-2c6965558888": {
+            "paths": [
+                "metadata/view/RegisterView",
+                "app/view/override/RegisterView.js",
+                "app/view/RegisterView.js"
+            ],
+            "className": "RegisterView"
+        },
+        "280ed071-8545-4627-a5ee-93f90ac99ab6": {
+            "paths": [
+                "metadata/controller/RegisterController",
+                "app/controller/override/RegisterController.js",
+                "app/controller/RegisterController.js"
+            ],
+            "className": "RegisterController"
+        },
+        "f8250694-b2c7-4d2e-acb9-b8b4105ae901": {
+            "paths": [
+                "metadata/controller/LogoutController",
+                "app/controller/override/LogoutController.js",
+                "app/controller/LogoutController.js"
+            ],
+            "className": "LogoutController"
+        },
+        "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c": {
+            "paths": [
+                "metadata/store/WhiteboardStore",
+                "app/store/override/WhiteboardStore.js",
+                "app/store/WhiteboardStore.js"
+            ],
+            "className": "WhiteboardStore"
+        },
+        "871de5e9-26b2-43ff-bc2f-0878d57b6eb0": {
+            "paths": [
+                "metadata/model/Whiteboard",
+                "app/model/override/Whiteboard.js",
+                "app/model/Whiteboard.js"
+            ],
+            "className": "Whiteboard"
+        },
+        "4667094e-d269-4dd6-938b-57fa7ec93d2d": {
+            "paths": [
+                "metadata/resource/js"
+            ],
+            "className": "js"
+        },
+        "c30706f9-cc4c-4141-8add-f9669fac7ddb": {
+            "paths": [
+                "metadata/resource/js1"
+            ],
+            "className": "js1"
+        },
+        "3662be31-cc5e-4d2a-95ce-a06d550d6e06": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "76c06b80-6f31-4cb0-b99c-79173bcf8867": {
+            "paths": [
+                "metadata/view/ProjectPanel",
+                "app/view/override/ProjectPanel.js",
+                "app/view/ProjectPanel.js"
+            ],
+            "className": "ProjectPanel"
+        },
+        "b06a2408-614f-41ca-9ff3-1bfb2538f6e7": {
+            "paths": [
+                "metadata/controller/ProjectController",
+                "app/controller/override/ProjectController.js",
+                "app/controller/ProjectController.js"
+            ],
+            "className": "ProjectController"
+        },
+        "300389f4-f250-49f2-81d9-c5484720fd8e": {
+            "paths": [
+                "metadata/view/WhiteboardPanel",
+                "app/view/override/WhiteboardPanel.js",
+                "app/view/WhiteboardPanel.js"
+            ],
+            "className": "WhiteboardPanel"
+        },
+        "517b2505-e531-4ba7-b350-b551d5a44e42": {
+            "paths": [
+                "metadata/controller/WhiteboardController",
+                "app/controller/override/WhiteboardController.js",
+                "app/controller/WhiteboardController.js"
+            ],
+            "className": "WhiteboardController"
+        },
+        "0b61d83c-ed08-4205-b0bd-e43a2459b662": {
+            "paths": [
+                "metadata/view/ProjectAddPanel",
+                "app/view/override/ProjectAddPanel.js",
+                "app/view/ProjectAddPanel.js"
+            ],
+            "className": "ProjectAddPanel"
+        },
+        "51339b7f-4be1-4002-aece-b703a2f2ea26": {
+            "paths": [
+                "metadata/view/WhiteboardAddPanel",
+                "app/view/override/WhiteboardAddPanel.js",
+                "app/view/WhiteboardAddPanel.js"
+            ],
+            "className": "WhiteboardAddPanel"
+        },
+<<<<<<< HEAD
+        "5390ca4c-3d7a-4f8b-a650-586496fc1c4b": {
+            "paths": [
+                "metadata/view/CaptureInterfaceView",
+                "app/view/override/CaptureInterfaceView.js",
+                "app/view/CaptureInterfaceView.js"
+            ],
+            "className": "CaptureInterfaceView"
+=======
+        "c44c4282-e1c4-47fa-ae2f-0478f5f4e7e0": {
+            "paths": [
+                "metadata/controller/ProjectAddController",
+                "app/controller/override/ProjectAddController.js",
+                "app/controller/ProjectAddController.js"
+            ],
+            "className": "ProjectAddController"
+>>>>>>> d604b10edfa5cb8abfa1b2f95e0d2a6beb852a21
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
+            "dac7811a-406f-45f7-98a5-2c6965558888",
+            "76c06b80-6f31-4cb0-b99c-79173bcf8867",
+            "300389f4-f250-49f2-81d9-c5484720fd8e",
+            "0b61d83c-ed08-4205-b0bd-e43a2459b662",
+            "51339b7f-4be1-4002-aece-b703a2f2ea26",
+            "5390ca4c-3d7a-4f8b-a650-586496fc1c4b"
+        ],
+        "store": [
+            "7dc7745b-f467-445d-9ea0-fe60358dabb3",
+            "7ac5b842-ba01-4d68-80e1-f82c0d3cdfaf",
+            "54618e1f-0c7d-459e-ba47-4f426ffb2aac",
+            "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c"
+        ],
+        "controller": [
+            "a520ca8e-f72a-45cc-8089-f3241bf019e4",
+            "280ed071-8545-4627-a5ee-93f90ac99ab6",
+            "f8250694-b2c7-4d2e-acb9-b8b4105ae901",
+            "b06a2408-614f-41ca-9ff3-1bfb2538f6e7",
+            "517b2505-e531-4ba7-b350-b551d5a44e42",
+            "c44c4282-e1c4-47fa-ae2f-0478f5f4e7e0"
+        ],
+        "model": [
+            "300bf1ee-bbe8-48ff-8fde-cfa6099da00f",
+            "1acff2bf-e6df-41c2-abe6-520ffdf03ad7",
+            "961c5402-96fe-4533-a73f-293d40ba2d74",
+            "f3e4ad26-5dc1-4929-bb42-163b689f747d",
+            "871de5e9-26b2-43ff-bc2f-0878d57b6eb0"
+        ],
+        "resource": [
+            "6a6457cf-590c-4bed-8798-99dcfccd4bb3",
+            "4667094e-d269-4dd6-938b-57fa7ec93d2d",
+            "c30706f9-cc4c-4141-8add-f9669fac7ddb",
+            "3662be31-cc5e-4d2a-95ce-a06d550d6e06"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -63,11 +63,16 @@ Ext.define('app.controller.ProjectController', {
 
     onButtonTap: function(button, e, eOpts) {
         var view = Ext.ComponentManager.get("MainMenuView");
+        var newProject = Ext.create("app.view.ProjectAddPanel");
+        var newWhite = Ext.create("app.view.WhiteboardAddPanel");
+        var id = view.getActiveItem().id;
 
-        switch(view.getActiveItem().id){
-            case "LoginView":
-            console.log("login view");
+        switch(id){
+            case "ProjectPanel":
+            view.push(newProject);
             break;
+            case "WhiteboardPanel":
+            view.push(newWhite);
             default:
             break;
         }

@@ -20,14 +20,16 @@
             "MainMenuView",
             "RegisterView",
             "ProjectPanel",
-            "WhiteboardPanel"
+            "WhiteboardPanel",
+            "WhiteboardAddPanel"
         ],
         "controllers": [
             "LoginController",
             "RegisterController",
             "LogoutController",
             "ProjectController",
-            "WhiteboardController"
+            "WhiteboardController",
+            "ProjectAddController"
         ],
         "name": "app"
     },

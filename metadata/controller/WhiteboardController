@@ -1,0 +1,12 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "WhiteboardController"
+    },
+    "designerId": "517b2505-e531-4ba7-b350-b551d5a44e42"
+}

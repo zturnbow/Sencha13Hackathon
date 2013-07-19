@@ -166,13 +166,30 @@
                 "app/controller/ProjectController.js"
             ],
             "className": "ProjectController"
+        },
+        "300389f4-f250-49f2-81d9-c5484720fd8e": {
+            "paths": [
+                "metadata/view/WhiteboardPanel",
+                "app/view/override/WhiteboardPanel.js",
+                "app/view/WhiteboardPanel.js"
+            ],
+            "className": "WhiteboardPanel"
+        },
+        "517b2505-e531-4ba7-b350-b551d5a44e42": {
+            "paths": [
+                "metadata/controller/WhiteboardController",
+                "app/controller/override/WhiteboardController.js",
+                "app/controller/WhiteboardController.js"
+            ],
+            "className": "WhiteboardController"
         }
     },
     "viewOrderMap": {
         "view": [
             "2fcf1215-e5ee-4c09-8e7b-8b191f261c24",
             "dac7811a-406f-45f7-98a5-2c6965558888",
-            "76c06b80-6f31-4cb0-b99c-79173bcf8867"
+            "76c06b80-6f31-4cb0-b99c-79173bcf8867",
+            "300389f4-f250-49f2-81d9-c5484720fd8e"
         ],
         "store": [
             "7dc7745b-f467-445d-9ea0-fe60358dabb3",
@@ -184,7 +201,8 @@
             "a520ca8e-f72a-45cc-8089-f3241bf019e4",
             "280ed071-8545-4627-a5ee-93f90ac99ab6",
             "f8250694-b2c7-4d2e-acb9-b8b4105ae901",
-            "b06a2408-614f-41ca-9ff3-1bfb2538f6e7"
+            "b06a2408-614f-41ca-9ff3-1bfb2538f6e7",
+            "517b2505-e531-4ba7-b350-b551d5a44e42"
         ],
         "model": [
             "300bf1ee-bbe8-48ff-8fde-cfa6099da00f",

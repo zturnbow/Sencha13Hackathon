@@ -6,8 +6,9 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoLoad": true,
         "model": "Whiteboard",
-        "storeId": "MyJsonStore",
+        "storeId": "WhiteboardStore",
         "designer|userClassName": "WhiteboardStore"
     },
     "designerId": "cf48e9ce-7153-4cc6-83b0-e290f2e9c35c",

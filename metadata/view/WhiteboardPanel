@@ -1,0 +1,54 @@
+{
+    "type": "Ext.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "WhiteboardPanel",
+        "designer|userClassName": "WhiteboardPanel",
+        "layout": "fit"
+    },
+    "designerId": "300389f4-f250-49f2-81d9-c5484720fd8e",
+    "cn": [
+        {
+            "type": "Ext.dataview.List",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "WhiteboardList",
+                "store": "WhiteboardStore"
+            },
+            "designerId": "ca2ef1e4-1ff0-4ac9-89e0-58164aabf5ad",
+            "cn": [
+                {
+                    "type": "Ext.XTemplate",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "implHandler": [
+                            "<div>",
+                            "    <div>{project}</div>",
+                            "    <div>",
+                            "        <img src=\"{image}\"/>",
+                            "    </div>",
+                            "    <div>",
+                            "        <p>{description}</p>",
+                            "    </div>",
+                            "</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "48dfa005-c28c-413b-b0e6-1e16c2792a29"
+                }
+            ]
+        }
+    ]
+}

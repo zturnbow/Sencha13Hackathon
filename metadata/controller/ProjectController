@@ -20,7 +20,8 @@
             "userConfig": {
                 "fn": "onListItemTap",
                 "implHandler": [
-                    "console.log(record.data.name+\" selected\");"
+                    "var newView = Ext.create(\"app.view.WhiteboardPanel\");",
+                    "Ext.ComponentMgr.get(\"MainMenuView\").push(newView);"
                 ],
                 "name": "itemtap",
                 "designer|targetType": "Ext.dataview.List",

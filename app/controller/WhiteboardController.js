@@ -25,7 +25,18 @@ Ext.define('app.controller.WhiteboardController', {
     },
 
     onAddPhoto: function(button, e, eOpts) {
+        Ext.device.Camera.capture({
+            source: 'camera',
+            destination: 'file',
 
+            success: function(url) {
+                this.fireEvent('change', this, url);
+            },
+            failure: function() {
+                Ext.Msg.alert('Error', 'There was an error when acquiring the picture.');
+            },
+            scope: this
+        });
     }
 
 });

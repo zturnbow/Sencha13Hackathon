@@ -31,7 +31,25 @@
                 "docked": "top",
                 "androidAnimation": false
             },
-            "designerId": "585368ec-c112-4ee4-9469-b32e5cf3c80e"
+            "designerId": "585368ec-c112-4ee4-9469-b32e5cf3c80e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "right",
+                        "id": "LogoutButton",
+                        "ui": "decline",
+                        "iconAlign": "center",
+                        "text": "Logout"
+                    },
+                    "designerId": "1f5cfb3d-de70-4a76-b4e8-ac24a3802dd0"
+                }
+            ]
         },
         {
             "type": "Ext.form.Panel",
@@ -202,6 +220,39 @@
                 ]
             },
             "designerId": "fdbaa9c6-a682-408c-bbc3-4788ed17c9c0"
+        },
+        {
+            "type": "Ext.Toolbar",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "center",
+                "docked": "bottom"
+            },
+            "designerId": "aa0074ec-f6af-46f9-9fec-1f9a888e8b4e",
+            "cn": [
+                {
+                    "type": "Ext.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 0,
+                        "height": 38,
+                        "ui": "action",
+                        "width": null,
+                        "iconAlign": "center",
+                        "iconCls": "add",
+                        "text": "Add"
+                    },
+                    "designerId": "4ae5c3be-52b9-4d32-ba4f-3ed9f05b4407"
+                }
+            ]
         }
     ]
 }

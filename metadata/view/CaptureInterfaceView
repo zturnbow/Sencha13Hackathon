@@ -1,0 +1,55 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CaptureInterfaceView"
+    },
+    "designerId": "5390ca4c-3d7a-4f8b-a650-586496fc1c4b",
+    "cn": [
+        {
+            "type": "Ext.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "bottom",
+                "ui": "action",
+                "text": "Capture"
+            },
+            "designerId": "b62f0008-947f-44a7-b87d-74ab51885e08",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "Ext.device.Camera.capture({",
+                            "    success: function(image) {",
+                            "        var imageView = Ext.getCmp('capturedImage');",
+                            "        imageView.setSrc(image);",
+                            "    },                          ",
+                            "    destination: 'camera'",
+                            "});"
+                        ]
+                    },
+                    "designerId": "43ed9802-f24d-4cb2-a177-aa7707f66a1f"
+                }
+            ]
+        }
+    ]
+}

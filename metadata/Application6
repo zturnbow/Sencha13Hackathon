@@ -1,0 +1,52 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "User",
+            "Project",
+            "Whiteboard"
+        ],
+        "stores": [
+            "UserStore",
+            "ProjectStore",
+            "WhiteboardStore"
+        ],
+        "views": [
+            "MainMenuView",
+            "RegisterView",
+            "ProjectPanel",
+            "WhiteboardPanel"
+        ],
+        "controllers": [
+            "LoginController",
+            "RegisterController",
+            "LogoutController",
+            "ProjectController",
+            "WhiteboardController"
+        ],
+        "name": "app"
+    },
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "launch",
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "60988bcc-7671-470c-8d1e-2cd06718065f"
+        }
+    ]
+}

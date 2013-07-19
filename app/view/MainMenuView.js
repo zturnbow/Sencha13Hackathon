@@ -35,7 +35,17 @@ Ext.define('app.view.MainMenuView', {
             layout: {
                 pack: 'center',
                 type: 'hbox'
-            }
+            },
+            items: [
+                {
+                    xtype: 'button',
+                    align: 'right',
+                    id: 'LogoutButton',
+                    ui: 'decline',
+                    iconAlign: 'center',
+                    text: 'Logout'
+                }
+            ]
         },
         items: [
             {
@@ -107,6 +117,25 @@ Ext.define('app.view.MainMenuView', {
                                 text: 'Register'
                             }
                         ]
+                    }
+                ]
+            },
+            {
+                xtype: 'toolbar',
+                docked: 'bottom',
+                layout: {
+                    align: 'center',
+                    type: 'hbox'
+                },
+                items: [
+                    {
+                        xtype: 'button',
+                        flex: 0,
+                        height: 38,
+                        ui: 'action',
+                        iconAlign: 'center',
+                        iconCls: 'add',
+                        text: 'Add'
                     }
                 ]
             }

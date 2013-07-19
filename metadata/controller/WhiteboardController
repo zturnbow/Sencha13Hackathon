@@ -19,6 +19,20 @@
             "codeClass": null,
             "userConfig": {
                 "fn": "onAddPhoto",
+                "implHandler": [
+                    " Ext.device.Camera.capture({",
+                    "    source: 'camera',",
+                    "    destination: 'file',",
+                    "    ",
+                    "    success: function(url) {",
+                    "        this.fireEvent('change', this, url);",
+                    "    },",
+                    "    failure: function() {",
+                    "        Ext.Msg.alert('Error', 'There was an error when acquiring the picture.');",
+                    "    },",
+                    "    scope: this",
+                    "});"
+                ],
                 "name": "tap",
                 "designer|targetType": "Ext.Button",
                 "designer|controlQuery": "#whiteboardAddPhoto"

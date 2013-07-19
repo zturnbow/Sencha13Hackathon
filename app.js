@@ -27,18 +27,18 @@ Ext.application({
     stores: [
         'UserStore',
         'ProjectStore',
-        'imageStore',
         'WhiteboardStore'
     ],
     views: [
         'MainMenuView',
-        'ProjectList',
-        'RegisterView'
+        'RegisterView',
+        'ProjectPanel'
     ],
     controllers: [
         'LoginController',
         'RegisterController',
-        'LogoutController'
+        'LogoutController',
+        'ProjectController'
     ],
     name: 'app',
 

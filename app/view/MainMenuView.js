@@ -48,7 +48,6 @@ Ext.define('app.view.MainMenuView', {
                 items: [
                     {
                         xtype: 'container',
-                        docked: 'top',
                         items: [
                             {
                                 xtype: 'fieldset',
@@ -116,9 +115,9 @@ Ext.define('app.view.MainMenuView', {
         settings.getUsername();
         alert(settings.username);
         if(settings.username && settings.username !== null && settings.username !== ""){
-            Ext.ComponentMgr.get("MainMenuView").pop();
-            Ext.ComponentMgr.get("MainMenuView").push(Ext.create("app.view.ProjectList"));
-            alert(settings.getUsername());
+            //Ext.ComponentMgr.get("MainMenuView").pop();
+            Ext.ComponentMgr.get("MainMenuView").push(Ext.create("app.view.ProjectPanel"));
+            //alert(settings.getUsername());
         }
     }
 

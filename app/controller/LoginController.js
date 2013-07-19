@@ -42,9 +42,9 @@ Ext.define('app.controller.LoginController', {
             success: function(response) {
                 var msg = Ext.JSON.decode(response.responseText);
                 if(msg.authenticated == true){
-                    console.log("YEEEAAHHH!");
+                    //console.log("YEEEAAHHH!");
                     settings.setUsername(uname);
-                    var listView = Ext.create("app.view.ProjectList");
+                    var listView = Ext.create("app.view.ProjectPanel");
                     listView.config.title = "Project List";
                     Ext.ComponentMgr.get("MainMenuView").push(listView);
                 }else{

@@ -1,0 +1,32 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ProjectController"
+    },
+    "designerId": "b06a2408-614f-41ca-9ff3-1bfb2538f6e7",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "console.log(record.data.name+\" selected\");"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#ProjectListView"
+            },
+            "designerId": "3df5466b-11fe-4ca3-8ecf-c5627cfe62a7"
+        }
+    ]
+}

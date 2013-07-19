@@ -52,6 +52,16 @@ Ext.define('app.controller.ProjectAddController', {
             participants: []
         };
 
+        var list = Ext.ComponentMgr.get("PeepsList")
+
+        if(list){
+
+            Ext.Array.forEach(list.getSelection(), function(x) {
+                submission.participants.push(x.data.username); 
+            });
+
+        }
+
         Ext.Ajax.request({
             url: "https://"+settings.server_host+"/api/projects",
             method: "POST",

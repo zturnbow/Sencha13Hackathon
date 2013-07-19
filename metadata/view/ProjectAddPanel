@@ -10,7 +10,8 @@
         "ui": null,
         "designer|userClassName": "ProjectAddPanel",
         "designer|userAlias": "projectaddpanel",
-        "scrollable": false
+        "layout": "vbox",
+        "scrollable": "vertical"
     },
     "designerId": "0b61d83c-ed08-4205-b0bd-e43a2459b662",
     "cn": [
@@ -46,6 +47,56 @@
                 "autoCapitalize": true
             },
             "designerId": "1832d5b9-850c-43a4-8fef-ad8bea4a520b"
+        },
+        {
+            "type": "Ext.form.FieldSet",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": null,
+                "height": null,
+                "title": "Peeps"
+            },
+            "designerId": "c6784432-0f71-46c9-a608-8ff8957542c1",
+            "cn": [
+                {
+                    "type": "Ext.dataview.List",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 300,
+                        "id": "PeepsList",
+                        "designer|displayName": "PeepList",
+                        "modal": true,
+                        "mode": "MULTI",
+                        "store": "UserStore"
+                    },
+                    "designerId": "bda48221-f5a5-4523-8c08-1f0f86c10c22",
+                    "cn": [
+                        {
+                            "type": "Ext.XTemplate",
+                            "reference": {
+                                "name": "itemTpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "implHandler": [
+                                    "<div>{username}</div>"
+                                ],
+                                "designer|displayName": "itemTpl"
+                            },
+                            "designerId": "9ebaaeca-1f99-4d41-a57b-075782b5aa93"
+                        }
+                    ]
+                }
+            ]
         },
         {
             "type": "Ext.Button",

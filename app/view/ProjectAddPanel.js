@@ -19,7 +19,10 @@ Ext.define('app.view.ProjectAddPanel', {
 
     config: {
         id: 'ProjectAddPanel',
-        scrollable: false,
+        layout: {
+            type: 'vbox'
+        },
+        scrollable: 'vertical',
         items: [
             {
                 xtype: 'textfield',
@@ -33,6 +36,23 @@ Ext.define('app.view.ProjectAddPanel', {
                 itemId: 'projectDesc',
                 label: 'Desc',
                 autoCapitalize: true
+            },
+            {
+                xtype: 'fieldset',
+                title: 'Peeps',
+                items: [
+                    {
+                        xtype: 'list',
+                        height: 300,
+                        id: 'PeepsList',
+                        modal: true,
+                        mode: 'MULTI',
+                        itemTpl: [
+                            '<div>{username}</div>'
+                        ],
+                        store: 'UserStore'
+                    }
+                ]
             },
             {
                 xtype: 'button',

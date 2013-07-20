@@ -164,24 +164,7 @@ Ext.define('app.view.MainMenuView', {
                     }
                 ]
             }
-        ],
-        listeners: [
-            {
-                fn: 'onMyimg1Tap',
-                event: 'tap',
-                delegate: '#loginAboutImage'
-            }
         ]
-    },
-
-    onMyimg1Tap: function(image, e, eOpts) {
-        var about;
-        about = Ext.ComponentMgr.get("About");
-        if(!about){
-            about = Ext.create("app.view.About");
-        }
-        about.config.title = "About";
-        Ext.ComponentMgr.get("MainMenuView").push(register);
     },
 
     initialize: function() {

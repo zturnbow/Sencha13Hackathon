@@ -2,7 +2,7 @@
     "name": "Architect",
     "settings": {
         "urlPrefix": "http://localhost",
-        "exportPath": "/Users/JSDowning/Projects/SenchaCon",
+        "exportPath": "/Users/GXReiser/projects/Sencha13HackathonBuild",
         "spacesToIndent": 4,
         "lineEnding": "LF",
         "genTimestamps": false,

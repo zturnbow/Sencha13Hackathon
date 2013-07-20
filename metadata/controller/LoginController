@@ -106,6 +106,30 @@
                 "designer|controlQuery": "#LoginView"
             },
             "designerId": "6c619ab2-6354-4a2a-a5b7-8e0740df4ff8"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onAbout",
+                "implHandler": [
+                    "var about;",
+                    "about = Ext.ComponentMgr.get(\"About\");",
+                    "if(!about){",
+                    " about = Ext.create(\"app.view.About\");",
+                    "}",
+                    "about.config.title = \"About\";",
+                    "Ext.ComponentMgr.get(\"MainMenuView\").push(register);"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Img",
+                "designer|controlQuery": "#loginAboutImage"
+            },
+            "designerId": "2956f4c7-4363-4852-9469-488218776842"
         }
     ]
 }

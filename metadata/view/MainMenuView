@@ -223,31 +223,7 @@
                                         "width": 45,
                                         "src": "resources/images/icon_menu_info.png"
                                     },
-                                    "designerId": "afde7f6b-b8a8-4feb-866a-452c47b5bb1a",
-                                    "cn": [
-                                        {
-                                            "type": "basiceventbinding",
-                                            "reference": {
-                                                "name": "listeners",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "fn": "onMyimg1Tap",
-                                                "implHandler": [
-                                                    "var about;",
-                                                    "about = Ext.ComponentMgr.get(\"About\");",
-                                                    "if(!about){",
-                                                    " about = Ext.create(\"app.view.About\");",
-                                                    "}",
-                                                    "about.config.title = \"About\";",
-                                                    "Ext.ComponentMgr.get(\"MainMenuView\").push(register);"
-                                                ],
-                                                "name": "tap"
-                                            },
-                                            "designerId": "853381ef-42f6-4f19-bf2d-d01e153ee92f"
-                                        }
-                                    ]
+                                    "designerId": "afde7f6b-b8a8-4feb-866a-452c47b5bb1a"
                                 },
                                 {
                                     "type": "Ext.Label",

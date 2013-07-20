@@ -30,6 +30,9 @@ Ext.define('app.controller.LoginController', {
             },
             "#LoginView": {
                 activate: 'onFormpanelActivate'
+            },
+            "#loginAboutImage": {
+                tap: 'onAbout'
             }
         }
     },
@@ -84,6 +87,16 @@ Ext.define('app.controller.LoginController', {
         if(button){
             button.setVisibility(false);
         }
+    },
+
+    onAbout: function(image, e, eOpts) {
+        var about;
+        about = Ext.ComponentMgr.get("About");
+        if(!about){
+            about = Ext.create("app.view.About");
+        }
+        about.config.title = "About";
+        Ext.ComponentMgr.get("MainMenuView").push(register);
     }
 
 });
